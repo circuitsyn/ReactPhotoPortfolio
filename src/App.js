@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import './App.css';
 // import gallery components for main page
 
