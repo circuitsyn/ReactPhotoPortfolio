@@ -1,41 +1,41 @@
-export const photos = [
+export const landingPhotos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: '/imgs/landing/birds.jpg',
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1, 
-      height: 1 
+      src: "/imgs/landing/cetaceans.jpg",
+      width: 4, 
+      height: 3 
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: "/imgs/landing/insects.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
+      src: "/imgs/landing/landscapes.jpg",
+      width: 4,
+      height: 3
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: "/imgs/landing/nightTime.jpg",
+      width: 3,
+      height: 5
+    },
+    {
+      src: "/imgs/landing/ungulates.jpg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/imgs/landing/waterFeatures.jpg",
+      width: 3,
+      height: 5
+    },
+    {
+      src: "/imgs/landing/winter.jpg",
       width: 4,
       height: 3
     },
