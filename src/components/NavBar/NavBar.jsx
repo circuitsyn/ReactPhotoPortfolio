@@ -23,7 +23,7 @@ const NavBar = (props) => {
                   <a class="dropdown-item" href="/Cetaceans">Cetaceans</a>
                   <a class="dropdown-item" href="/Insects">Insects</a>
                   <a class="dropdown-item" href="/Night-Sky">Night Sky</a>
-                  <a class="dropdown-item" href="/Ubngulates">Ubngulates</a>
+                  <a class="dropdown-item" href="/Ungulates">Ungulates</a>
                   <a class="dropdown-item" href="Water-Features">Water Features</a>
                   <a class="dropdown-item" href="Winter">Winter</a>
                 </div>
