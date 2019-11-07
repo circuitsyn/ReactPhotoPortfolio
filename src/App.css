@@ -17,8 +17,14 @@
   color: orangered;
 }
 
-.navBar {
-  /* height: 10vh; */
+.navIcon {
+  max-height: 2rem;
+  max-width: auto;
+}
+
+.navbar-toggler {
+  border-color: rgba(0,0,0,.4) !important;
+  padding: .20rem .60rem !important;
 }
 
 .App {
