@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import NavBar from './components/NavBar/NavBar';
 // import gallery components for main page
 import Gallery from "react-photo-gallery";
