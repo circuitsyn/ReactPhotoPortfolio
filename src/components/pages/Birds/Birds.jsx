@@ -1,12 +1,12 @@
 import React from 'react';
 import Gallery from "react-photo-gallery";
-import { photosBirds } from "./photosBirds";
+import { birdsPhotos } from "./birdsPhotos";
 
 const Birds = (props) => {
 
   return (
     <div>
-      <Gallery photos={photosBirds} />
+      <Gallery photos={birdsPhotos} />
     </div>
   );
 }
