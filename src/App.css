@@ -17,6 +17,14 @@
   color: orangered;
 }
 
+.nav-link {
+  color: orangered;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
 .navIcon {
   max-height: 2rem;
   max-width: auto;

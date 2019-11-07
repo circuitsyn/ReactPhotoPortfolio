@@ -8,8 +8,17 @@ const NavBar = (props) => {
       <div className="pos-f-t">
         <div className="collapse" id="navBarToggleTrig">
           <div className="bg-light p-4">
-            <h5 className="text-white h4">Blog</h5>
-            <span className="text-muted">Toggleable via the navbar brand.</span>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Copyright</a>
+              </li>
+            </ul>
           </div>
         </div>
         <nav className="navbar navbar-light bg-light pb-0 pt-1">
