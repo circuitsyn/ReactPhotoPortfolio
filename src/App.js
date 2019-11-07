@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 // import gallery components for main page
 import Gallery from "react-photo-gallery";
-import { landingPhotos } from "./landingPhotos";
-// import { render } from "react-dom";
+import Home from './components/pages/Home/Home';
+import Birds from './components/pages/Birds/Birds';
 import './App.css';
+
 
 
 class App extends Component {
@@ -12,10 +14,21 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Gallery photos={landingPhotos} />
+        {/* <Gallery photos={landingPhotos} /> */}
+        <Switch>
+          <Route exact path="/"render={() => 
+								<Home 
+									
+								/>} />
+          <Route exact path="/Birds"render={() => 
+								<Birds 
+									
+								/>} />
+
+        </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter (App)
