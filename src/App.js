@@ -13,14 +13,19 @@ import Winter from './components/pages/Winter/Winter';
 import './App.css';
 
 class App extends Component {
+
+  onPickClick = e => {
+    alert(e.target.src)
+  }
+
   render() {
     return (
       <div className="App">
         <NavBar />
-        {/* <Gallery photos={landingPhotos} /> */}
+        
         <Switch>
           <Route exact path="/"render={() => 
-								<Home 					
+								<Home onClick={this.onPickClick}					
 								/>} />
           <Route exact path="/Birds"render={() => 
 								<Birds 
