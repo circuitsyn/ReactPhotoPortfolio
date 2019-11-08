@@ -4,15 +4,27 @@ import navIcon from '../../assets/Icons/camera.png';
 const NavBar = (props) => {
 
   return (
-    <div>
-      <div className="pos-f-t">
-        <div className="collapse" id="navBarToggleTrig">
+    <div>        
+      <nav className="navbar navbar-light bg-light pb-0 pt-1">
+        <a href="/" className="navbar-brand titleFont"><span className="titleOr">Jarred Sutton</span> | Photography</a>
+        
+        
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation">
+          <img className="navIcon" src={navIcon} alt="camera" />
+        </button>
+      </nav>
+
+        {/* Directory Components */}
+        <div className="collapse text-right" id="navBarToggleTrig">
           <div className="bg-light p-4">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
+                <a className="nav-link" href="/Home">Home</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/Blog">Blog</a>
               </li>
-              <li className="nav-item dropright">
+              <li className="nav-item drop">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Galleries
                 </a>
@@ -36,13 +48,8 @@ const NavBar = (props) => {
             </ul>
           </div>
         </div>
-        <nav className="navbar navbar-light bg-light pb-0 pt-1">
-            <a href="/" className="navbar-brand titleFont"><span className="titleOr">Jarred Sutton</span> | Photography</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation">
-            <img className="navIcon" src={navIcon} alt="camera" />
-          </button>
-        </nav>
-      </div>
+      
+      
     </div>
   );
 }
