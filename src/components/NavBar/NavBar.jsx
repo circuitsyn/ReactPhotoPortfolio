@@ -12,22 +12,22 @@ const NavBar = (props) => {
               <li className="nav-item active">
                 <a className="nav-link" href="/Blog">Blog</a>
               </li>
-              <li className="nav-item">
-              <li class="nav-item dropright">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item dropright">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Galleries
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/Birds">Birds</a>
-                  <a class="dropdown-item" href="/Landscapes">Landscapes</a>
-                  <a class="dropdown-item" href="/Cetaceans">Cetaceans</a>
-                  <a class="dropdown-item" href="/Insects">Insects</a>
-                  <a class="dropdown-item" href="/Night-Sky">Night Sky</a>
-                  <a class="dropdown-item" href="/Ungulates">Ungulates</a>
-                  <a class="dropdown-item" href="Water-Features">Water Features</a>
-                  <a class="dropdown-item" href="Winter">Winter</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="/Birds">Birds</a>
+                  <a className="dropdown-item" href="/Cetaceans">Cetaceans</a>
+                  <a className="dropdown-item" href="/Insects">Insects</a>
+                  <a className="dropdown-item" href="/Landscapes">Landscapes</a>
+                  <a className="dropdown-item" href="/Night-Sky">Night Sky</a>
+                  <a className="dropdown-item" href="/Ungulates">Ungulates</a>
+                  <a className="dropdown-item" href="Water-Features">Water Features</a>
+                  <a className="dropdown-item" href="Winter">Winter</a>
                 </div>
               </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/Contact">Contact</a>
               </li>
               <li className="nav-item">

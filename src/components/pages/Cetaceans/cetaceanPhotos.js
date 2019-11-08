@@ -1,4 +1,4 @@
-export const birdsPhotos = [
+export const cetaceanPhotos = [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
       width: 4,
