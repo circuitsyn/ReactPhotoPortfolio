@@ -16,6 +16,7 @@ class App extends Component {
 
   onPickClick = e => {
     alert(e.target.src)
+    console.log(e.target)
   }
 
   render() {

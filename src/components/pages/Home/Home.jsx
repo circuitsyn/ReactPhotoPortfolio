@@ -6,7 +6,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <Gallery photos={landingPhotos} />
+      <Gallery onClick={props.onClick} photos={landingPhotos} />
     </div>
   );
 }
