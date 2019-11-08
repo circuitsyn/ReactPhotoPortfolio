@@ -15,8 +15,8 @@ import './App.css';
 class App extends Component {
 
   onPickClick = e => {
-    alert(e.target.src)
     console.log(e.target)
+    console.log(e.target.alt)
   }
 
   render() {
