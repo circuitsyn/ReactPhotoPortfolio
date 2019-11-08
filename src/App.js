@@ -14,9 +14,9 @@ import './App.css';
 
 class App extends Component {
 
+  // function to detect gallery click and redirect to gallery
   onPickClick = e => {
-    console.log(e.target)
-    console.log(e.target.alt)
+    this.props.history.push('/'+ e.target.alt);
   }
 
   render() {
