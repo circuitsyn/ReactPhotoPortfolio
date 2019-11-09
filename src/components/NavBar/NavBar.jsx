@@ -1,5 +1,5 @@
 import React from 'react';
-import navIcon from '../../assets/Icons/camera.png';
+import navIcon from '../../assets/Icons/camera2.png';
 
 const NavBar = (props) => {
 
