@@ -6,6 +6,7 @@ import { birdsPhotos } from "./birdsPhotos";
 
 const Birds = (props) => {
 
+  // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
