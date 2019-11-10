@@ -19,9 +19,15 @@ const Winter = (props) => {
       setViewerIsOpen(false);
     };
 
+    const trigOver = () => {
+      console.log('!entered the photo!');
+      alert('testing)')
+    };
+
+
     return (
       <div>
-        <Gallery photos={winterPhotos} onClick={openLightbox} />
+        <Gallery photos={winterPhotos} onClick={openLightbox} onMouseEnter={trigOver} />
         <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

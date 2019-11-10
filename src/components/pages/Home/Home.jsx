@@ -4,9 +4,16 @@ import { landingPhotos } from "./landingPhotos";
 
 const Home = (props) => {
 
+  const handleHover = (e) => {
+    console.log('It worked!');
+    console.log('target: ', e.target)
+  }
+
   return (
     <div>
-      <Gallery onClick={props.onClick} photos={landingPhotos} />
+      <div onMouseOver={handleHover}>
+        <Gallery onClick={props.onClick} photos={landingPhotos} />
+      </div>
     </div>
   );
 }
