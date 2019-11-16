@@ -3,7 +3,8 @@ export const landingPhotos = [
       src: '/imgs/landing/birds.jpg',
       width: 4,
       height: 3,
-      alt: "Birds"
+      alt: "Birds",
+      overlay: './imgs/landing/birdsTitle.jpg'
     },
     {
       src: "/imgs/landing/cetaceans.jpg",

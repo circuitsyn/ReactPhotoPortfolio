@@ -11,7 +11,8 @@ const Home = (props) => {
     // Detection to make sure only overlay is added to highlighted img
     if (e.target.nodeName == 'IMG') {
       e.target.classList.add('fade-in');
-      e.target.src = './imgs/landing/birdsTitle.jpg';      
+      let overlayURL = $(e.target).attr('overlay');
+      e.target.src = overlayURL;      
     }
   }
 
