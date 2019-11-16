@@ -13,7 +13,15 @@ import Winter from './components/pages/Winter/Winter';
 import './App.css';
 
 class App extends Component {
-
+  // componentDidMount() {
+  //   console.log('GrandChild did mount.');
+  //   const img = document.querySelector('img');
+  //   console.log('img', img)
+  //   img.onload = () => {
+  //     console.log('loaded');
+  //     img.classList.add('fade-in');
+  //   }
+  // }
   // function to detect gallery click and redirect to gallery
   onPickClick = e => {
     this.props.history.push('/'+ e.target.alt);
