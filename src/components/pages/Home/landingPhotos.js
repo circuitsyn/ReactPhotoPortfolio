@@ -10,97 +10,85 @@ export const landingPhotos = [
       src: "/imgs/landing/cetaceans.jpg",
       width: 4, 
       height: 3,
-      alt: "Cetaceans"
+      alt: "Cetaceans",
+      overlay:  './imgs/landing/cetaceansTitle.jpg'
     },
     {
       src: "/imgs/landing/insects.jpg",
       width: 4,
       height: 3,
-      alt: "Insects"
+      alt: "Insects",
+      overlay: './imgs/landing/insectsTitle.jpg' 
     },
     {
       src: "/imgs/landing/landscapes.jpg",
       width: 4,
       height: 3,
-      alt: "Landscapes"
+      alt: "Landscapes",
+      overlay: './imgs/landing/landscapesTitle.jpg' 
     },
     {
       src: "/imgs/landing/nightTime.jpg",
       width: 3,
       height: 5,
-      alt: "Night-Sky"
+      alt: "Night-Sky",
+      overlay: './imgs/landing/nightTimeTitle.jpg'
     },
     {
       src: "/imgs/landing/ungulates.jpg",
       width: 4,
       height: 3,
-      alt: "Ungulates"
+      alt: "Ungulates",
+      overlay: './imgs/landing/ungulatesTitle.jpg' 
     },
     {
       src: "/imgs/landing/waterFeatures.jpg",
-      width: 3,
+      width: 4,
       height: 5,
-      alt: "Water-Features"
+      alt: "Water-Features",
+      overlay: './imgs/landing/waterFeaturesTitle.jpg'
     },
     {
       src: "/imgs/landing/winter.jpg",
       width: 4,
       height: 3,
-      alt: "Winter"
+      alt: "Winter",
+      overlay: './imgs/landing/winterTitle.jpg' 
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3,
-      alt: ""
-    },
-    {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
-      width: 3,
-      height: 4,
-      alt: ""
-    },
-    {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
-      width: 4,
-      height: 3,
-      alt: ""
-    },
-    {
-      src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
+      src: "./imgs/landing/panoramas.jpg",
       width: 4927,
       height: 1000,
-      alt: ""
+      alt: "Panoramas",
+      overlay: './imgs/landing/panoramasTitle.jpg' 
     },
     {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
+      src: "./imgs/landing/flowers.jpg",
       width: 4,
       height: 3,
-      alt: ""
+      alt: "Flowers",
+      overlay: './imgs/landing/flowersTitle.jpg'
     },
     {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
+      src: "./imgs/landing/travel.jpg",
       width: 4,
-      height: 3,
-      alt: ""
+      height: 5,
+      alt: "Travel",
+      overlay: './imgs/landing/travelTitle.jpg' 
     },
     {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
+      src: "./imgs/landing/seaLife.jpg",
       width: 4,
       height: 3,
-      alt: ""
-    },
+      alt: "SeaLife",
+      overlay: './imgs/landing/seaLifeTitle.jpg'
+    }, 
     {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
+      src: "./imgs/landing/reptiles.jpg",
       width: 4,
       height: 3,
-      alt: ""
-    },
-    {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
-      width: 4,
-      height: 3,
-      alt: ""
+      alt: "Reptiles",
+      overlay: './imgs/landing/reptilesTitles.jpg'
     }
   ];
   
