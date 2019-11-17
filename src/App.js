@@ -4,24 +4,26 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/pages/Home/Home';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
+import Flowers from './components/pages/Flowers/Flowers';
 import Insects from './components/pages/Insects/Insects';
 import Landscapes from './components/pages/Landscapes/Landscapes';
 import NightSky from './components/pages/Night-Sky/Night-Sky';
+import Panoramas from './components/pages/Panoramas/Panoramas';
+import Reptiles from './components/pages/Reptiles/Reptiles';
+import SeaLife from './components/pages/SeaLife/SeaLife';
+import Travel from './components/pages/Travel/Travel';
 import Ungulates from './components/pages/Ungulates/Ungulates';
 import WaterFeatures from './components/pages/Water-Features/Water-Features';
 import Winter from './components/pages/Winter/Winter';
 import './App.css';
 
 class App extends Component {
-  // componentDidMount() {
-  //   console.log('GrandChild did mount.');
-  //   const img = document.querySelector('img');
-  //   console.log('img', img)
-  //   img.onload = () => {
-  //     console.log('loaded');
-  //     img.classList.add('fade-in');
-  //   }
-  // }
+  componentDidMount() {
+    const img = document.querySelector('img');
+    img.onload = () => {
+      img.classList.add('fade-in');
+    }
+  }
   // function to detect gallery click and redirect to gallery
   onPickClick = e => {
     this.props.history.push('/'+ e.target.alt);
@@ -42,6 +44,9 @@ class App extends Component {
           <Route exact path="/Cetaceans"render={() => 
 								<Cetaceans 
 								/>} />
+          <Route exact path="/Flowers"render={() => 
+								<Flowers 
+								/>} />
           <Route exact path="/Insects"render={() => 
 								<Insects 
 								/>} />
@@ -50,6 +55,18 @@ class App extends Component {
 								/>} />
           <Route exact path="/Night-Sky"render={() => 
 								<NightSky 
+								/>} />
+          <Route exact path="/Panoramas"render={() => 
+								<Panoramas 
+								/>} />
+          <Route exact path="/Reptiles"render={() => 
+								<Reptiles 
+								/>} />
+          <Route exact path="/SeaLife"render={() => 
+								<SeaLife 
+								/>} />
+          <Route exact path="/Travel"render={() => 
+								<Travel 
 								/>} />
           <Route exact path="/Ungulates"render={() => 
 								<Ungulates 
