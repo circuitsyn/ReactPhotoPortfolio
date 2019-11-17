@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { birdsPhotos } from "./birdsPhotos";
+import { reptilesPhotos } from "./reptilesPhotos";
 
-const Birds = (props) => {
+const Reptiles = (props) => {
 
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
@@ -21,13 +21,13 @@ const Birds = (props) => {
 
   return (
     <div>
-      <Gallery photos={birdsPhotos} onClick={openLightbox} />
+      <Gallery photos={reptilesPhotos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={birdsPhotos.map(x => ({
+              views={reptilesPhotos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title
@@ -40,4 +40,4 @@ const Birds = (props) => {
   );
 }
 
-export default Birds;
+export default Reptiles;
