@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')
 	require('dotenv').config()
 }
-console.log('id', process.env.REACT_APP_CONTENT_SPACE_ID, process.env.REACT_APP_CONTENT_API_KEY)
+
 var client = contentful.createClient({
     space: process.env.REACT_APP_CONTENT_SPACE_ID,
     accessToken: process.env.REACT_APP_CONTENT_API_KEY })
