@@ -5,7 +5,7 @@ const NavBar = (props) => {
 
   return (
     <div>        
-      <nav className="navbar navbar-light bg-light pb-0 pt-1">
+      <nav className="navbar navbar-light pb-0 pt-1">
         <a href="/" className="navbar-brand titleFont"><span className="titleOr">Jarred Sutton</span> | Photography</a>
         
         
@@ -16,7 +16,7 @@ const NavBar = (props) => {
 
         {/* Directory Components */}
         <div className="collapse text-right" id="navBarToggleTrig">
-          <div className="bg-light pb-4 pr-4 pt-0">
+          <div className="pb-4 pr-4 pt-0">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
                 <a className="nav-link" href="/">Home</a>

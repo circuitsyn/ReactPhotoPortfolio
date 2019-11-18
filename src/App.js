@@ -18,6 +18,7 @@ import Winter from './components/pages/Winter/Winter';
 import './App.css';
 
 class App extends Component {
+  // capture all image components to add fade in ability on load for transition on hover
   componentDidMount() {
     const img = document.querySelector('img');
     img.onload = () => {
