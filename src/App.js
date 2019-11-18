@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/pages/Home/Home';
+import Blog from './components/pages/Blog/Blog';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
 import Flowers from './components/pages/Flowers/Flowers';
@@ -38,6 +39,9 @@ class App extends Component {
         <Switch>
           <Route exact path="/"render={() => 
 								<Home onClick={this.onPickClick}					
+								/>} />
+          <Route exact path="/Blog"render={() => 
+								<Blog 
 								/>} />
           <Route exact path="/Birds"render={() => 
 								<Birds 
