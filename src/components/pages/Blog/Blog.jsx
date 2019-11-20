@@ -34,7 +34,7 @@ class Blog extends React.Component {
   render() {
     return (
         <div>
-            <Jumbotron fluid>
+            <Jumbotron className="m-1" fluid>
                 <h1 className="blogTitle">Blog</h1>
             </Jumbotron>
             <p>This is the Blog Page</p>
