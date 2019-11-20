@@ -42,9 +42,11 @@ class Blog extends React.Component {
                 <h1 className="blogTitle">Blog</h1>
             </Jumbotron>
             <Container className="p-0 m-1">
-              { this.state.posts.map(({fields}, i) =>
-              <Card key={i} {...fields} />
-            )}
+              <Row className="m-auto">
+                { this.state.posts.map(({fields}, i) =>
+                <Card key={i} {...fields} />
+              )}
+              </Row>
             </Container>
             { this.state.posts.map(({fields}, i) =>
             <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
