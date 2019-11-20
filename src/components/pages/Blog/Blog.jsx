@@ -1,6 +1,8 @@
 import React from 'react';
 import dotenv from "dotenv";
 import * as contentful from 'contentful';
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import './blogStyle.css';
 
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')
@@ -32,12 +34,15 @@ class Blog extends React.Component {
   render() {
     return (
         <div>
-        <p>This is the Blog Page</p>
-        <br/>
-        { this.state.posts.map(({fields}, i) =>
-          <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
-        )}
-      </div>
+            <Jumbotron fluid>
+                <h1 className="blogTitle">Blog</h1>
+            </Jumbotron>
+            <p>This is the Blog Page</p>
+            <br/>
+            { this.state.posts.map(({fields}, i) =>
+            <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
+            )}
+            </div>
     )
   }
 }
