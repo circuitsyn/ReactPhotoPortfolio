@@ -1,8 +1,12 @@
 import React from 'react';
 import dotenv from "dotenv";
 import * as contentful from 'contentful';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import './blogStyle.css';
+import Card from './postCard';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')
@@ -37,8 +41,9 @@ class Blog extends React.Component {
             <Jumbotron className="m-1" fluid>
                 <h1 className="blogTitle">Blog</h1>
             </Jumbotron>
-            <p>This is the Blog Page</p>
-            <br/>
+            <Container className="p-0 m-1">
+              <Card />
+            </Container>
             { this.state.posts.map(({fields}, i) =>
             <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
             )}
