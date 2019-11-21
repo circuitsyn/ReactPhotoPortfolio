@@ -29,14 +29,18 @@ class Blog extends React.Component {
     this.fetchPosts().then(this.setPosts);
   }
 
+  // get posts and push it to the state as well as the latest post
   fetchPosts = () => this.client.getEntries()
   setPosts = response => {
     this.setState({
       posts: response.items,
-      latest: response.items[0].fields.mainImage.fields.file.url
+      latestUrl: response.items[0].fields.mainImage.fields.file.url,
+      latestTitle: response.items[0].fields.title,
+      latestPath: response.items[0].fields.path,
+      latestContent: response.items[0].fields.content
     })
-    // console.log('response items', response.items[0].fields)
-    // console.log('post',this.state.posts[0].fields.mainImage.fields.file.url)
+    console.log('response items', response.items)
+    console.log('latestUrl-Blog',this.state.latestTitle)
   }
 
   render() {
@@ -45,13 +49,11 @@ class Blog extends React.Component {
         <div>
             <Jumbotron className="m-1" fluid>
                 <h1 className="blogTitle">Blog</h1>
-            </Jumbotron>
-
-            
+            </Jumbotron> 
 
             <Container className="p-0 m-1">
               <Row className="m-auto">
-                <Latest imageUrl={this.state.latest} />
+                <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} />
               </Row>
             </Container>
 
