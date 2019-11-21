@@ -48,10 +48,7 @@ class Blog extends React.Component {
               )}
               </Row>
             </Container>
-            { this.state.posts.map(({fields}, i) =>
-            <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
-            )}
-            </div>
+        </div>
     )
   }
 }

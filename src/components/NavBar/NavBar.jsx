@@ -31,12 +31,17 @@ const NavBar = (props) => {
                 <div className="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="/Birds">Birds</a>
                   <a className="dropdown-item" href="/Cetaceans">Cetaceans</a>
+                  <a className="dropdown-item" href="/Flowers">Flowers</a>
                   <a className="dropdown-item" href="/Insects">Insects</a>
                   <a className="dropdown-item" href="/Landscapes">Landscapes</a>
                   <a className="dropdown-item" href="/Night-Sky">Night Sky</a>
+                  <a className="dropdown-item" href="/Panoramas">Panoramas</a>
+                  <a className="dropdown-item" href="/Reptiles">Reptiles</a>
+                  <a className="dropdown-item" href="/SeaLife">SeaLife</a>
+                  <a className="dropdown-item" href="/Travel">Travel</a>
                   <a className="dropdown-item" href="/Ungulates">Ungulates</a>
-                  <a className="dropdown-item" href="Water-Features">Water Features</a>
-                  <a className="dropdown-item" href="Winter">Winter</a>
+                  <a className="dropdown-item" href="/Water-Features">Water Features</a>
+                  <a className="dropdown-item" href="/Winter">Winter</a>
                 </div>
               </li>
               <li className="nav-item">
