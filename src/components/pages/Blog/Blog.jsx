@@ -4,6 +4,7 @@ import * as contentful from 'contentful';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './blogStyle.css';
 import Card from './postCard';
+import Latest from './postLatest'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
@@ -17,12 +18,12 @@ class Blog extends React.Component {
   state = {
     posts: []
   }
+
+  // API call to get content data
   client = contentful.createClient({
     space: process.env.REACT_APP_CONTENT_SPACE_ID,
     accessToken: process.env.REACT_APP_CONTENT_API_KEY
   })
-
-  
 
   componentDidMount() {
     this.fetchPosts().then(this.setPosts);
@@ -31,16 +32,29 @@ class Blog extends React.Component {
   fetchPosts = () => this.client.getEntries()
   setPosts = response => {
     this.setState({
-      posts: response.items
+      posts: response.items,
+      latest: response.items[0].fields.mainImage.fields.file.url
     })
+    // console.log('response items', response.items[0].fields)
+    // console.log('post',this.state.posts[0].fields.mainImage.fields.file.url)
   }
 
   render() {
+
     return (
         <div>
             <Jumbotron className="m-1" fluid>
                 <h1 className="blogTitle">Blog</h1>
             </Jumbotron>
+
+            
+
+            <Container className="p-0 m-1">
+              <Row className="m-auto">
+                <Latest imageUrl={this.state.latest} />
+              </Row>
+            </Container>
+
             <Container className="p-0 m-1">
               <Row className="m-auto">
                 { this.state.posts.map(({fields}, i) =>

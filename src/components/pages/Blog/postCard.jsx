@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 const postCard = (props) => {
-    console.log('props', props)
+    // console.log('props', props)
     let length = 150;
     let content = props.content;
   return (
