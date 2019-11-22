@@ -26,12 +26,12 @@ const postLatest = (props) => {
     
     return (
         <div>     
-            <Container>
+            <Container className="latestPostCard">
                 <Row>
-                    <Col>
+                    <Col xs={12} sm={3} md={3} lg={3} xl={3}>
                         {cardChoice}
                     </Col>
-                    <Col>
+                    <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
                         {text}
                     </Col>
