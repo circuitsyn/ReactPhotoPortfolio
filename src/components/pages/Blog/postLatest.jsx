@@ -2,10 +2,16 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import loading from '../../../assets/images/loading.gif'
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+
 const postLatest = (props) => {
     
     let cardChoice;
     let text;
+    let title;
+
     console.log('card props', props)
     if (props == 'undefined') {
         cardChoice = <img className="text-center m-auto" src={loading} alt="loading" />
@@ -13,16 +19,29 @@ const postLatest = (props) => {
     }
     else {
         cardChoice = <Card.Img className="img-fluid w-100" variant="bottom" src={props.url} />
+        title = <h1>{props.title}</h1>
         text = <p>{props.content}</p>
         console.log('url card', props);
     }
     
     return (
         <div>     
-
-            {cardChoice}
-            {text}
-            <Button href={props.path} variant="primary">Read More..</Button>
+            <Container>
+                <Row>
+                    <Col>
+                        {cardChoice}
+                    </Col>
+                    <Col>
+                        {title}
+                        {text}
+                    </Col>
+                </Row>
+                <Row>
+                    <Button href={props.path} variant="primary">Read More..</Button>
+                </Row>
+            </Container>
+            
+            
 
 
             {/* <Card style={{ width: '18rem' }}>
