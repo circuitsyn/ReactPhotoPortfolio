@@ -14,7 +14,7 @@ const postCard = (props) => {
                 <Card.Title>{props.title}</Card.Title>
                 <hr />
                 <Card.Text>
-                    {content.substr(0, length) + '...'}
+                    <p>{content.substr(0, length) + '...'}</p>
                 </Card.Text>
                 <Button href={props.path} variant="primary">Read More..</Button>
             </Card.Body>

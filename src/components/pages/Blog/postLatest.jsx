@@ -8,20 +8,18 @@ import Container from 'react-bootstrap/Container';
 
 const postLatest = (props) => {
     
-    let cardChoice;
-    let text;
-    let title;
+    let cardChoice = "";
+    let title = "";
+    const length = 300;
+    let content = "";
 
-    console.log('card props', props)
-    if (props == 'undefined') {
+    if (props.content === undefined) {
         cardChoice = <img className="text-center m-auto" src={loading} alt="loading" />
-        console.log('propsLatest', props)
     }
     else {
+        content = props.content;
         cardChoice = <Card.Img className="img-fluid w-100" variant="bottom" src={props.url} />
         title = <h1>{props.title}</h1>
-        text = <p>{props.content}</p>
-        console.log('url card', props);
     }
     
     return (
@@ -33,28 +31,13 @@ const postLatest = (props) => {
                     </Col>
                     <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
-                        {text}
+                        <p>{content.substr(0, length) + '...'}</p>
                     </Col>
                 </Row>
                 <Row>
                     <Button href={props.path} variant="primary">Read More..</Button>
                 </Row>
             </Container>
-            
-            
-
-
-            {/* <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.mainImage.fields.file.url} />
-                <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
-                    <hr />
-                    <Card.Text>
-                        {content.substr(0, length) + '...'}
-                    </Card.Text>
-                    <Button href={props.path} variant="primary">Read More..</Button>
-                </Card.Body>
-            </Card> */}
         </div>
     );
 }
