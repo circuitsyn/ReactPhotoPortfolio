@@ -51,11 +51,11 @@ class Blog extends React.Component {
                 <h1 className="blogTitle">Blog</h1>
             </Jumbotron> 
 
-            <Container className="p-0 m-1">
-              <Row className="m-auto">
+            {/* <Container className="p-0 m-1">
+              <Row className="m-auto"> */}
                 <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} />
-              </Row>
-            </Container>
+              {/* </Row>
+            </Container> */}
 
             <Container className="p-0 m-1">
               <Row className="m-auto">
