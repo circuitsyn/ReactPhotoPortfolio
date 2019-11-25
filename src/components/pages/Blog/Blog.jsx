@@ -50,16 +50,12 @@ class Blog extends React.Component {
         <div>
             <Jumbotron className="m-1" fluid>
                 <h1 className="blogTitle display-1">Blog</h1>
-            </Jumbotron> 
+            </Jumbotron>
 
-            {/* <Container className="p-0 m-1">
-              <Row className="m-auto"> */}
-                <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} time={this.state.latestTime} />
-              {/* </Row>
-            </Container> */}
+            <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} time={this.state.latestTime} />
 
-            <Container className="p-0 m-1">
-              <Row className="m-auto">
+            <Container className="p-0 m-1" fluid>
+              <Row>
                 { this.state.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />
               )}

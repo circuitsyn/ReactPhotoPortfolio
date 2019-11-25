@@ -1,6 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import loading from '../../../assets/images/loading.gif'
 import Col from 'react-bootstrap/Col';
