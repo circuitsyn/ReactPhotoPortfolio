@@ -40,8 +40,6 @@ class Blog extends React.Component {
       latestContent: response.items[0].fields.content,
       latestTime: response.items[0].sys.createdAt
     })
-    console.log('response items', response.items)
-    console.log('latestUrl-Blog',this.state.latestTitle)
   }
 
   render() {
