@@ -18,24 +18,22 @@ const postLatest = (props) => {
     }
     else {
         content = props.content;
-        cardChoice = <Card.Img className="img-fluid w-100" variant="bottom" src={props.url} />
+        cardChoice = <img className="p-0 cover" variant="bottom" src={props.url} />
         title = <h3>{props.title}</h3>
     }
     
     return (
         <div>     
-            <Container className="text-left latestPostCard">
+            <Container className="text-left latestPostCard m-1" fluid>
                 <Row>
-                    <Col xs={12} sm={3} md={3} lg={3} xl={3}>
+                    <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>
                         {cardChoice}
                     </Col>
                     <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
-                        <p>{content.substr(0, length) + '...'}</p>
+                        <p className="mb-0">{content.substr(0, length) + '...'}</p>
+                        <Button className="float-right m-1" href={props.path} variant="primary">Read More!</Button>
                     </Col>
-                </Row>
-                <Row>
-                    <Button className="ml-auto m-1" href={props.path} variant="primary">Read More!</Button>
                 </Row>
             </Container>
         </div>
