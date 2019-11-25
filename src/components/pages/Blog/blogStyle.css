@@ -16,3 +16,18 @@
     width: 100%;
     height: 100%;
   }
+
+  .blogBtn {
+    background: orangered !important;
+    border-color: orangered !important;
+  }
+
+  .blogBtn:focus, .blogBtn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 69, 0, 0.5) !important;
+  }
+
+  .blogBtn:hover, .blogBtn.hover {
+    box-shadow: 0 0 0 0.2rem rgba(255, 69, 0, 0.5) !important;
+    font-weight: bold;
+    transition: 0.1s;
+  }

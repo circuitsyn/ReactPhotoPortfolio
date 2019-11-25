@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import loading from '../../../assets/images/loading.gif'
@@ -12,14 +13,18 @@ const postLatest = (props) => {
     let title = "";
     const length = 300;
     let content = "";
+    let time = "";
 
     if (props.content === undefined) {
         cardChoice = <img className="text-center m-auto" src={loading} alt="loading" />
     }
     else {
         content = props.content;
-        cardChoice = <img className="p-0 cover" variant="bottom" src={props.url} />
-        title = <h3>{props.title}</h3>
+        cardChoice = <img className="p-0 cover" variant="bottom" src={props.url} />;
+        title = <h3 className="mb-0">{props.title}</h3>;
+        time = props.time;
+        time = moment(time).format('M.D.YY');
+        time = <p className="small text-muted">{time}</p>
     }
     
     return (
@@ -31,8 +36,9 @@ const postLatest = (props) => {
                     </Col>
                     <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
+                        {time}
                         <p className="mb-0">{content.substr(0, length) + '...'}</p>
-                        <Button className="float-right m-1" href={props.path} variant="primary">Read More!</Button>
+                        <Button className="float-right m-1 blogBtn" href={props.path} size="sm">Read More!</Button>
                     </Col>
                 </Row>
             </Container>

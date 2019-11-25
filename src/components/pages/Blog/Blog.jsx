@@ -37,7 +37,8 @@ class Blog extends React.Component {
       latestUrl: response.items[0].fields.mainImage.fields.file.url,
       latestTitle: response.items[0].fields.title,
       latestPath: response.items[0].fields.path,
-      latestContent: response.items[0].fields.content
+      latestContent: response.items[0].fields.content,
+      latestTime: response.items[0].sys.createdAt
     })
     console.log('response items', response.items)
     console.log('latestUrl-Blog',this.state.latestTitle)
@@ -48,12 +49,12 @@ class Blog extends React.Component {
     return (
         <div>
             <Jumbotron className="m-1" fluid>
-                <h1 className="blogTitle">Blog</h1>
+                <h1 className="blogTitle display-1">Blog</h1>
             </Jumbotron> 
 
             {/* <Container className="p-0 m-1">
               <Row className="m-auto"> */}
-                <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} />
+                <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} time={this.state.latestTime} />
               {/* </Row>
             </Container> */}
 

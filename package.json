@@ -9,6 +9,7 @@
     "contentful": "^7.10.0",
     "dotenv": "^8.2.0",
     "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "popper.js": "^1.16.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.15",
