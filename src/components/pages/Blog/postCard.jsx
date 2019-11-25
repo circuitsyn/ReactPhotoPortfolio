@@ -14,8 +14,8 @@ const postCard = (props) => {
     time = <p className="small text-muted">{time}</p>
   return (
     <div>     
-        <Col>   
-            <Card style={{ width: '18rem' }}>
+        <Col className="h-100">   
+            <Card className="h-100" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.mainImage.fields.file.url} />
                 <Card.Body>
                     <Card.Title className="mb-0">{props.title}</Card.Title>
