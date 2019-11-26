@@ -11,7 +11,7 @@
   font-family: TitleFont;
   font-weight: bold;
   font-size: 1.75rem !important;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 .blogTitle{
@@ -27,6 +27,18 @@
 
 .nav-link {
   color: orangered;
+}
+
+.footer-copyright {
+  color: orangered;
+}
+
+.footer {
+  background: lightgrey;
+}
+
+.titleBl {
+  color: black;
 }
 
 .nav-link:hover {

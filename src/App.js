@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer'
 import Home from './components/pages/Home/Home';
 import Blog from './components/pages/Blog/Blog';
 import Birds from './components/pages/Birds/Birds';
@@ -83,6 +84,8 @@ class App extends Component {
 								<Winter 
 								/>} />
         </Switch>
+
+        <Footer />
       </div>
     );
   }

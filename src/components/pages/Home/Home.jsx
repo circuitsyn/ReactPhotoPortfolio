@@ -9,7 +9,7 @@ const Home = (props) => {
   const handleHover = (e) => {
 
     // Detection to make sure only overlay is added to highlighted img
-    if (e.target.nodeName == 'IMG') {
+    if (e.target.nodeName === 'IMG') {
       e.target.classList.add('fade-in');
       let overlayURL = $(e.target).attr('overlay');
       e.target.src = overlayURL;      
