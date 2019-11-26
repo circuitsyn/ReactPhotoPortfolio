@@ -23,6 +23,12 @@ const NavBar = (props) => {
               <li className="nav-item">
                 <a className="nav-link" href="/Blog">Blog</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/About">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Contact">Contact</a>
+              </li>
               <li className="nav-item drop">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Galleries
@@ -42,13 +48,7 @@ const NavBar = (props) => {
                   <a className="dropdown-item" href="/Water-Features">Water Features</a>
                   <a className="dropdown-item" href="/Winter">Winter</a>
                 </div>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Contact">Contact</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Copyright">Copyright</a>
-              </li>
+              </li>              
             </ul>
           </div>
         </div>

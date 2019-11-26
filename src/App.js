@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer'
 import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
 import Blog from './components/pages/Blog/Blog';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
@@ -41,6 +42,9 @@ class App extends Component {
         <Switch>
           <Route exact path="/"render={() => 
 								<Home onClick={this.onPickClick}					
+								/>} />
+          <Route exact path="/About"render={() => 
+								<About 
 								/>} />
           <Route exact path="/Blog"render={() => 
 								<Blog 

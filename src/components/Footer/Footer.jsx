@@ -27,6 +27,9 @@ const Footer = () => {
                 <a className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/Blog">Blog</a>
               </li>
               <li className="list-unstyled">
+                <a className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/About">About</a>
+              </li>
+              <li className="list-unstyled">
                 <a className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/Copyright">Copyright</a>
               </li>
               <li className="list-unstyled">
