@@ -29,12 +29,13 @@
   color: orangered;
 }
 
-.footer-copyright {
-  color: orangered;
-}
-
 .footer {
   background: lightgrey;
+}
+
+.footerLink.active {
+  color: black;
+  font-weight: bolder;
 }
 
 .titleBl {

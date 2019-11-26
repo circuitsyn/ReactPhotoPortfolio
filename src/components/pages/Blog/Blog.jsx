@@ -5,7 +5,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import './blogStyle.css';
 import Card from './postCard';
 import Latest from './postLatest'
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
