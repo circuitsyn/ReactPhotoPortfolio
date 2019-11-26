@@ -6,6 +6,7 @@ import Home from './components/pages/Home/Home';
 import Blog from './components/pages/Blog/Blog';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
+import Contact from './components/pages/Contact/Contact'
 import Flowers from './components/pages/Flowers/Flowers';
 import Insects from './components/pages/Insects/Insects';
 import Landscapes from './components/pages/Landscapes/Landscapes';
@@ -49,6 +50,9 @@ class App extends Component {
 								/>} />
           <Route exact path="/Cetaceans"render={() => 
 								<Cetaceans 
+								/>} />
+          <Route exact path="/Contact"render={() => 
+								<Contact 
 								/>} />
           <Route exact path="/Flowers"render={() => 
 								<Flowers 
