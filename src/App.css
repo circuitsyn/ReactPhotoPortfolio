@@ -45,6 +45,11 @@
 .nav-link:hover {
   color: black;
   font-weight: bolder;
+  text-decoration: black !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: dotted !important;
+  -moz-text-decoration-line: underline !important;
+
 }
 
 .navIcon {
