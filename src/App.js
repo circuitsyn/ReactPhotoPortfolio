@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        
+        <div className="wrapper">
         <Switch>
           <Route exact path="/"render={() => 
 								<Home onClick={this.onPickClick}					
@@ -88,7 +88,7 @@ class App extends Component {
 								<Winter 
 								/>} />
         </Switch>
-
+        </div>
         <Footer />
       </div>
     );
