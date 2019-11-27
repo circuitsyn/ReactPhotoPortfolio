@@ -15,7 +15,7 @@ const About = () => {
             <Container>
                 <Row>
                     <img className="aboutImage" src={Me} alt="Jarred Sutton" />
-                    <h3>
+                    <h3 className="titleFont">
                         A Little About Me..
                     </h3>
                     <p>
@@ -36,30 +36,30 @@ const About = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <h2>
+                        <h3 className="titleFont">
                             Accolades:
-                        </h2>
-                        <ul>
+                        </h3>
+                        <ul className="text-left">
                             <li>
-                                Selected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
+                                <span className="titleFont">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
                             </li>
                             <li>
-                                Grant Funded Project with the Staten Island Arts Foundation.
+                                <span className="titleFont">G</span>rant Funded Project with the Staten Island Arts Foundation.
                             </li>
                             <li>
-                                Published in the Rainforest Alliance publication.
+                                <span className="titleFont">P</span>ublished in the Rainforest Alliance publication.
                             </li>
                             <li>
-                                Photo contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
+                                <span className="titleFont">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
                             </li>
                             <li>
-                                Designed, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
+                                <span className="titleFont">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
                             </li>
                             <li>
-                                Gallery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
+                                <span className="titleFont">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
                             </li>
                             <li>
-                                Photography educator at MakerSpace.nyc, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
+                                <span className="titleFont">P</span>hotography educator at MakerSpace.nyc, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
                             </li>
                         </ul>
                     </Col>

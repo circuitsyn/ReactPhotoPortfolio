@@ -18,22 +18,22 @@ const Footer = () => {
 
           </Col>
           <Col className="text-right" md="6">
-            <h5 className="title">Navigation</h5>
+            <h5 className="title titleFont">Navigation</h5>
             <ul>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/">Home</a>
+                <a className={` ${window.location.pathname === '/' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/">Home</a>
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/Blog">Blog</a>
+                <a className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Blog">Blog</a>
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/About">About</a>
+                <a className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/About">About</a>
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/Copyright">Copyright</a>
+                <a className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Copyright">Copyright</a>
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Contact' ? 'active footerLink nav-link' : 'inactive footerLink nav-link'} `} href="/Contact">Contact</a>
+                <a className={` ${window.location.pathname === '/Contact' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Contact">Contact</a>
               </li>
             </ul>
           </Col>

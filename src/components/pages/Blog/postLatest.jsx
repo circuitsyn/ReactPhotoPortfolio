@@ -21,7 +21,7 @@ const postLatest = (props) => {
         content = props.content;
         cardChoice = <img className="p-0 cover" variant="bottom" src={props.url} alt="latest post" />;
         // pull and format time with moment.js
-        title = <h3 className="mb-0">{props.title}</h3>;
+        title = <h3 className="mb-0 txt-shadow">{props.title}</h3>;
         time = props.time;
         time = moment(time).format('M.D.YY');
         time = <p className="small text-muted">{time}</p>
