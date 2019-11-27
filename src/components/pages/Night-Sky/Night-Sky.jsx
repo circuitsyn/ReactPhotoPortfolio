@@ -5,6 +5,9 @@ import { nightSkyPhotos } from "./nightSkyPhotos";
 
 const NightSky = (props) => {
 
+  // Adding title page name for accessibility dynamically
+  document.title = 'Night Sky Gallery Page';
+
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

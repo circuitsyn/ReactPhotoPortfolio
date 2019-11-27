@@ -5,6 +5,9 @@ import { cetaceanPhotos } from "./cetaceanPhotos";
 
 const Cetaceans = (props) => {
 
+  // Adding title page name for accessibility dynamically
+  document.title = 'Cetaceans Gallery Page';
+
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

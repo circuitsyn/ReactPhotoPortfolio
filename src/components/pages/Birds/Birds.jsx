@@ -5,6 +5,9 @@ import { birdsPhotos } from "./birdsPhotos";
 
 const Birds = (props) => {
 
+  // Adding title page name for accessibility dynamically
+  document.title = 'Birds Gallery Page';
+
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

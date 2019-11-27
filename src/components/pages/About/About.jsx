@@ -8,10 +8,11 @@ import Teaching from '../../../assets/images/jarred-sutton-teaching.jpg';
 import Travel from '../../../assets/images/jarred-sutton-travel.jpg'
 
 const About = () => {
-  
-      return (
+    // Adding title page name for accessibility dynamically
+    document.title = 'About Jarred Page';
+    return (
         
-          <div className="mt-5 mb-5">
+        <div className="mt-5 mb-5">
             <Container>
                 <Row>
                     <Col>
@@ -71,7 +72,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
-          </div>
+        </div>
       
       );
     }

@@ -5,6 +5,9 @@ import { waterFeaturePhotos } from "./waterFeaturePhotos";
 
 const WaterFeatures = (props) => {
 
+  // Adding title page name for accessibility dynamically
+  document.title = 'Water Features Gallery Page';
+
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

@@ -5,6 +5,9 @@ import { panoramasPhotos } from "./panoramasPhotos";
 
 const Panoramas = (props) => {
 
+  // Adding title page name for accessibility dynamically
+  document.title = 'Panoramas Gallery Page';
+
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

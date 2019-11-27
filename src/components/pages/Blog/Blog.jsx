@@ -43,7 +43,8 @@ class Blog extends React.Component {
   }
 
   render() {
-
+    // Adding title page name for accessibility dynamically
+    document.title = 'Blog Page';
     return (
         <div>
             <Jumbotron className="m-1 ml-4 mr-4" fluid>
