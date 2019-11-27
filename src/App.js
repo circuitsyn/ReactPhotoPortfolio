@@ -7,7 +7,8 @@ import About from './components/pages/About/About';
 import Blog from './components/pages/Blog/Blog';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
-import Contact from './components/pages/Contact/Contact'
+import Contact from './components/pages/Contact/Contact';
+import Copyright from './components/pages/Copyright/Copyright';
 import Flowers from './components/pages/Flowers/Flowers';
 import Insects from './components/pages/Insects/Insects';
 import Landscapes from './components/pages/Landscapes/Landscapes';
@@ -57,6 +58,9 @@ class App extends Component {
 								/>} />
           <Route exact path="/Contact"render={() => 
 								<Contact 
+								/>} />
+          <Route exact path="/Copyright"render={() => 
+								<Copyright 
 								/>} />
           <Route exact path="/Flowers"render={() => 
 								<Flowers 
