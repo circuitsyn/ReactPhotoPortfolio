@@ -1,4 +1,5 @@
 .aboutImage {
     height: 25vh;
     width: auto;
+    border-radius: 5px;
 }

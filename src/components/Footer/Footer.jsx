@@ -14,7 +14,7 @@ const Footer = () => {
       <Container fluid className="text-center text-md-left">
         <Row>
           <Col md="6">
-          <a href="/" className="navbar-brand titleFont pb-0"><span className="titleOr">Jarred Sutton</span><span className="titleBl"> | Photography</span></a>
+          <a href="/" className="navbar-brand navTitleFont pb-0"><span className="titleOr">Jarred Sutton</span><span className="titleBl"> | Photography</span></a>
 
           <p className="small text-muted">
             &copy; {new Date().getFullYear()} All Rights Reserved

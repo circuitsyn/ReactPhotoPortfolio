@@ -10,6 +10,13 @@
 .titleFont {
   font-family: TitleFont;
   font-weight: bold;
+  /* font-size: 1.75rem !important; */
+  text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.navTitleFont {
+  font-family: TitleFont;
+  font-weight: bold;
   font-size: 1.75rem !important;
   text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
 }
