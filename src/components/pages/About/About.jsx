@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Me from '../../../assets/images/jarredSutton.jpg';
-import Teaching from '../../../assets/images/jarred-sutton-teaching.jpg'
+import Teaching from '../../../assets/images/jarred-sutton-teaching.jpg';
+import Travel from '../../../assets/images/jarred-sutton-travel.jpg'
 
 const About = () => {
   
@@ -13,7 +14,10 @@ const About = () => {
           <div className="">
             <Container>
                 <Row>
-                    <img src={Me} alt="Jarred Sutton" />
+                    <img className="aboutImage" src={Me} alt="Jarred Sutton" />
+                    <h3>
+                        A Little About Me..
+                    </h3>
                     <p>
 
                     </p>
@@ -22,10 +26,10 @@ const About = () => {
                     <p>
 
                     </p>
-                    <img src={Me} alt="Jarred Sutton" />
+                    <img className="aboutImage" src={Travel} alt="Jarred Sutton" />
                 </Row>
                 <Row>
-                    <img src={Me} alt="Jarred Sutton" />
+                    <img className="aboutImage" src={Teaching} alt="Jarred Sutton" />
                     <p>
 
                     </p>
