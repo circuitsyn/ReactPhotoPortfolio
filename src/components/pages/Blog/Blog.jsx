@@ -6,6 +6,7 @@ import './blogStyle.css';
 import Card from './postCard';
 import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -45,13 +46,23 @@ class Blog extends React.Component {
 
     return (
         <div>
-            <Jumbotron className="m-1" fluid>
+            <Jumbotron className="m-1 ml-4 mr-4" fluid>
                 <h1 className="blogTitle display-1">Blog</h1>
             </Jumbotron>
 
             <Latest url={this.state.latestUrl} title={this.state.latestTitle} path={this.state.latestPath} content={this.state.latestContent} time={this.state.latestTime} />
 
-            <Container className="p-0 m-1" fluid>
+            <Container>
+              <Row>
+                <Col>
+                  <h3 className="blogSubTitle display-3 mb-3 mt-3">
+                    Recent Posts
+                  </h3>
+                </Col>
+              </Row>
+            </Container>
+
+            <Container className="p-0 m-1 mr-4 ml-4" fluid>
               <Row>
                 { this.state.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />

@@ -28,13 +28,13 @@ const postLatest = (props) => {
     }
     
     return (
-        <div>     
-            <Container className="text-left latestPostCard m-1" fluid>
+        <div className="mt-5 ml-4 mr-4">     
+            <Container className="text-left latestPostCard" fluid>
                 <Row>
                     <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>
                         {cardChoice}
                     </Col>
-                    <Col xs={12} sm={9} md={9} lg={9} xl={9}>
+                    <Col className="p-4" xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
                         {time}
                         <p className="mb-0">{content.substr(0, length) + '...'}</p>
