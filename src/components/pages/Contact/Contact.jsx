@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import "./Contact.css";
 
 const Contact = () => {
@@ -12,8 +13,8 @@ const Contact = () => {
               <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                 <form className="p-3" action="https://formspree.io/circuitsyn@gmail.com" method="POST" >
 
-                  <div className="contactHeader pt-5">
-                    <h2>Questions, Comments, Concerns? Send us an email!</h2>
+                  <div className="contactHeader pt-5 text-shadow">
+                    <h2>Questions, Comments, Concerns? Send Me An E-mail!</h2>
                   </div>
                   <hr className="contactHr mb-4"></hr>
                   <div className="row mt-5">
@@ -46,7 +47,7 @@ const Contact = () => {
                   </div>
 
                   <div className="buttonDiv">
-                    <button type="submit" className="btn btn-outline-light font-weight-bold float-right mb-3" id="btnContactUs">Send It!</button>
+                    <Button id="btnContactUs" type="submit" className="blogBtn float-right" size="sm">Send It!</Button>
                   </div>
                 </form>
               </div>
