@@ -6,7 +6,11 @@ import Container from 'react-bootstrap/Container';
 
 const Footer = () => {
   return (
-    <div color="blue" className="font-small mt-3">
+    <div className="font-small mt-3">
+      <Container>
+        <hr />
+      </Container>
+      
       <Container fluid className="text-center text-md-left">
         <Row>
           <Col md="6">
