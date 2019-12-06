@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/ReactPhotoPortfolio/static/media/jarred-sutton-travel.07cbbf9a.jpg"
   },
   {
-    "revision": "bea01d3945072ba7c00c",
-    "url": "/ReactPhotoPortfolio/static/css/main.78ca495e.chunk.css"
+    "revision": "c991260df8b84147e5ef",
+    "url": "/ReactPhotoPortfolio/static/css/main.c8c729e0.chunk.css"
   },
   {
     "revision": "1068e4d0f48847ae02fb1ed9da793cdf",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/ReactPhotoPortfolio/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "bea01d3945072ba7c00c",
-    "url": "/ReactPhotoPortfolio/static/js/main.bea01d39.chunk.js"
+    "revision": "c991260df8b84147e5ef",
+    "url": "/ReactPhotoPortfolio/static/js/main.c991260d.chunk.js"
   },
   {
     "revision": "9fdd7ae8f4dfbf003b35f6d6c5a8278f",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/ReactPhotoPortfolio/static/css/1.44f19768.chunk.css"
   },
   {
-    "revision": "ff3719322a59be4c3e39b2ddf08f4de0",
+    "revision": "2fb7944c905a7ee732d2832df0109e93",
     "url": "/ReactPhotoPortfolio/index.html"
   }
 ];
