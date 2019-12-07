@@ -1,7 +1,7 @@
 {
   "main.css": "/ReactPhotoPortfolio/static/css/main.c8c729e0.chunk.css",
-  "main.js": "/ReactPhotoPortfolio/static/js/main.f6ab8986.chunk.js",
-  "main.js.map": "/ReactPhotoPortfolio/static/js/main.f6ab8986.chunk.js.map",
+  "main.js": "/ReactPhotoPortfolio/static/js/main.edd13680.chunk.js",
+  "main.js.map": "/ReactPhotoPortfolio/static/js/main.edd13680.chunk.js.map",
   "static/css/1.44f19768.chunk.css": "/ReactPhotoPortfolio/static/css/1.44f19768.chunk.css",
   "static/js/1.527f1d7c.chunk.js": "/ReactPhotoPortfolio/static/js/1.527f1d7c.chunk.js",
   "static/js/1.527f1d7c.chunk.js.map": "/ReactPhotoPortfolio/static/js/1.527f1d7c.chunk.js.map",
@@ -15,9 +15,9 @@
   "static/media/blogStyle.css": "/ReactPhotoPortfolio/static/media/blogSunset.f43211c9.jpg",
   "static/media/App.css": "/ReactPhotoPortfolio/static/media/Feldn___.1068e4d0.woff",
   "static/media/jarred-sutton-teaching.jpg": "/ReactPhotoPortfolio/static/media/jarred-sutton-teaching.1d95a45b.jpg",
-  "static/css/1.44f19768.chunk.css.map": "/ReactPhotoPortfolio/static/css/1.44f19768.chunk.css.map",
   "static/css/main.c8c729e0.chunk.css.map": "/ReactPhotoPortfolio/static/css/main.c8c729e0.chunk.css.map",
+  "static/css/1.44f19768.chunk.css.map": "/ReactPhotoPortfolio/static/css/1.44f19768.chunk.css.map",
   "index.html": "/ReactPhotoPortfolio/index.html",
-  "precache-manifest.029ddffd838f6327d5f91fc044045dec.js": "/ReactPhotoPortfolio/precache-manifest.029ddffd838f6327d5f91fc044045dec.js",
+  "precache-manifest.e37c767dcb8e0421a02e2b48eb91755c.js": "/ReactPhotoPortfolio/precache-manifest.e37c767dcb8e0421a02e2b48eb91755c.js",
   "service-worker.js": "/ReactPhotoPortfolio/service-worker.js"
 }
