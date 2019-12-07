@@ -20,6 +20,7 @@ import Travel from './components/pages/Travel/Travel';
 import Ungulates from './components/pages/Ungulates/Ungulates';
 import WaterFeatures from './components/pages/Water-Features/Water-Features';
 import Winter from './components/pages/Winter/Winter';
+import Error404 from './components/pages/Error404/Error404';
 import './App.css';
 
 class App extends Component {
@@ -40,62 +41,67 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="wrapper">
-        <Switch>
-          <Route exact path="/"render={() => 
-								<Home onClick={this.onPickClick}					
-								/>} />
-          <Route exact path="/About"render={() => 
-								<About 
-								/>} />
-          <Route exact path="/Blog"render={() => 
-								<Blog 
-								/>} />
-          <Route exact path="/Birds"render={() => 
-								<Birds 
-								/>} />
-          <Route exact path="/Cetaceans"render={() => 
-								<Cetaceans 
-								/>} />
-          <Route exact path="/Contact"render={() => 
-								<Contact 
-								/>} />
-          <Route exact path="/Copyright"render={() => 
-								<Copyright 
-								/>} />
-          <Route exact path="/Flowers"render={() => 
-								<Flowers 
-								/>} />
-          <Route exact path="/Insects"render={() => 
-								<Insects 
-								/>} />
-          <Route exact path="/Landscapes"render={() => 
-								<Landscapes 
-								/>} />
-          <Route exact path="/Night-Sky"render={() => 
-								<NightSky 
-								/>} />
-          <Route exact path="/Panoramas"render={() => 
-								<Panoramas 
-								/>} />
-          <Route exact path="/Reptiles"render={() => 
-								<Reptiles 
-								/>} />
-          <Route exact path="/SeaLife"render={() => 
-								<SeaLife 
-								/>} />
-          <Route exact path="/Travel"render={() => 
-								<Travel 
-								/>} />
-          <Route exact path="/Ungulates"render={() => 
-								<Ungulates 
-								/>} />
-          <Route exact path="/Water-Features"render={() => 
-								<WaterFeatures 
-								/>} />
-          <Route exact path="/Winter"render={() => 
-								<Winter 
-								/>} />
-        </Switch>
+        <Router>
+          <Switch>
+            <Route exact path="/" render={() => 
+                  <Home onClick={this.onPickClick}					
+                  />} />
+            <Route path="/About" render={() => 
+                  <About 
+                  />} />
+            <Route path="/Blog" render={() => 
+                  <Blog 
+                  />} />
+            <Route path="/Birds" render={() => 
+                  <Birds 
+                  />} />
+            <Route path="/Cetaceans" render={() => 
+                  <Cetaceans 
+                  />} />
+            <Route path="/Contact" render={() => 
+                  <Contact 
+                  />} />
+            <Route path="/Copyright" render={() => 
+                  <Copyright 
+                  />} />
+            <Route path="/Flowers" render={() => 
+                  <Flowers 
+                  />} />
+            <Route path="/Insects" render={() => 
+                  <Insects 
+                  />} />
+            <Route path="/Landscapes" render={() => 
+                  <Landscapes 
+                  />} />
+            <Route path="/Night-Sky" render={() => 
+                  <NightSky 
+                  />} />
+            <Route path="/Panoramas" render={() => 
+                  <Panoramas 
+                  />} />
+            <Route path="/Reptiles" render={() => 
+                  <Reptiles 
+                  />} />
+            <Route path="/SeaLife" render={() => 
+                  <SeaLife 
+                  />} />
+            <Route path="/Travel" render={() => 
+                  <Travel 
+                  />} />
+            <Route path="/Ungulates" render={() => 
+                  <Ungulates 
+                  />} />
+            <Route path="/Water-Features" render={() => 
+                  <WaterFeatures 
+                  />} />
+            <Route path="/Winter" render={() => 
+                  <Winter 
+                  />} />
+            
+            {/* Error Catch */}
+            <Route path="*" component={Error404} />
+            </Switch>
+          </Router>
         </div>
         <Footer />
       </div>

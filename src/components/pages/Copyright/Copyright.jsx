@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import CopyrightImg from './copyrightImg.png'
+import CreditsImg from './credits.png'
 
 const Contact = () => {
           // Adding title page name for accessibility dynamically
@@ -13,7 +14,7 @@ const Contact = () => {
       return (
         
         <div>
-            <Container className="mt-5">
+            <Container className="mt-5 mb-5">
                 <Row>
                     <Col>
                         <img className="float-left copyRImg mr-2 mb-2" src={CopyrightImg} alt="copyright" />
@@ -23,6 +24,36 @@ const Contact = () => {
                         </p>
                     </Col>
                 </Row>
+            </Container>
+
+            <Container className="mt-5">
+                <Row>
+                    <Col>
+                        <img className="float-left copyRImg mr-2 mb-2" src={CreditsImg} alt="credits" />
+                        <h3 className="text-left titleFont mb-0">Credits:</h3>
+                        <p className="text-left small text-muted">
+                        Credits for items not created by myself are also important and i wanted to make sur eto give credit where credit is due. If anything is missing please reach out and let me know, thank you!
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} md={12} lg={12} xl={12}>
+                        <ul className="d-flex align-items-center text-left flex-column">
+                            <li>
+                                <strong>Copyright logo</strong> - <div>Made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            </li>
+                            <li>
+                                <strong>Navigation camera logo</strong> - <div>Made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            </li>
+                            <li>
+                                <strong>Credits logo</strong> - <div>Made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                            </li>
+                            <li>
+                                Font - 
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>                   
             </Container>
             
         </div>

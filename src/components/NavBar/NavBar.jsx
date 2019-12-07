@@ -5,8 +5,8 @@ const NavBar = (props) => {
 
   return (
     <div>        
-      <nav className="navbar navbar-light pb-0 pt-1">
-        <a href="/" className="navbar-brand navTitleFont"><span className="titleOr">Jarred Sutton</span> | Photography</a>
+      <nav className="navbar navbar-light pb-0 pt-1 pl-2">
+        <a href="/" className="navbar-brand navTitleFont mr-auto"><span className="titleOr">Jarred Sutton</span> | Photography</a>
         
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation" data-display="static">
           <img className="navIcon" src={navIcon} alt="camera" />
