@@ -8,6 +8,7 @@ import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Modal from 'react-bootstrap/Modal'
 
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')

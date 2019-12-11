@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 const Error404 = (props) => {
 
   // Adding title page name for accessibility dynamically
-  document.title = 'Error Page';
+  document.title = 'Error 404 Page';
 
   return (
     <div>
@@ -21,7 +21,7 @@ const Error404 = (props) => {
             </Row>
             <Row>
                 <Col>
-                    <Image id="img404" className="m-3" src={Image404} alt="404 robot" rounded />
+                    <Image id="img404" className="m-4" src={Image404} alt="404 robot" />
                 </Col>
             </Row>
             <Row>

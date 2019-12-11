@@ -13,7 +13,7 @@ const postCard = (props) => {
     time = moment(time).format('M.D.YY');
     time = <p className="small text-muted">{time}</p>
   return (
-    <div>     
+    <div className="mb-3">     
         <Col className="h-100">   
             <Card className="h-100" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.mainImage.fields.file.url} />
