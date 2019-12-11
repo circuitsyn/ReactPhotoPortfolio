@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Blog from './components/pages/Blog/Blog';
+import BlogPost from './components/pages/BlogPost/BlogPost';
 import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
 import Contact from './components/pages/Contact/Contact';
@@ -49,7 +50,7 @@ class App extends Component {
             <Route path="/About" render={() => 
                   <About 
                   />} />
-            <Route path="/Blog" render={() => 
+            <Route exact path="/Blog" render={() => 
                   <Blog 
                   />} />
             <Route path="/Birds" render={() => 
@@ -97,6 +98,9 @@ class App extends Component {
             <Route path="/Winter" render={() => 
                   <Winter 
                   />} />
+
+            {/* Reusable blog post page */}
+            <Route path="/blog/:blogPost" component={BlogPost} />
             
             {/* Error Catch */}
             <Route path="*" component={Error404} />
