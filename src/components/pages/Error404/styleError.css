@@ -1,0 +1,27 @@
+#img404 {
+    height: 15vh;
+    width: auto;
+}
+
+#errorTitle {
+    font-family: TitleFont;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.errorLink {
+    color: orangered;
+}
+
+.errorLink.active {
+    color: black;
+    font-weight: bolder;
+  }
+
+  .errorLink:hover {
+    color: black;
+    font-weight: bolder;
+    text-decoration: black !important;
+    text-decoration-line: underline !important;
+    text-decoration-style: dotted !important;
+    -moz-text-decoration-line: underline !important;
+  }
