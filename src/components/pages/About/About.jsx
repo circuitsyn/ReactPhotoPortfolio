@@ -14,10 +14,10 @@ const About = () => {
         
         <div className="mt-5 mb-5">
             <Container>
-                <Row>
+                <Row className="mt-3 mb-3">
                     <Col>
                         <img className="aboutImage float-left mr-md-1 mr-lg-1 mr-xl-1 mb-md-1 mb-lg-1 mb-xl-1" src={Me} alt="Jarred Sutton" />
-                        <h3 className="text-left titleFont">
+                        <h3 className="text-left titleFont mt-2">
                             A Little About Me..
                         </h3>
                         <p className="text-left">
@@ -25,25 +25,25 @@ const About = () => {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-3 mb-3">
                     <Col>
-                        <img className="aboutImage float-right ml-md-1 ml-lg-1 ml-xl-1 mb-md-1 mb-lg-1 mb-xl-1" src={Travel} alt="Jarred Sutton" />
-                        <p className="text-left">
+                        <img className="aboutImage float-none float-sm-right float-md-right float-lg-right float-xl-right m-2" src={Travel} alt="Jarred Sutton" />
+                        <p className="text-left mt-2">
                             "Oh, it's raining? That's okday, I don't melt." A quote that truly demonstrates how I approach my photography and travel. I often seek out remote locations and conditions where humans prefer not to roam. Combining patience and stamina to endure incliment weather to get the shot. Whether it is hiding at a safe distance to photograph a mother swan over her nest or it's -40F degrees in Grand Teton National Park under the stars at night. I refuse to let that stand in my way. Being prepared and respecting nature and the elements will yield huge gains. Travelling far and wide is exciting to me as there are an unlimited number of photos to capture. Angles or changes in light or fleeting moments. Many feel every photo has been taken, but I believe that infinity is a number that still exists in this world of digital photography. Only we can be the judge.
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-3 mb-3">
                     <Col>
-                        <img className="aboutImage float-left mr-md-2 mr-lg-2 mr-xl-2 mb-md-1 mb-lg-1 mb-xl-1" src={Teaching} alt="Jarred Sutton" />
-                        <p className="text-left">
+                        <img className="aboutImage float-none float-sm-left float-md-left float-lg-left float-xl-left m-2" src={Teaching} alt="Jarred Sutton" />
+                        <p className="text-left mt-2">
                             I believe the reason that my passion of photography runs so strong is its combination of art and technical challenge. I have enjoyed computers, building and fixing them since my early teenage years and that has not changed over time. I greatly enjoy testing specifications, learning new techniques, building both technical and non-technical hacks for my gear, and taking up DIY challenges at every chance I am given. I am also a gear head and thoroughly enjoy testing new equipment; lenses, cameras, accessories, software, you name it! 
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-3 mb-3">
                     <Col>
-                        <h3 className="titleFont">
+                        <h3 className="titleFont text-left">
                             Accolades:
                         </h3>
                         <ul className="text-left">
