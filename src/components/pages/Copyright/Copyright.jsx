@@ -13,7 +13,7 @@ const Contact = () => {
   
       return (
         
-        <div>
+        <div className="crWrapper">
             <Container className="mt-5 mb-5">
                 <Row>
                     <Col>

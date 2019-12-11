@@ -5,3 +5,7 @@
 .cRListImg {
     height: 5rem;
 }
+
+.crWrapper {
+    min-height: 100vh;
+}
