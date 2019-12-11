@@ -71,7 +71,8 @@ const About = () => {
                                 <span className="firstLetter">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
                             </li>
                             <li>
-                                <span className="firstLetter">P</span>hotography educator at MakerSpace.nyc, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
+                                <span className="firstLetter">P</span>hotography educator at <a className="errorLink" href=
+                                "www.makerspace.nyc">MakerSpace.NYC</a>, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
                             </li>
                         </ul>
                     </Col>
