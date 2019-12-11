@@ -64,7 +64,7 @@ class Blog extends React.Component {
             </Container>
 
             <Container className="p-0 m-1 mr-4 ml-4" fluid>
-              <Row>
+              <Row className="d-flex justify-content-center">
                 { this.state.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />
               )}
