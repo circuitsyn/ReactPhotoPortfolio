@@ -99,7 +99,7 @@ class App extends Component {
                   />} />
             
             {/* Error Catch */}
-            {/* <Route path="*" component={Error404} /> */}
+            <Route path="*" component={Error404} />
             </Switch>
           </Router>
         </div>

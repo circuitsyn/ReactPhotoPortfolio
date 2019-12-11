@@ -32,6 +32,7 @@ class Blog extends React.Component {
   // get posts and push it to the state as well as the latest post
   fetchPosts = () => this.client.getEntries()
   setPosts = response => {
+    console.log('response:', response)
     this.setState({
       posts: response.items,
       latestUrl: response.items[0].fields.mainImage.fields.file.url,
@@ -63,7 +64,7 @@ class Blog extends React.Component {
               </Row>
             </Container>
 
-            <Container className="p-0 m-1 mr-4 ml-4" fluid>
+            <Container className="" fluid>
               <Row className="d-flex justify-content-center">
                 { this.state.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />
