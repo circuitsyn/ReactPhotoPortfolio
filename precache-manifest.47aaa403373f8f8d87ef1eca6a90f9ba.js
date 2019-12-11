@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-travel.07cbbf9a.jpg"
   },
   {
-    "revision": "d87b8b4503f902dc7933",
-    "url": "/static/css/main.631e9eea.chunk.css"
+    "revision": "ea2c546abb341786892d",
+    "url": "/static/css/main.6faa7927.chunk.css"
   },
   {
     "revision": "1068e4d0f48847ae02fb1ed9da793cdf",
     "url": "/static/media/Feldn___.1068e4d0.woff"
   },
   {
-    "revision": "dcf9bb15d30898652acc",
-    "url": "/static/js/1.dcf9bb15.chunk.js"
+    "revision": "60e8e4b57a9b7762d395",
+    "url": "/static/js/1.60e8e4b5.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "d87b8b4503f902dc7933",
-    "url": "/static/js/main.d87b8b45.chunk.js"
+    "revision": "ea2c546abb341786892d",
+    "url": "/static/js/main.ea2c546a.chunk.js"
   },
   {
     "revision": "9fdd7ae8f4dfbf003b35f6d6c5a8278f",
@@ -44,15 +44,19 @@ self.__precacheManifest = [
     "url": "/static/media/copyrightImg.6d076cd3.png"
   },
   {
+    "revision": "9c06b6feeee8bfe73f066ad064e29c6e",
+    "url": "/static/media/404robot.9c06b6fe.png"
+  },
+  {
     "revision": "f43211c9a87a1f642bbb4e3fcb893688",
     "url": "/static/media/blogSunset.f43211c9.jpg"
   },
   {
-    "revision": "dcf9bb15d30898652acc",
-    "url": "/static/css/1.44f19768.chunk.css"
+    "revision": "60e8e4b57a9b7762d395",
+    "url": "/static/css/1.5a946a91.chunk.css"
   },
   {
-    "revision": "bfc0984dc9784db14fafdef322a3a24b",
+    "revision": "dd9e061a5211886425cef994c3613375",
     "url": "/index.html"
   }
 ];
