@@ -3,3 +3,10 @@
     width: auto;
     border-radius: 5px;
 }
+
+.firstLetter {
+    font-family: TitleFont;
+    font-weight: bold;
+    text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
+    margin-right: 1px;
+}

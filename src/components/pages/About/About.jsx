@@ -41,32 +41,37 @@ const About = () => {
                         </p>
                     </Col>
                 </Row>
-                <Row className="mt-3 mb-3">
+                <Row>
+                    <Col>
+                        <hr />
+                    </Col>
+                </Row>
+                <Row className="mt-4 mb-3">
                     <Col>
                         <h3 className="titleFont text-left">
                             Accolades:
                         </h3>
                         <ul className="text-left">
                             <li>
-                                <span className="titleFont">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
+                                <span className="firstLetter">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
                             </li>
                             <li>
-                                <span className="titleFont">G</span>rant Funded Project with the Staten Island Arts Foundation.
+                                <span className="firstLetter">G</span>rant Funded Project with the Staten Island Arts Foundation.
                             </li>
                             <li>
-                                <span className="titleFont">P</span>ublished in the Rainforest Alliance publication.
+                                <span className="firstLetter">P</span>ublished in the Rainforest Alliance publication.
                             </li>
                             <li>
-                                <span className="titleFont">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
+                                <span className="firstLetter">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
                             </li>
                             <li>
-                                <span className="titleFont">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
+                                <span className="firstLetter">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
                             </li>
                             <li>
-                                <span className="titleFont">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
+                                <span className="firstLetter">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
                             </li>
                             <li>
-                                <span className="titleFont">P</span>hotography educator at MakerSpace.nyc, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
+                                <span className="firstLetter">P</span>hotography educator at MakerSpace.nyc, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
                             </li>
                         </ul>
                     </Col>
