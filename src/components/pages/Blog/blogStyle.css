@@ -20,16 +20,21 @@
 .blogBtn {
   background: orangered !important;
   border-color: orangered !important;
+  color: white;
 }
 
 .blogBtn:focus, .blogBtn.focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 69, 0, 0.5) !important;
+  color: white;
+  text-decoration: none;
 }
 
 .blogBtn:hover, .blogBtn.hover {
   box-shadow: 0 0 0 0.2rem rgba(255, 69, 0, 0.5) !important;
   font-weight: bold;
   transition: 0.1s;
+  color: white;
+  text-decoration: none;
 }
 
 .blogTitle{

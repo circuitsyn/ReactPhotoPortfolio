@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 
 const postCard = (props) => {
     let length = 150;
@@ -24,7 +24,9 @@ const postCard = (props) => {
                     <Card.Text>
                         {content.substr(0, length) + '...'}
                     </Card.Text>
-                    <Button className="blogBtn" href={props.path} variant="primary" size="sm">Read More!</Button>
+                    <Link to={`/blog${props.path}`} className="blogBtn btn-sm">
+                        Read More!
+                    </Link>
                 </Card.Body>
             </Card>
         </Col>

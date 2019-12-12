@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 import loading from '../../../assets/images/loading.gif'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -38,7 +38,9 @@ const postLatest = (props) => {
                         {title}
                         {time}
                         <p className="mb-0">{content.substr(0, length) + '...'}</p>
-                        <Button className="float-right m-1 blogBtn" href={props.path} size="sm">Read More!</Button>
+                        <Link to={`/blog${props.path}`} className="float-right m-1 blogBtn btn-sm">
+                        Read More!
+                        </Link>
                     </Col>
                 </Row>
             </Container>

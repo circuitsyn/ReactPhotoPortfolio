@@ -5,7 +5,7 @@ const BlogPost = (props) => {
   // Adding title page name for accessibility dynamically
   document.title = 'Jarred Sutton Photography';
 
-  // functions to facilitate lightbox
+  console.log('BlogPost props:', props)
 
   return (
     <div>
