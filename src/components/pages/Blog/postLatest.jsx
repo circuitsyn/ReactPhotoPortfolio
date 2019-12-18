@@ -5,6 +5,7 @@ import loading from '../../../assets/images/loading.gif'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import * as Markdown from 'react-markdown';
 
 const postLatest = (props) => {
     
@@ -37,7 +38,7 @@ const postLatest = (props) => {
                     <Col className="p-4" xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
                         {time}
-                        <p className="mb-0">{content.substr(0, length) + '...'}</p>
+                        <p className="mb-0"><Markdown source={content.substr(0, length) + '...'} /></p>
                         <Link to={`/blog${props.path}`} className="float-right m-1 blogBtn btn-sm">
                         Read More!
                         </Link>
