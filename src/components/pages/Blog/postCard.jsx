@@ -3,6 +3,7 @@ import moment from 'moment';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
+import * as Markdown from 'react-markdown';
 
 const postCard = (props) => {
     let length = 150;
@@ -22,7 +23,7 @@ const postCard = (props) => {
                     {time}
                     <hr />
                     <Card.Text>
-                        {content.substr(0, length) + '...'}
+                        <Markdown source={content.substr(0, length) + '...'} />
                     </Card.Text>
                     <Link to={`/blog${props.path}`} className="blogBtn btn-sm">
                         Read More!
