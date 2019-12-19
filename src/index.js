@@ -14,6 +14,12 @@ import 'bootstrap/dist/js/bootstrap.js';
 import $ from 'jquery';
 import Popper from 'popper.js';
 
+// Redux Store
+import { Provider } from 'react-redux'
+import { configureStore } from '../src/store'
+
+const store = configureStore()
+
 // if (process.env.NODE_ENV !== 'production') {
 // 	console.log('loading dev environments')
 // 	require('dotenv').config()
@@ -31,11 +37,13 @@ import Popper from 'popper.js';
 //   })
 
 ReactDOM.render(
-    <BrowserRouter>
-		<ScrollToTop>
-            <App />
-        </ScrollToTop>
-    </BrowserRouter>,
+    <Provider store={store}>
+        <BrowserRouter>
+            <ScrollToTop>
+                <App />
+            </ScrollToTop>
+        </BrowserRouter>
+    </Provider>,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
