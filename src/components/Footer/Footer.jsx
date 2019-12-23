@@ -22,7 +22,7 @@ const Footer = () => {
 
           </Col>
           <Col className="text-right" md="6">
-            <h5 className="title titleFont">Navigation</h5>
+            <h3 className="title titleFont">Navigation</h3>
             <ul>
               <li className="list-unstyled">
                 <a className={` ${window.location.pathname === '/' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/">Home</a>

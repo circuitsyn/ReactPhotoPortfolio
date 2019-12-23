@@ -8,7 +8,7 @@ import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Modal from 'react-bootstrap/Modal'
+import { connect } from 'react-redux';
 
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')
@@ -47,6 +47,7 @@ class Blog extends React.Component {
   render() {
     // Adding title page name for accessibility dynamically
     document.title = 'Blog Page';
+    
     return (
         <div>
             <Jumbotron className="m-1 ml-4 mr-4" fluid>
@@ -77,4 +78,9 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+function mapStateToProps(state, ownProps) {
+  return {
+    blog: state.blog
+  }
+}
+export default connect(mapStateToProps)(Blog)

@@ -10,10 +10,15 @@ const client = contentful.createClient({
 const error = err => console.log(err)
 
 export function loadBlog() {
-  return dispatch =>
-    client.getEntries()
+  return dispatch => {
+    dispatch (actions.blogLoading())
+    return client.getEntries()
       .then(({items}) => {
         dispatch(actions.loadBlogSuccess(items))
       })
-      .catch(error)
+      .catch(error => {
+        console.log(error)
+        dispatch(actions.blogLoading(false))
+      })
+}
 }
