@@ -17,24 +17,10 @@ import Popper from 'popper.js';
 // Redux Store
 import { Provider } from 'react-redux'
 import { configureStore } from '../src/store'
+import { loadBlog } from './store/Blog'
 
 const store = configureStore()
-
-// if (process.env.NODE_ENV !== 'production') {
-// 	console.log('loading dev environments')
-// 	require('dotenv').config()
-// }
-
-// var client = contentful.createClient({
-//     space: process.env.REACT_APP_CONTENT_SPACE_ID,
-//     accessToken: process.env.REACT_APP_CONTENT_API_KEY })
-//   client.getEntries().then(entries => {
-//     entries.items.forEach(entry => {
-//       if(entry.fields) {
-//         console.log(entry.fields)
-//       }
-//     })
-//   })
+store.dispatch(loadBlog())
 
 ReactDOM.render(
     <Provider store={store}>
