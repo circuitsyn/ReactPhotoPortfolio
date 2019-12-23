@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import "./copyrightStyle.css";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
