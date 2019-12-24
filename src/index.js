@@ -2,7 +2,7 @@ import React from 'react';
 // config.js
 // import dotenv from "dotenv";
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './index.css';
 import App from './App';
@@ -24,11 +24,11 @@ store.dispatch(loadBlog())
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter>
+        <Router>
             <ScrollToTop>
                 <App />
             </ScrollToTop>
-        </BrowserRouter>
+        </Router>
     </Provider>,
     document.getElementById('root'));
 
