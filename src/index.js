@@ -2,7 +2,7 @@ import React from 'react';
 // config.js
 // import dotenv from "dotenv";
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './index.css';
 import App from './App';
@@ -14,28 +14,22 @@ import 'bootstrap/dist/js/bootstrap.js';
 import $ from 'jquery';
 import Popper from 'popper.js';
 
-// if (process.env.NODE_ENV !== 'production') {
-// 	console.log('loading dev environments')
-// 	require('dotenv').config()
-// }
+// Redux Store
+import { Provider } from 'react-redux'
+import { configureStore } from '../src/store'
+import { loadBlog } from './store/Blog'
 
-// var client = contentful.createClient({
-//     space: process.env.REACT_APP_CONTENT_SPACE_ID,
-//     accessToken: process.env.REACT_APP_CONTENT_API_KEY })
-//   client.getEntries().then(entries => {
-//     entries.items.forEach(entry => {
-//       if(entry.fields) {
-//         console.log(entry.fields)
-//       }
-//     })
-//   })
+const store = configureStore()
+store.dispatch(loadBlog())
 
 ReactDOM.render(
-    <BrowserRouter>
-		<ScrollToTop>
-            <App />
-        </ScrollToTop>
-    </BrowserRouter>,
+    <Provider store={store}>
+        <Router>
+            <ScrollToTop>
+                <App />
+            </ScrollToTop>
+        </Router>
+    </Provider>,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -8,7 +8,7 @@ import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Modal from 'react-bootstrap/Modal'
+import { connect } from 'react-redux';
 
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments')
@@ -33,20 +33,21 @@ class Blog extends React.Component {
   // get posts and push it to the state as well as the latest post
   fetchPosts = () => this.client.getEntries()
   setPosts = response => {
-    console.log('response:', response)
+    // console.log('response:', response)
     this.setState({
       posts: response.items,
-      latestUrl: response.items[0].fields.mainImage.fields.file.url,
-      latestTitle: response.items[0].fields.title,
-      latestPath: response.items[0].fields.path,
-      latestContent: response.items[0].fields.content,
-      latestTime: response.items[0].sys.createdAt
+      latestUrl: this.props.blog.posts[0].fields.mainImage.fields.file.url,
+      latestTitle: this.props.blog.posts[0].fields.title,
+      latestPath: this.props.blog.posts[0].fields.path,
+      latestContent: this.props.blog.posts[0].fields.content,
+      latestTime: this.props.blog.posts[0].sys.createdAt
     })
   }
 
   render() {
     // Adding title page name for accessibility dynamically
     document.title = 'Blog Page';
+
     return (
         <div>
             <Jumbotron className="m-1 ml-4 mr-4" fluid>
@@ -67,7 +68,7 @@ class Blog extends React.Component {
 
             <Container className="" fluid>
               <Row className="d-flex justify-content-center">
-                { this.state.posts.map(({fields}, i) =>
+                { this.props.blog.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />
               )}
               </Row>
@@ -77,4 +78,9 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+function mapStateToProps(state, ownProps) {
+  return {
+    blog: state.blog
+  }
+}
+export default connect(mapStateToProps)(Blog)

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
+
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer'
 import Home from './components/pages/Home/Home';
@@ -35,6 +36,8 @@ class App extends Component {
   // function to detect gallery click and redirect to gallery
   onPickClick = e => {
     this.props.history.push('/'+ e.target.alt);
+    console.log("I'm in; clicked!")
+    console.log('event', e.target.alt)
   }
 
   render() {
@@ -42,7 +45,6 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="wrapper">
-        <Router>
           <Switch>
             <Route exact path="/" render={() => 
                   <Home onClick={this.onPickClick}					
@@ -98,14 +100,13 @@ class App extends Component {
             <Route path="/Winter" render={() => 
                   <Winter 
                   />} />
-
             {/* Reusable blog post page */}
             <Route path="/blog/:blogPost" component={BlogPost} />
             
             {/* Error Catch */}
             <Route path="*" component={Error404} />
             </Switch>
-          </Router>
+          
         </div>
         <Footer />
       </div>

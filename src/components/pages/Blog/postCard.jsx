@@ -22,9 +22,9 @@ const postCard = (props) => {
                     <Card.Title className="mb-0 txt-shadow">{props.title}</Card.Title>
                     {time}
                     <hr />
-                    <Card.Text>
+                    {/* <Card.Text> */}
                         <Markdown source={content.substr(0, length) + '...'} />
-                    </Card.Text>
+                    {/* </Card.Text> */}
                     <Link to={`/blog${props.path}`} className="blogBtn btn-sm">
                         Read More!
                     </Link>
