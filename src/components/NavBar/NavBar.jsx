@@ -1,5 +1,6 @@
 import React from 'react';
 import navIcon from '../../assets/Icons/camera2.png';
+import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
 
@@ -17,36 +18,70 @@ const NavBar = (props) => {
         <div className="collapse text-right" id="navBarToggleTrig">
           <div className="pb-4 pr-4 pt-0">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
-                <a className="nav-link txt-shadow" href="/">Home</a>
+              <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item active">
+                <Link to={"/"} className="nav-link txt-shadow">
+                  Home
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link txt-shadow" href="/Blog">Blog</a>
+              <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
+                <Link to={"/Blog"} className="nav-link txt-shadow">
+                  Blog
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link txt-shadow" href="/About">About</a>
+              <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
+                <Link to={"/About"} className="nav-link txt-shadow">
+                  About
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link txt-shadow" href="/Contact">Contact</a>
+              <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
+                <Link to={"/Contact"} className="nav-link txt-shadow">
+                  Contact
+                </Link>
               </li>
-              <li className="nav-item drop">
+              <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item drop">
                 <a className="nav-link txt-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Galleries
                 </a>
                 <div className="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item txt-shadow" href="/Birds">Birds</a>
-                  <a className="dropdown-item txt-shadow" href="/Cetaceans">Cetaceans</a>
-                  <a className="dropdown-item txt-shadow" href="/Flowers">Flowers</a>
-                  <a className="dropdown-item txt-shadow" href="/Insects">Insects</a>
-                  <a className="dropdown-item txt-shadow" href="/Landscapes">Landscapes</a>
-                  <a className="dropdown-item txt-shadow" href="/Night-Sky">Night Sky</a>
-                  <a className="dropdown-item txt-shadow" href="/Panoramas">Panoramas</a>
-                  <a className="dropdown-item txt-shadow" href="/Reptiles">Reptiles</a>
-                  <a className="dropdown-item txt-shadow" href="/SeaLife">SeaLife</a>
-                  <a className="dropdown-item txt-shadow" href="/Travel">Travel</a>
-                  <a className="dropdown-item txt-shadow" href="/Ungulates">Ungulates</a>
-                  <a className="dropdown-item txt-shadow" href="/Water-Features">Water Features</a>
-                  <a className="dropdown-item txt-shadow" href="/Winter">Winter</a>
+                    <Link to={"/Birds"} className="dropdown-item txt-shadow">
+                      Birds
+                    </Link>                  
+                  <Link to={"/Cetaceans"} className="dropdown-item txt-shadow">
+                    Cetaceans
+                  </Link>
+                  <Link to={"/Flowers"} className="dropdown-item txt-shadow">
+                    Flowers
+                  </Link>
+                  <Link to={"/Insects"} className="dropdown-item txt-shadow">
+                    Insects
+                  </Link>
+                  <Link to={"/Landscapes"} className="dropdown-item txt-shadow">
+                    Landscapes
+                  </Link>
+                  <Link to={"/Night-Sky"} className="dropdown-item txt-shadow">
+                    Night Sky
+                  </Link>
+                  <Link to={"/Panoramas"} className="dropdown-item txt-shadow">
+                    Panoramas
+                  </Link>
+                  <Link to={"/Reptiles"} className="dropdown-item txt-shadow">
+                    Reptiles
+                  </Link>
+                  <Link to={"/SeaLife"} className="dropdown-item txt-shadow">
+                    SeaLife
+                  </Link>
+                  <Link to={"/Travel"} className="dropdown-item txt-shadow">
+                    Travel
+                  </Link>
+                  <Link to={"/Ungulates"} className="dropdown-item txt-shadow">
+                    Ungulates
+                  </Link>
+                  <Link to={"/Water-Features"} className="dropdown-item txt-shadow">
+                    Water Features
+                  </Link>
+                  <Link to={"/Winter"} className="dropdown-item txt-shadow">
+                    Winter
+                  </Link>
                 </div>
               </li>              
             </ul>
