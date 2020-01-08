@@ -56,8 +56,6 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      {/* <div className="footer text-center">
-      </div> */}
       </div>
   );
 }
