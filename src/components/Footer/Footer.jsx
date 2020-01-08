@@ -2,6 +2,7 @@ import React from "react";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -14,7 +15,9 @@ const Footer = () => {
       <Container fluid className="text-center text-md-left">
         <Row>
           <Col md="6">
-          <a href="/" className="navbar-brand navTitleFont pb-0"><span className="titleOr">Jarred Sutton</span><span className="titleBl"> | Photography</span></a>
+          <Link to={"/"} className="navbar-brand navTitleFont pb-0">
+            <span className="titleOr">Jarred Sutton</span><span className="titleBl"> | Photography</span>
+          </Link>   
 
           <p className="small text-muted">
             &copy; {new Date().getFullYear()} All Rights Reserved
@@ -25,19 +28,29 @@ const Footer = () => {
             <h3 className="title titleFont">Navigation</h3>
             <ul>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/">Home</a>
+                <Link to={"/"} className={` ${window.location.pathname === '/' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                  Home
+                </Link>   
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Blog">Blog</a>
+                <Link to={"/Blog"} className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                  Blog
+                </Link> 
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/About">About</a>
+                <Link to={"/About"} className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                  About
+                </Link> 
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Copyright">Copyright</a>
+                <Link to={"/Copyright"} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                  Copyright
+                </Link>
               </li>
               <li className="list-unstyled">
-                <a className={` ${window.location.pathname === '/Contact' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `} href="/Contact">Contact</a>
+                <Link to={"/Contact"} className={` ${window.location.pathname === '/Contact' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </Col>

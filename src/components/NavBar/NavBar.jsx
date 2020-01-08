@@ -43,9 +43,9 @@ const NavBar = (props) => {
                   Galleries
                 </a>
                 <div className="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdown">
-                    <Link to={"/Birds"} className="dropdown-item txt-shadow">
-                      Birds
-                    </Link>                  
+                  <Link to={"/Birds"} className="dropdown-item txt-shadow">
+                    Birds
+                  </Link>                  
                   <Link to={"/Cetaceans"} className="dropdown-item txt-shadow">
                     Cetaceans
                   </Link>
