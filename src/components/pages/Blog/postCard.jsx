@@ -25,7 +25,7 @@ const postCard = (props) => {
                     {/* <Card.Text> */}
                         <Markdown source={content.substr(0, length) + '...'} />
                     {/* </Card.Text> */}
-                    <Link to={`/blog${props.path}`} className="blogBtn btn-sm">
+                    <Link to={`/Blog${props.path}`} className="blogBtn btn-sm">
                         Read More!
                     </Link>
                 </Card.Body>

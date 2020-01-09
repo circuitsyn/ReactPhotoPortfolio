@@ -9,7 +9,7 @@ const BlogPost = (props) => {
 
   return (
     <div>
-      
+      <h1>Clicked Post!</h1>
     </div>
   );
 }

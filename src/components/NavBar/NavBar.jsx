@@ -41,9 +41,12 @@ const NavBar = (props) => {
                 </Link>
               </li>
               <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item drop">
-                <a className="nav-link txt-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <Link to={"#"} className="nav-link txt-shadow dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Galleries
-                </a>
+                </Link>  
+                {/* <a className="nav-link txt-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Galleries
+                </a> */}
                 <div className="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdown">
                   <Link to={"/Birds"} className="dropdown-item txt-shadow">
                     Birds

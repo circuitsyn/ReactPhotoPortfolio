@@ -26,91 +26,97 @@ import Error404 from './components/pages/Error404/Error404';
 import './App.css';
 
 class App extends Component {
-  // capture all image components to add fade in ability on load for transition on hover
-  componentDidMount() {
-    const img = document.querySelector('img');
-    img.onload = () => {
-      img.classList.add('fade-in');
-    }
-  }
-  // function to detect gallery click and redirect to gallery
-  onPickClick = e => {
-    this.props.history.push('/'+ e.target.alt);
-    console.log("I'm in; clicked!")
-    console.log('event', e.target.alt)
-  }
 
-  render() {
-    return (
-      <div className="App">
-        <NavBar />
-        <div className="wrapper">
-          <Switch>
-            <Route exact path="/" render={() => 
-                  <Home onClick={this.onPickClick}					
-                  />} />
-            <Route path="/About" render={() => 
-                  <About 
-                  />} />
-            <Route exact path="/Blog" render={() => 
-                  <Blog 
-                  />} />
-            <Route path="/Birds" render={() => 
-                  <Birds 
-                  />} />
-            <Route path="/Cetaceans" render={() => 
-                  <Cetaceans 
-                  />} />
-            <Route path="/Contact" render={() => 
-                  <Contact 
-                  />} />
-            <Route path="/Copyright" render={() => 
-                  <Copyright 
-                  />} />
-            <Route path="/Flowers" render={() => 
-                  <Flowers 
-                  />} />
-            <Route path="/Insects" render={() => 
-                  <Insects 
-                  />} />
-            <Route path="/Landscapes" render={() => 
-                  <Landscapes 
-                  />} />
-            <Route path="/Night-Sky" render={() => 
-                  <NightSky 
-                  />} />
-            <Route path="/Panoramas" render={() => 
-                  <Panoramas 
-                  />} />
-            <Route path="/Reptiles" render={() => 
-                  <Reptiles 
-                  />} />
-            <Route path="/SeaLife" render={() => 
-                  <SeaLife 
-                  />} />
-            <Route path="/Travel" render={() => 
-                  <Travel 
-                  />} />
-            <Route path="/Ungulates" render={() => 
-                  <Ungulates 
-                  />} />
-            <Route path="/Water-Features" render={() => 
-                  <WaterFeatures 
-                  />} />
-            <Route path="/Winter" render={() => 
-                  <Winter 
-                  />} />
-            {/* Reusable blog post page */}
-            <Route path="/blog/:blogPost" component={BlogPost} />
-            
-            {/* Error Catch */}
-            <Route path="*" component={Error404} />
-            </Switch>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+      state = {
+
+      }
+
+      // capture all image components to add fade in ability on load for transition on hover
+      componentDidMount() {
+            const img = document.querySelector('img');
+            img.onload = () => {
+                  img.classList.add('fade-in');
+            }
+      }
+
+      // function to detect gallery click and redirect to gallery
+      onPickClick = e => {
+            this.props.history.push('/'+ e.target.alt);
+            console.log("I'm in; clicked!")
+            console.log('event', e.target.alt)
+      }
+
+      render() {
+            return (
+                  <div className="App">
+                  <NavBar />
+                  <div className="wrapper">
+                  <Switch>
+                        <Route exact path="/" render={() => 
+                              <Home onClick={this.onPickClick}					
+                              />} />
+                        <Route path="/About" render={() => 
+                              <About 
+                              />} />
+                        <Route exact path="/Blog" render={() => 
+                              <Blog 
+                              />} />
+                        <Route path="/Birds" render={() => 
+                              <Birds 
+                              />} />
+                        <Route path="/Cetaceans" render={() => 
+                              <Cetaceans 
+                              />} />
+                        <Route path="/Contact" render={() => 
+                              <Contact 
+                              />} />
+                        <Route path="/Copyright" render={() => 
+                              <Copyright 
+                              />} />
+                        <Route path="/Flowers" render={() => 
+                              <Flowers 
+                              />} />
+                        <Route path="/Insects" render={() => 
+                              <Insects 
+                              />} />
+                        <Route path="/Landscapes" render={() => 
+                              <Landscapes 
+                              />} />
+                        <Route path="/Night-Sky" render={() => 
+                              <NightSky 
+                              />} />
+                        <Route path="/Panoramas" render={() => 
+                              <Panoramas 
+                              />} />
+                        <Route path="/Reptiles" render={() => 
+                              <Reptiles 
+                              />} />
+                        <Route path="/SeaLife" render={() => 
+                              <SeaLife 
+                              />} />
+                        <Route path="/Travel" render={() => 
+                              <Travel 
+                              />} />
+                        <Route path="/Ungulates" render={() => 
+                              <Ungulates 
+                              />} />
+                        <Route path="/Water-Features" render={() => 
+                              <WaterFeatures 
+                              />} />
+                        <Route path="/Winter" render={() => 
+                              <Winter 
+                              />} />
+                        {/* Reusable blog post page */}
+                        <Route path="/Blog/:blogPost" component={BlogPost} />
+                        
+                        {/* Error Catch */}
+                        <Route path="*" component={Error404} />
+                        </Switch>
+                  </div>
+                  <Footer />
+                  </div>
+            );
+      }
 }
 
 export default withRouter (App)
