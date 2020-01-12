@@ -20,10 +20,10 @@ class Blog extends React.Component {
 
   }
 
-  render() {
+  render(props) {
     // Adding title page name for accessibility dynamically
     document.title = 'Blog Page';
-
+    console.log('blog props', props)
     return (
         <div>
             <Jumbotron className="m-1 ml-4 mr-4" fluid>
@@ -45,7 +45,7 @@ class Blog extends React.Component {
             <Container className="" fluid>
               <Row className="d-flex justify-content-center">
                 { this.props.blog.posts.map(({fields}, i) =>
-                <Card key={i} {...fields} />
+                <Card key={i} {...fields} onClick={props.onReadMoreClick} />
               )}
               </Row>
             </Container>

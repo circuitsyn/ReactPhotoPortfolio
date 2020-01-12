@@ -46,6 +46,16 @@ class App extends Component {
             console.log('event', e.target.alt)
       }
 
+      // function to store key for clicked blog post and to advance page
+      // **** 1- first build a state where you store the key number. Default it to the latest of 0. 
+      // 2- then build a post page where it reads from that state with the key
+      // 3- then build a wy and test a way to capture a key and then push it to the state held in app
+      // 4- make sur ein both that you are still pushing to the custom path. Look in the Link area for the custom url build and just use that and push history ***** 
+      readMoreClick = (e) => {
+            console.log('event', e.target)
+            console.log('this', this)     
+      }
+
       render() {
             return (
                   <div className="App">
@@ -59,7 +69,7 @@ class App extends Component {
                               <About 
                               />} />
                         <Route exact path="/Blog" render={() => 
-                              <Blog 
+                              <Blog onClick={this.readMoreClick}
                               />} />
                         <Route path="/Birds" render={() => 
                               <Birds 
