@@ -22,14 +22,16 @@ class Blog extends React.Component {
     }
   }
 
+  // loading function to alternate between loading state and data present state if needed
   loading = () => {
-    console.log('props if test content', this.props.blog.posts)
+    
+    // conditional to test and see if data is available to fill posts
     if (this.props.blog.posts.length === 0) {
-      console.log('Loadng...')
+
       return(<Loading />)
     }
     else {
-      console.log('here comes blog content!')
+
       return(
       <div>
         <Jumbotron className="m-1 ml-4 mr-4" fluid>
