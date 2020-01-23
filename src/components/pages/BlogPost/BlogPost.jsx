@@ -10,7 +10,7 @@ const BlogPost = (props) => {
   return (
     <div>
       <h1>Clicked Post!</h1>
-      <h1></h1>
+      <h1>hey there</h1>
     </div>
   );
 }

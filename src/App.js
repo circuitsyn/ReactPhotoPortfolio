@@ -27,8 +27,13 @@ import './App.css';
 
 class App extends Component {
 
-      state = {
+      constructor(props) {
+	      super(props)
 
+		this.state = {
+                  postKey: 0
+            }
+      // this.readMoreClick = this.readMoreClick.bind(this);
       }
 
       // capture all image components to add fade in ability on load for transition on hover
@@ -39,22 +44,24 @@ class App extends Component {
             }
       }
 
-      // function to detect gallery click and redirect to gallery
+      // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
             this.props.history.push('/'+ e.target.alt);
             console.log("I'm in; clicked!")
             console.log('event', e.target.alt)
       }
 
-      // function to store key for clicked blog post and to advance page
+      // function to store key for clicked BLOG post and to advance page
       // **** 1- first build a state where you store the key number. Default it to the latest of 0. 
       // 2- then build a post page where it reads from that state with the key
       // 3- then build a wy and test a way to capture a key and then push it to the state held in app
       // 4- make sur ein both that you are still pushing to the custom path. Look in the Link area for the custom url build and just use that and push history ***** 
-      readMoreClick = (e) => {
-            console.log('event', e.target)
-            console.log('this', this)     
-      }
+      // readMoreClick = () => {
+      //       console.log('event');
+      //       console.log('event data');
+      //       // this.props.history.push('/Blog' + `${this.props.path}`);
+            
+      // }
 
       render() {
             return (
@@ -63,13 +70,13 @@ class App extends Component {
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
-                              <Home onClick={this.onPickClick}					
+                              <Home onClick={this.onPickClick}	
                               />} />
                         <Route path="/About" render={() => 
                               <About 
                               />} />
                         <Route exact path="/Blog" render={() => 
-                              <Blog onClick={this.readMoreClick}
+                              <Blog
                               />} />
                         <Route path="/Birds" render={() => 
                               <Birds 

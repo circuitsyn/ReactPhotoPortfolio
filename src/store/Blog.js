@@ -1,6 +1,6 @@
 import * as contentful from 'contentful'
 import * as actions from './blog/actions'
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
 const client = contentful.createClient({
     space: process.env.REACT_APP_CONTENT_SPACE_ID,

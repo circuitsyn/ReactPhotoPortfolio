@@ -2,7 +2,7 @@ import React from 'react';
 import navIcon from '../../assets/Icons/camera2.png';
 import { Link } from "react-router-dom";
 
-const NavBar = (props) => {
+const NavBar = () => {
 
   return (
     <div>        
