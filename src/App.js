@@ -52,6 +52,15 @@ class App extends Component {
       }
 
       // function to store key for clicked BLOG post and to advance page
+      // updateKey = (e) => {
+      //       let target = e.target;
+      //       let value = target.____;
+      //       this.setState({
+	// 		postKey: value
+	// 	})
+      // }
+
+
       // **** 1- first build a state where you store the key number. Default it to the latest of 0. 
       // 2- then build a post page where it reads from that state with the key
       // 3- then build a wy and test a way to capture a key and then push it to the state held in app
@@ -124,7 +133,9 @@ class App extends Component {
                               <Winter 
                               />} />
                         {/* Reusable blog post page */}
-                        <Route path="/Blog/:blogPost" component={BlogPost} />
+                        <Route path="/Blog/:blogPost" render={() => 
+                              <BlogPost numberKey={this.state.postKey}
+                              />} />
                         
                         {/* Error Catch */}
                         <Route path="*" component={Error404} />
