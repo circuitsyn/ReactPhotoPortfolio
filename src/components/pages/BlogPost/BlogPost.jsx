@@ -6,7 +6,6 @@ const BlogPost = (props) => {
   document.title = 'Jarred Sutton Photography';
 
   console.log('BlogPost props:', props)
-  console.log('BlogPost props  numberKey:', props.numberKey)
 
   return (
     <div>

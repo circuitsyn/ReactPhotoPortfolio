@@ -18,7 +18,7 @@ class Blog extends React.Component {
   constructor(props) {
     super(props);
     this.state= { 
-    
+      
     }
   }
 
@@ -80,14 +80,7 @@ class Blog extends React.Component {
 
 function mapStateToProps(state, ownProps) {
   return {
-    blog: state.blog,
-    articleNum: 0,
-    readMoreClick () {
-      console.log('event');
-      console.log('event data');
-      // this.props.history.push('/Blog' + `${this.props.path}`);
-      
-    }
+    blog: state.blog
   }
 }
 export default connect(mapStateToProps)(Blog)
