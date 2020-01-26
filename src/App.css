@@ -50,15 +50,7 @@
 
 /* **border override removal for cards from bootstrap for styling ** */
 .cardOverstyle {
-  border-radius: 1rem !important;
-  width: 18rem !important;
-}
-
-.textWhiteHover {
-  background-color: white;
-  opacity: 0.9;
-  margin: 20rem 2rem 1rem 2rem ;
-  border-radius: 1rem;
+  border-radius: 1rem !important
 }
 
 .nav-link:hover {

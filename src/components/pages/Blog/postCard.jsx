@@ -13,12 +13,10 @@ const postCard = (props) => {
     time = props.mainImage.sys.createdAt;
     time = moment(time).format('M.D.YY');
     time = <p className="small text-muted">{time}</p>
-  return (
-    <div className="mb-3">     
+  return (   
         <Col>   
             <Card className="cardOverstyle" 
-            style={{ width: '18rem' },
-            {backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
+            style={{backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}}>
                 {/* <Card.Img variant="top" src={props.mainImage.fields.file.url} /> */}
@@ -35,7 +33,6 @@ const postCard = (props) => {
                 </Card.Body>
             </Card>
         </Col>
-    </div>
   );
 }
 
