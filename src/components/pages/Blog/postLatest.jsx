@@ -29,13 +29,13 @@ const postLatest = (props) => {
     }
     
     return (
-        <div className="mt-5 ml-4 mr-4 cardShadow">     
+        <div className="mt-5 ml-4 mr-4">     
             <Container className="text-left latestPostCard" fluid>
                 <Row>
-                    <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>
+                    <Col className="p-0" xs={12} sm={2} md={2} lg={2} xl={2}>
                         {cardChoice}
                     </Col>
-                    <Col className="p-4" xs={12} sm={9} md={9} lg={9} xl={9}>
+                    <Col className="p-4 textWhiteHoverLatest" xs={12} sm={9} md={9} lg={9} xl={9}>
                         {title}
                         {time}
                         <Markdown className="mb-0" source={content.substr(0, length) + '...'} />
