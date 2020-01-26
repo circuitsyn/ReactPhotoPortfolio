@@ -6,15 +6,11 @@
 }
 
 .latestPostCard {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+    border-radius: .25rem !important;
 }
 
-.cover {
-    object-fit: contain !important;
-    overflow: hidden !important;
-    width: 100%;
-    /* height: 100% !important; */
+#latestImg {
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .blogBtn {
@@ -48,4 +44,9 @@
   font-family: TitleFont;
   color: black;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cardShadow {
+  /* text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.2);
 }

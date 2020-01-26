@@ -20,7 +20,7 @@ const postLatest = (props) => {
     }
     else {
         content = props.content;
-        cardChoice = <img className="p-0 cover" variant="bottom" src={props.url} alt="latest post" />;
+        cardChoice = <img id="latestImg" className="p-0 cover" variant="bottom" src={props.url} alt="latest post" />;
         // pull and format time with moment.js
         title = <h3 className="mb-0 txt-shadow">{props.title}</h3>;
         time = props.time;
@@ -29,7 +29,7 @@ const postLatest = (props) => {
     }
     
     return (
-        <div className="mt-5 ml-4 mr-4">     
+        <div className="mt-5 ml-4 mr-4 cardShadow">     
             <Container className="text-left latestPostCard" fluid>
                 <Row>
                     <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>

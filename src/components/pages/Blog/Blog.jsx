@@ -2,6 +2,7 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './blogStyle.css';
 import Card from './postCard';
+import CardDeck from 'react-bootstrap/CardDeck'
 import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -47,18 +48,23 @@ class Blog extends React.Component {
         <Container>
           <Row>
             <Col>
-              <h3 className="blogSubTitle display-3 mb-3 mt-3">
+              <h3 className="blogSubTitle display-3 mb-0 mt-5">
                 Recent Posts
               </h3>
+              <hr className="mt-1 mb-4"/>
             </Col>
           </Row>
         </Container>
 
-        <Container className="" fluid>
-          <Row className="d-flex justify-content-center">
-            { this.props.blog.posts.map(({fields}, i) =>
-            <Card key={i} {...fields} />
-          )}
+        <Container fluid>
+          <Row>
+            {/* <Col> */}
+              <CardDeck>
+                { this.props.blog.posts.map(({fields}, i) =>
+                <Card key={i} {...fields} />
+            )}
+              </CardDeck>
+            {/* </Col> */}
           </Row>
         </Container>
       </div>
