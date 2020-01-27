@@ -15,7 +15,7 @@ const postCard = (props) => {
     time = <p className="small text-muted">{time}</p>
   return (   
         <Col>   
-            <Card className="cardOverstyle" 
+            <Card className="cardOverstyle mt-2 mb-2" 
             style={{backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}}>

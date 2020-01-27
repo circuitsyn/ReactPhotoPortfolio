@@ -32,13 +32,13 @@ const postLatest = (props) => {
         <div className="mt-5 ml-4 mr-4">     
             <Container className="text-left latestPostCard" fluid>
                 <Row>
-                    <Col className="p-0" xs={12} sm={2} md={2} lg={2} xl={2}>
+                    <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>
                         {cardChoice}
                     </Col>
-                    <Col className="p-4 textWhiteHoverLatest" xs={12} sm={9} md={9} lg={9} xl={9}>
+                    <Col className="ml-auto p-5 textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
                         {title}
                         {time}
-                        <Markdown className="mb-0" source={content.substr(0, length) + '...'} />
+                        <Markdown className="mb-0 font-weight-bolder" source={content.substr(0, length) + '...'} />
                         <Link to={`/Blog${props.path}`} className="float-right m-1 blogBtn btn-sm">
                         Read More!
                         </Link>
