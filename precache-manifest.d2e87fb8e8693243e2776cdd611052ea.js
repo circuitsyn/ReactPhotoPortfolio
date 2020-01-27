@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "1cc82f822d0956aa9714",
+    "revision": "bc0ebf5f5c56aeed3bb5",
     "url": "/static/css/main.0a47c427.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarredSutton.4cf3be0c.jpg"
   },
   {
-    "revision": "1cc82f822d0956aa9714",
-    "url": "/static/js/main.1cc82f82.chunk.js"
+    "revision": "bc0ebf5f5c56aeed3bb5",
+    "url": "/static/js/main.bc0ebf5f.chunk.js"
   },
   {
     "revision": "bc84ed9a45a2252953c228a7e13477f9",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.caef44d7.chunk.css"
   },
   {
-    "revision": "0efba41b07900ce1c1338370ee6d66d7",
+    "revision": "701df47c1dcd0c53f23c0ec5ce543e54",
     "url": "/index.html"
   }
 ];

@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.0a47c427.chunk.css",
-  "main.js": "/static/js/main.1cc82f82.chunk.js",
-  "main.js.map": "/static/js/main.1cc82f82.chunk.js.map",
+  "main.js": "/static/js/main.bc0ebf5f.chunk.js",
+  "main.js.map": "/static/js/main.bc0ebf5f.chunk.js.map",
   "static/css/1.caef44d7.chunk.css": "/static/css/1.caef44d7.chunk.css",
   "static/js/1.bd4a2389.chunk.js": "/static/js/1.bd4a2389.chunk.js",
   "static/js/1.bd4a2389.chunk.js.map": "/static/js/1.bd4a2389.chunk.js.map",
@@ -16,9 +16,9 @@
   "static/media/blogStyle.css": "/static/media/blogSunset.f43211c9.jpg",
   "static/media/App.css": "/static/media/Feldn___.1068e4d0.woff",
   "static/media/jarredSutton.jpg": "/static/media/jarredSutton.4cf3be0c.jpg",
-  "static/css/main.0a47c427.chunk.css.map": "/static/css/main.0a47c427.chunk.css.map",
   "static/css/1.caef44d7.chunk.css.map": "/static/css/1.caef44d7.chunk.css.map",
+  "static/css/main.0a47c427.chunk.css.map": "/static/css/main.0a47c427.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.897fb6ef4bf0f299fd36e744498daf64.js": "/precache-manifest.897fb6ef4bf0f299fd36e744498daf64.js",
+  "precache-manifest.d2e87fb8e8693243e2776cdd611052ea.js": "/precache-manifest.d2e87fb8e8693243e2776cdd611052ea.js",
   "service-worker.js": "/service-worker.js"
 }
