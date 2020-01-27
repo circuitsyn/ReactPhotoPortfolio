@@ -39,6 +39,8 @@ class Blog extends React.Component {
             <h1 className="blogTitle display-1">Blog</h1>
         </Jumbotron>
 
+        <hr className="w-50"/>
+
         <Latest url={this.props.blog.posts[0].fields.mainImage.fields.file.url}
                 title={this.props.blog.posts[0].fields.title}
                 path={this.props.blog.posts[0].fields.path}
