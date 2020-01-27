@@ -35,7 +35,7 @@ class Blog extends React.Component {
 
       return(
       <div>
-        <Jumbotron className="m-1 ml-4 mr-4" fluid>
+        <Jumbotron id="blogJumbotron" className="" fluid>
             <h1 className="blogTitle display-1">Blog</h1>
         </Jumbotron>
 
@@ -58,11 +58,9 @@ class Blog extends React.Component {
 
         <Container>
           <Row>
-              {/* <CardDeck> */}
                 { this.props.blog.posts.map(({fields}, i) =>
                 <Card key={i} {...fields} />
             )}
-              {/* </CardDeck> */}
           </Row>
         </Container>
       </div>
