@@ -1,6 +1,7 @@
 export default {
     blog: {
       loading: false,
-      posts: []
+      posts: [],
+      articleNum: 0
     }
   }
