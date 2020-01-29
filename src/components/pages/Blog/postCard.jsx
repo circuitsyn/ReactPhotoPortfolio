@@ -27,7 +27,7 @@ const postCard = (props) => {
                     {/* content in markdown, produces <p> element with text */}
                     <Markdown className="cover" source={content.substr(0, length) + '...'} />
                     
-                    <Link to={`/Blog${props.path}`} onClick={()=>{console.log('CLICKED')}} className="blogBtn btn-sm">
+                    <Link to={`/Blog/${props.path}`} onClick={()=>{console.log('CLICKED')}} className="blogBtn btn-sm">
                         Read More!
                     </Link>
                 </Card.Body>

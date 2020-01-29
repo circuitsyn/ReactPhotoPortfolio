@@ -10,10 +10,10 @@ import Container from 'react-bootstrap/Container';
 import { connect } from 'react-redux';
 import Loading from '../../Loader/Loader';
 
-if (process.env.NODE_ENV !== 'production') {
-	console.log('loading dev environments')
-	require('dotenv').config()
-}
+// if (process.env.NODE_ENV !== 'production') {
+// 	console.log('loading dev environments')
+// 	require('dotenv').config()
+// }
 
 class Blog extends React.Component {
   constructor(props) {
@@ -21,6 +21,12 @@ class Blog extends React.Component {
     this.state= { 
       
     }
+  }
+
+  // Actions to perform when component mounts
+  componentDidMount(props) {
+    // Adding title page name for accessibility dynamically
+    // this.props.blog.alterArticleState();
   }
 
   // loading function to alternate between loading state and data present state if needed

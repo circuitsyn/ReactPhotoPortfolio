@@ -1,18 +1,36 @@
 import React from "react";
+import { connect } from 'react-redux';
 
-const BlogPost = (props) => {
+class BlogPost extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state= { 
+      
+    }
+  }
 
-  // Adding title page name for accessibility dynamically
-  document.title = 'Jarred Sutton Photography';
+  // Actions to perform when component mounts
+  componentDidMount(props) {
+    document.title = 'Jarred Sutton Photography';
+    // Adding title page name for accessibility dynamically
+    this.props.blog.alterArticleState();
+  }
 
-  console.log('BlogPost props:', props)
 
-  return (
-    <div>
-      <h1>Clicked Post!</h1>
-      <h1>hey there</h1>
-    </div>
-  );
+  render() {
+
+    return (
+      <div>
+        <h1>Clicked Post!</h1>
+        <h1>hey there</h1>
+      </div>
+    )
+  }
 }
 
-export default BlogPost;
+function mapStateToProps(state, ownProps) {
+  return {
+    blog: state.blog
+  }
+}
+export default connect(mapStateToProps)(BlogPost)
