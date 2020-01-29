@@ -29,21 +29,24 @@ class BlogPost extends React.Component {
       return(<Loading />)
     }
     else {
-
+      let key = this.props.blog.articleNum;
+      let content = this.props.blog.posts[key].fields.content;
       let time = "";
-      time = this.props.blog.posts[this.props.blog.articleNum].sys.createdAt;
+      time = this.props.blog.posts[key].sys.createdAt;
       time = moment(time).format('M.D.YY');
       time = <p id="latestTime" className="txt-shadow font-weight-bolder">{time}</p>
 
       return(
         <div>
-        <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[this.props.blog.articleNum].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
+        <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}} fluid>
-            <h1 className="blogTitle display-1">{this.props.blog.posts[this.props.blog.articleNum].fields.title}</h1>
+            <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
             {time}
 
         </Jumbotron>
+
+        <Markdown className="cover" source={content} />
       </div>
       )
     }
