@@ -7,7 +7,7 @@
 }
 
 .latestPostCard {
-    border-radius: 1rem !important;
+    border-radius: 3rem !important;
     background-color: black;
     /* border: solid 2px lightgray; */
 }
@@ -57,8 +57,13 @@
 .textWhiteHover {
   background-color: white;
   opacity: 0.9;
-  margin: 20rem 2rem 1rem 2rem ;
+  margin: 20rem 2rem 2rem 2rem ;
   border-radius: 1rem;
+}
+
+/* **border override removal for cards from bootstrap for styling ** */
+.cardOverstyle {
+  border-radius: 3rem !important
 }
 
 .textWhiteHoverLatest {
@@ -72,4 +77,8 @@
 /* Blog Post Main page */
 #latestTime {
   color: white;
+}
+
+#latestImage {
+  border-radius: 1rem;
 }

@@ -56,11 +56,6 @@
   min-height: 100vh;
 } */
 
-/* **border override removal for cards from bootstrap for styling ** */
-.cardOverstyle {
-  border-radius: 1rem !important
-}
-
 .nav-link:hover {
   color: black;
   font-weight: bolder;

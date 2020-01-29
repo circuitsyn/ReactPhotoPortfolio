@@ -32,10 +32,13 @@ const postLatest = (props) => {
         <div className="mt-5 ml-4 mr-4">     
             <Container className="text-left latestPostCard" fluid>
                 <Row>
-                    <Col className="p-0" xs={12} sm={3} md={3} lg={3} xl={3}>
-                        {cardChoice}
+                    <Col id="latestImage" style={{backgroundImage: `url(${props.url})`,             backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'}}
+                        className="p-0" xs={12} sm={4} md={4} lg={4} xl={4}>
+                        {/* {cardChoice} */}
                     </Col>
-                    <Col className="ml-auto p-5 textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
+                    <Col className="p-5 textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
                         {title}
                         {time}
                         <Markdown className="mb-0 font-weight-bolder" source={content.substr(0, length) + '...'} />
