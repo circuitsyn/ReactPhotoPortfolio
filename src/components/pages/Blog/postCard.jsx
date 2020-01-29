@@ -24,10 +24,10 @@ const postCard = (props) => {
                     <Card.Title className="mb-0 txt-shadow">{props.title}</Card.Title>
                     {time}
                     <hr />
-                    {/* content in markdown, produces <p> element with text */}
+                    {/* note: content in markdown, produces <p> element with text */}
                     <Markdown className="cover" source={content.substr(0, length) + '...'} />
                     
-                    <Link to={`/Blog/${props.path}`} onClick={()=>{console.log('CLICKED')}} className="blogBtn btn-sm">
+                    <Link to={`/Blog${props.path}`} onClick={props.grabKey} className="blogBtn btn-sm">
                         Read More!
                     </Link>
                 </Card.Body>

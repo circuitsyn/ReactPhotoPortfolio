@@ -6,6 +6,14 @@
 	font-style: normal;
 }
 
+/* Apple like font altrnative */
+/* @font-face {
+	font-family: 'TitleFont';
+	src: local('☺'), url('./assets/fonts/roundedFont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
 .titleFont {
   font-family: TitleFont;
   font-weight: bold;

@@ -67,7 +67,7 @@ class Blog extends React.Component {
         <Container>
           <Row>
                 { this.props.blog.posts.map(({fields}, i) =>
-                <Card key={i} {...fields} />
+                <Card key={i} {...fields} grabKey={this.props.blog.alterArticleState} />
             )}
           </Row>
         </Container>
