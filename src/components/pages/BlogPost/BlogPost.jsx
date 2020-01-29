@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 class BlogPost extends React.Component {
   constructor(props) {
@@ -21,8 +22,11 @@ class BlogPost extends React.Component {
 
     return (
       <div>
-        <h1>Clicked Post!</h1>
-        <h1>hey there</h1>
+        <Jumbotron id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[this.props.blog.articleNum].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'}} fluid>
+            <h1 className="blogTitle display-1">{this.props.blog.posts[this.props.blog.articleNum].fields.title}</h1>
+        </Jumbotron>
       </div>
     )
   }
