@@ -12,7 +12,7 @@ export default {
         // console.log('e.target:', e.target)
         console.log('e.articleNum:', $(e.target).attr('articlenum'))
         // this.props.history.push('/Blog' + `${this.props.path}`);      } 
-				let action = {articleNum: updatedArticleNum} 
+				let action = { type: 'CHANGEARTICLE', articleNum: updatedArticleNum} 
 				store.dispatch(action)
     }
   }
