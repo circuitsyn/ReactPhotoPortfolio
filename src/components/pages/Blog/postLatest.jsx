@@ -45,7 +45,7 @@ const postLatest = (props) => {
                         {title}
                         {time}
                         <Markdown className="mb-0 font-weight-bolder" source={content.substr(0, length) + '...'} />
-                        <Link to={`/Blog/${props.path}`} className="float-right m-1 blogBtn btn-sm">
+                        <Link to={`/Blog${props.path}`} className="float-right m-1 blogBtn btn-sm">
                         Read More!
                         </Link>
                     </Col>
