@@ -33,7 +33,7 @@ class App extends Component {
 		this.state = {
                   postKey: 0
             }
-      // this.readMoreClick = this.readMoreClick.bind(this);
+
       }
 
       // capture all image components to add fade in ability on load for transition on hover
@@ -58,18 +58,6 @@ class App extends Component {
       //       this.setState({
 	// 		postKey: value
 	// 	})
-      // }
-
-
-      // **** 1- first build a state where you store the key number. Default it to the latest of 0. 
-      // 2- then build a post page where it reads from that state with the key
-      // 3- then build a wy and test a way to capture a key and then push it to the state held in app
-      // 4- make sur ein both that you are still pushing to the custom path. Look in the Link area for the custom url build and just use that and push history ***** 
-      // readMoreClick = () => {
-      //       console.log('event');
-      //       console.log('event data');
-      //       // this.props.history.push('/Blog' + `${this.props.path}`);
-            
       // }
 
       render() {

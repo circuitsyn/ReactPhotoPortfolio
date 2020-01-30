@@ -20,7 +20,7 @@ const postLatest = (props) => {
     }
     else {
         content = props.content;
-        cardChoice = <img id="latestImg" className="p-0 cover" variant="bottom" src={props.url} alt="latest post" />;
+        // cardChoice = <img id="latestImg" className="p-0 cover" variant="bottom" src={props.url} alt="latest post" />;
         // pull and format time with moment.js
         title = <h3 className="mb-0 txt-shadow">{props.title}</h3>;
         time = props.time;
@@ -29,16 +29,19 @@ const postLatest = (props) => {
     }
     
     return (
-        <div className="mt-5 ml-4 mr-4">     
-            <Container className="text-left latestPostCard" fluid>
+        <div className="mt-5">     
+            <Container className="text-left latestPostCard" 
+            style={{backgroundImage: `url(${props.url})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'}}>
                 <Row>
-                    <Col id="latestImage" style={{backgroundImage: `url(${props.url})`,             backgroundPosition: 'center',
+                    {/* <Col id="latestImage" style={{backgroundImage: `url(${props.url})`,             backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'}}
                         className="p-0" xs={12} sm={4} md={4} lg={4} xl={4}>
-                        {/* {cardChoice} */}
-                    </Col>
-                    <Col className="p-5 textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
+                    </Col> */}
+                    <Col className="p-5 ml-auto textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
                         {title}
                         {time}
                         <Markdown className="mb-0 font-weight-bolder" source={content.substr(0, length) + '...'} />

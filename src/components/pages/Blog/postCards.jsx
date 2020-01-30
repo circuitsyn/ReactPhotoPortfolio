@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
 import * as Markdown from 'react-markdown';
 
-const postCard = (props) => {
+const postCards = (props) => {
+
     let length = 150;
     let content = props.content;
     // pull and format time with moment.js
@@ -15,7 +16,7 @@ const postCard = (props) => {
     time = <p className="small text-muted">{time}</p>
   return (   
         <Col xs={12} sm={4} md={4} lg={4} xl={4}>   
-            <Card className="cardOverstyle mt-2 mb-2" 
+            <Card className="cardOverstyle mt-2 mb-2"
             style={{backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}}>
@@ -27,7 +28,7 @@ const postCard = (props) => {
                     {/* note: content in markdown, produces <p> element with text */}
                     <Markdown className="cover" source={content.substr(0, length) + '...'} />
                     
-                    <Link to={`/Blog${props.path}`} onClick={props.grabKey} className="blogBtn btn-sm">
+                    <Link to={`/Blog${props.path}`} articlenum={props.index} onClick={props.grabKey} className="cardLink blogBtn btn-sm">
                         Read More!
                     </Link>
                 </Card.Body>
@@ -36,4 +37,4 @@ const postCard = (props) => {
   );
 }
 
-export default postCard;
+export default postCards;
