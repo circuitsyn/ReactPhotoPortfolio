@@ -7,7 +7,7 @@ const client = contentful.createClient({
     accessToken: process.env.REACT_APP_CONTENT_API_KEY
 })
 
-const error = err => console.log(err)
+// const error = err => console.log(err)
 
 export function loadBlog() {
   return dispatch => {
