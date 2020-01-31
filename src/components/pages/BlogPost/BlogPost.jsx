@@ -17,7 +17,6 @@ class BlogPost extends React.Component {
   componentDidMount(props) {
     document.title = 'Jarred Sutton Photography';
     // Adding title page name for accessibility dynamically
-    // this.props.blog.alterArticleState();
   }
 
   // loading function to alternate between loading state and data present state if needed

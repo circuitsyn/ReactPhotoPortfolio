@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import store from '../store'
 
 export default {
     blog: {
@@ -6,17 +7,14 @@ export default {
       posts: [],
       articleNum: 0,
       alterArticleState: (e) => {
+        let updatedArticleNum = 0;
+				updatedArticleNum = $(e.target).attr('articlenum');
         // e.preventDefault()
-        let updatedArticleNum = $(e.target).attr('articlenum');
-        console.log('e.target:', e.target)
+        // console.log('e.target:', e.target)
         console.log('e.articleNum:', $(e.target).attr('articlenum'))
-        // this.props.history.push('/Blog' + `${this.props.path}`);
-        console.log('e.target.href', e.target.href)
-        // this.history.push(e.target.href);
-        console.log('updatedArticleNum', updatedArticleNum)
-        this.setState({
-          articleNum: updatedArticleNum
-        })
+        // this.props.history.push('/Blog' + `${this.props.path}`);      } 
+				let action = { type: 'CHANGEARTICLE', articleNum: updatedArticleNum} 
+        store.dispatch(action)
       } 
     }
   }

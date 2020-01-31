@@ -16,7 +16,7 @@ export default function blogReducer(state = initialState.blog, action) {
         ...state,
         posts: action.posts,
         loading: false
-      } 
+      }
     default:
       return state
   }
