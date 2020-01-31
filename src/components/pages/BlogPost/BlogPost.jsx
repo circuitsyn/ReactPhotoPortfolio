@@ -17,7 +17,7 @@ class BlogPost extends React.Component {
   componentDidMount(props) {
     document.title = 'Jarred Sutton Photography';
     // Adding title page name for accessibility dynamically
-    this.props.blog.alterArticleState();
+    // this.props.blog.alterArticleState();
   }
 
   // loading function to alternate between loading state and data present state if needed
@@ -38,16 +38,16 @@ class BlogPost extends React.Component {
 
       return(
         <div>
-        <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'}} fluid>
-            <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
-            {time}
+          <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'}} fluid>
+              <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
+              {time}
 
-        </Jumbotron>
+          </Jumbotron>
 
-        <Markdown className="cover" source={content} />
-      </div>
+          <Markdown className="cover" source={content} />
+        </div>
       )
     }
   }

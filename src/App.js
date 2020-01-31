@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from "react-router-dom";
 
+// Nav and footer
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+
+// Pages
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Blog from './components/pages/Blog/Blog';
