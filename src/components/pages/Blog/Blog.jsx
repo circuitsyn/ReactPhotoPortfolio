@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { connect } from 'react-redux';
 import Loading from '../../Loader/Loader';
+import $ from 'jquery';
 
 // if (process.env.NODE_ENV !== 'production') {
 // 	console.log('loading dev environments')
@@ -66,7 +67,7 @@ class Blog extends React.Component {
 
         <Container>
           <Row>
-                { this.props.blog.posts.map(({fields}, i) => <Card key={i} index={i} {...fields} grabKey={this.props.blog.alterArticleState} />
+                { this.props.blog.posts.map(({fields}, i) => <Card key={i} index={i} {...fields} grabKey={this.props.changeArticleState} />
                 )}
           </Row>
         </Container>
@@ -87,9 +88,19 @@ class Blog extends React.Component {
   }
 }
 
+const mapDispatchToProps = dispatch => {
+  return {
+    changeArticleState: (e) => {
+      let updatedArticleNum = $(e.target).attr('articlenum');
+      console.log('e.articleNum:', $(e.target).attr('articlenum'))
+      dispatch({type: "CHANGE_ARTICLE_NUM", articleNum: updatedArticleNum})
+    }
+  };
+}
+
 function mapStateToProps(state, ownProps) {
   return {
     blog: state.blog
   }
 }
-export default connect(mapStateToProps)(Blog)
+export default connect(mapStateToProps, mapDispatchToProps)(Blog)
