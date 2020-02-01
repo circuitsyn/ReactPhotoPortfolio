@@ -1,7 +1,9 @@
 import React from 'react';
 import moment from 'moment';
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
 import * as Markdown from 'react-markdown';
 
@@ -25,8 +27,7 @@ const postCards = (props) => {
                     {time}
                     <hr />
                     {/* note: content in markdown, produces <p> element with text */}
-                    <Markdown className="cover" source={content.substr(0, length) + '...'} />
-                    
+                    <Markdown className="" source={content.substr(0, length) + '...'} />
                     <Link to={`/Blog${props.path}`} articlenum={props.index} onClick={props.grabKey} className="cardLink blogBtn btn-sm">
                         Read More!
                     </Link>

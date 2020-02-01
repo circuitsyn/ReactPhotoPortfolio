@@ -82,3 +82,9 @@
 #latestImage {
   border-radius: 1rem;
 }
+
+p > img {
+  max-height: 35rem !important;
+  height: 70% !important;
+  width: auto !important;
+}

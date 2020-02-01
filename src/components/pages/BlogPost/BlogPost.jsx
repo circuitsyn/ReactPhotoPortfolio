@@ -2,6 +2,9 @@ import React from "react";
 import { connect } from 'react-redux';
 import moment from 'moment';
 import * as Markdown from 'react-markdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Loading from '../../Loader/Loader';
 
@@ -46,7 +49,14 @@ class BlogPost extends React.Component {
 
           </Jumbotron>
 
-          <Markdown className="" source={content} />
+          <Container className="">
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                <Markdown className="text-center" source={content} />
+              </Col>
+            </Row>
+          </Container>
+          
         </div>
       )
     }
