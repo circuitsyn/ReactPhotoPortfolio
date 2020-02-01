@@ -1,21 +1,22 @@
-/**
-* Blog Reducer
-*/
+/* Blog Reducer */
 import initialState from '../../store/initialState'
-import * as types from './types'
 
 export default function blogReducer(state = initialState.blog, action) {
+  console.log('state:', state)
+  console.log('initialState.blog:', initialState.blog)
+  console.log('action:', action)
+  console.log('action.type:', action.type)
+
   switch (action.type) {
-    case types.BLOG_LOADING:
-      return {
-        ...state,
-        loading: action.isLoading
-      }
-    case types.LOAD_BLOG_POSTS_SUCCESS:
+    case 'LOAD_BLOG_POSTS_SUCCESS':
       return {
         ...state,
         posts: action.posts,
-        loading: false
+      }
+    case 'CHANGE_ARTICLE_NUM':
+      return {
+        ...state,
+        articleNum: action.articleNum
       }
     default:
       return state
