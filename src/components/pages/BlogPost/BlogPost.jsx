@@ -23,12 +23,13 @@ class BlogPost extends React.Component {
   loading = () => {
     
     // conditional to test and see if data is available to fill posts
-    if (this.props.blog.posts.length === 0) {
+    if (this.props.blog.posts.length === 0 || undefined) {
 
       return(<Loading />)
     }
     else {
       let key = this.props.blog.articleNum;
+      console.log('blogPost Key:', key)
       let content = this.props.blog.posts[key].fields.content;
       let time = "";
       time = this.props.blog.posts[key].sys.createdAt;

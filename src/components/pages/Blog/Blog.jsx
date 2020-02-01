@@ -93,6 +93,7 @@ const mapDispatchToProps = dispatch => {
     changeArticleState: (e) => {
       let updatedArticleNum = $(e.target).attr('articlenum');
       console.log('e.articleNum:', $(e.target).attr('articlenum'))
+      console.log('made it to my new home!')
       dispatch({type: "CHANGE_ARTICLE_NUM", articleNum: updatedArticleNum})
     }
   };
