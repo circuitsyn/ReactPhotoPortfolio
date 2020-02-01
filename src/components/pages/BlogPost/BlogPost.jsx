@@ -51,9 +51,7 @@ class BlogPost extends React.Component {
 
           <Container className="">
             <Row>
-              <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Markdown className="text-center" source={content} />
-              </Col>
+                <Markdown className="col-12 text-center" source={content} />
             </Row>
           </Container>
           

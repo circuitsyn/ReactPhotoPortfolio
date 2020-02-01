@@ -84,7 +84,7 @@
 }
 
 p > img {
-  max-height: 35rem !important;
-  height: 70% !important;
-  width: auto !important;
+  max-width: 35rem !important;
+  height: auto !important;
+  /* width: auto !important; */
 }
