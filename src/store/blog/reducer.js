@@ -15,6 +15,7 @@ export default function blogReducer(state = initialState.blog, action) {
       }
     case 'CHANGE_ARTICLE_NUM':
       return {
+        ...state,
         articleNum: action.articleNum
       }
     default:

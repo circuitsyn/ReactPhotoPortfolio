@@ -23,7 +23,7 @@ class BlogPost extends React.Component {
   loading = () => {
     
     // conditional to test and see if data is available to fill posts
-    if (this.props.blog.posts.length === 0 || undefined) {
+    if ((this.props.blog.posts == undefined) || (this.props.blog.posts <= 0))  {
 
       return(<Loading />)
     }
