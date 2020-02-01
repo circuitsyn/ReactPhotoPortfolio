@@ -18,6 +18,11 @@ export default function blogReducer(state = initialState.blog, action) {
         ...state,
         articleNum: action.articleNum
       }
+    case 'CHANGE_LATEST':
+      return {
+        ...state,
+        articleNum: 0
+      }
     default:
       return state
   }

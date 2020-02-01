@@ -52,7 +52,7 @@ class Blog extends React.Component {
                 title={this.props.blog.posts[0].fields.title}
                 path={this.props.blog.posts[0].fields.path}
                 content={this.props.blog.posts[0].fields.content}
-                time={this.props.blog.posts[0].sys.createdAt} />
+                time={this.props.blog.posts[0].sys.createdAt} grabKey={this.props.changeArticleStateLatest} />
 
         <Container>
           <Row>
@@ -95,6 +95,10 @@ const mapDispatchToProps = dispatch => {
       console.log('e.articleNum:', $(e.target).attr('articlenum'))
       console.log('made it to my new home!')
       dispatch({type: "CHANGE_ARTICLE_NUM", articleNum: updatedArticleNum})
+    },
+    changeArticleStateLatest: (e) => {
+      console.log('made it to my new LATEST home!')
+      dispatch({type: "CHANGE_LATEST", articleNum: 0})
     }
   };
 }
