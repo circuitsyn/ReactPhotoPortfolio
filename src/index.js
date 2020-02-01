@@ -1,6 +1,4 @@
 import React from 'react';
-// config.js
-// import dotenv from "dotenv";
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
@@ -10,9 +8,6 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-// import * as contentful from 'contentful'
-// import $ from 'jquery';
-// import Popper from 'popper.js';
 
 // Redux Store
 import { Provider } from 'react-redux'

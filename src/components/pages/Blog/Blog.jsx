@@ -2,7 +2,7 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './blogStyle.css';
 import Card from './postCards';
-// // import CardDeck from 'react-bootstrap/CardDeck'
+import CardDeck from 'react-bootstrap/CardDeck'
 import Latest from './postLatest'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -67,8 +67,10 @@ class Blog extends React.Component {
 
         <Container>
           <Row>
-                { this.props.blog.posts.map(({fields}, i) => <Card key={i} index={i} {...fields} grabKey={this.props.changeArticleState} />
-                )}
+            <CardDeck>
+              { this.props.blog.posts.map(({fields}, i) => <Card key={i} index={i} {...fields} grabKey={this.props.changeArticleState} />
+              )}
+            </CardDeck>
           </Row>
         </Container>
       </div>

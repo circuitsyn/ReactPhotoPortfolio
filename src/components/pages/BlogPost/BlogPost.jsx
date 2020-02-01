@@ -46,7 +46,7 @@ class BlogPost extends React.Component {
 
           </Jumbotron>
 
-          <Markdown className="cover" source={content} />
+          <Markdown className="" source={content} />
         </div>
       )
     }

@@ -15,12 +15,11 @@ const postCards = (props) => {
     time = moment(time).format('M.D.YY');
     time = <p className="small text-muted">{time}</p>
   return (   
-        <Col xs={12} sm={4} md={4} lg={4} xl={4}>   
-            <Card className="cardOverstyle mt-2 mb-2"
+        <Col className="mt-2 mb-2" xs={12} sm={4} md={4} lg={4} xl={4}>   
+            <Card className="cardOverstyle h-100"
             style={{backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}}>
-                {/* <Card.Img variant="top" src={props.mainImage.fields.file.url} /> */}
                 <Card.Body className="textWhiteHover">
                     <Card.Title className="mb-0 txt-shadow">{props.title}</Card.Title>
                     {time}
