@@ -57,10 +57,12 @@ class BlogPost extends React.Component {
           </Jumbotron>
 
           <Container id="blogPostContainer" className="p-5">
+            <Container id="innerblogPostContainer" className="p-5">
             <Row>
                 <Markdown className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" source={content} escapeHtml={false}
-  renderers={{paragraph: imagesWithoutPTags}} />
+                renderers={{paragraph: imagesWithoutPTags}} />
             </Row>
+          </Container>
           </Container>
           
         </div>
