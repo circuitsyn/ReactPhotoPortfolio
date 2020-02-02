@@ -49,10 +49,10 @@ class BlogPost extends React.Component {
       return(
         <div>
           <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat'}} fluid>
-              <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
-              {time}
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'}} fluid>
+          <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
+          {time}
 
           </Jumbotron>
 

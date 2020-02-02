@@ -6,16 +6,6 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.latestPostCard {
-    border-radius: 3rem !important;
-    background-color: black;
-    /* border: solid 2px lightgray; */
-}
-
-#latestImg {
-  border-radius: 1rem;
-}
-
 .blogBtn {
   background: orangered !important;
   border-color: orangered !important;
@@ -59,11 +49,13 @@
   opacity: 0.9;
   margin: 20rem 2rem 2rem 2rem ;
   border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* **border override removal for cards from bootstrap for styling ** */
 .cardOverstyle {
-  border-radius: 3rem !important
+  border-radius: 3rem !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .textWhiteHoverLatest {
@@ -71,8 +63,19 @@
   opacity: 0.9;
   margin: 2rem ;
   border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+.latestPostCard {
+  border-radius: 3rem !important;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#latestImg {
+border-radius: 1rem;
+}
 
 /* Blog Post Main page */
 #latestTime {
@@ -81,6 +84,7 @@
 
 #latestImage {
   border-radius: 1rem;
+  
 }
 
 div > img {
@@ -96,10 +100,12 @@ div > img {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #innerblogPostContainer {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
