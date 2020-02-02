@@ -8,6 +8,11 @@ import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Loading from '../../Loader/Loader';
 
+const imagesWithoutPTags = (props) => {
+  const element = props.children[0];
+  return element.type === 'img' ? { ...element } : <p {...props} />;
+};
+
 class BlogPost extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +58,8 @@ class BlogPost extends React.Component {
 
           <Container id="blogPostContainer" className="p-5">
             <Row>
-                <Markdown className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" source={content} />
+                <Markdown className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" source={content} escapeHtml={false}
+  renderers={{paragraph: imagesWithoutPTags}} />
             </Row>
           </Container>
           
