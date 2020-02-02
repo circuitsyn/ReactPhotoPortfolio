@@ -84,17 +84,13 @@
 }
 
 div > img {
-  /* max-width: 35rem !important; */
-  /* height: auto !important; */
   border-radius: 1rem;
-  /* width: auto !important; */
 }
 
 #blogPostContainer {
   color: white;
   font-weight: bolder;
   background-color: lightgray;
-  /* border: 2px solid black; */
   border-radius: 3rem;
   background-image: url(http://blog.hdwallsource.com/wp-content/uploads/2016/01/nature-bench-blur-wallpaper-44620-45750-hd-wallpapers.jpg);
   background-position: center; /* Center the image */
