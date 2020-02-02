@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import moment from 'moment';
 import * as Markdown from 'react-markdown';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Loading from '../../Loader/Loader';
@@ -32,8 +32,10 @@ class BlogPost extends React.Component {
     }
     else {
       let key = this.props.blog.articleNum;
-      console.log('blogPost Key:', key)
+      // console.log('blogPost Key:', key)
+      
       let content = this.props.blog.posts[key].fields.content;
+      console.log('content', content)
       let time = "";
       time = this.props.blog.posts[key].sys.createdAt;
       time = moment(time).format('M.D.YY');
@@ -49,9 +51,9 @@ class BlogPost extends React.Component {
 
           </Jumbotron>
 
-          <Container className="">
+          <Container id="blogPostContainer" className="p-5">
             <Row>
-                <Markdown className="col-12 text-center" source={content} />
+                <Markdown className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" source={content} />
             </Row>
           </Container>
           
