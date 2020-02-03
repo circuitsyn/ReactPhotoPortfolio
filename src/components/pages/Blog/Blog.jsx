@@ -11,11 +11,6 @@ import { connect } from 'react-redux';
 import Loading from '../../Loader/Loader';
 import $ from 'jquery';
 
-// if (process.env.NODE_ENV !== 'production') {
-// 	console.log('loading dev environments')
-// 	require('dotenv').config()
-// }
-
 class Blog extends React.Component {
   constructor(props) {
     super(props);
@@ -26,8 +21,7 @@ class Blog extends React.Component {
 
   // Actions to perform when component mounts
   componentDidMount(props) {
-    // Adding title page name for accessibility dynamically
-    // this.props.blog.alterArticleState();
+
   }
 
   // loading function to alternate between loading state and data present state if needed

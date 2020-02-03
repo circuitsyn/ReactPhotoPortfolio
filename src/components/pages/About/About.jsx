@@ -5,7 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Me from '../../../assets/images/jarredSutton.jpg';
 import Teaching from '../../../assets/images/jarred-sutton-teaching.jpg';
-import Travel from '../../../assets/images/jarred-sutton-travel.jpg'
+import Travel from '../../../assets/images/jarred-sutton-travel.jpg';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import mainImgAbout from './Svalbard.jpg';
 
 const About = () => {
     // Adding title page name for accessibility dynamically
@@ -13,6 +15,13 @@ const About = () => {
     return (
         
         <div className="mt-5 mb-5">
+
+            <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${mainImgAbout})`, backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'}} fluid>
+            <h1 className="blogTitle display-1 p-3">A Little About Me..</h1>
+            </Jumbotron>
+
             <Container>
                 <Row className="mt-3 mb-3">
                     <Col>

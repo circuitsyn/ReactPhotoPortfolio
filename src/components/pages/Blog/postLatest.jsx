@@ -26,8 +26,8 @@ const postLatest = (props) => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'}}>
-                <Row>
-                    <Col className="p-5 ml-auto textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
+                <Row className="m-3 m-sm-0 m-md-0 m-lg-0 m-xl-0">
+                    <Col className="p-4 p-sm-5 p-md-5 p-lg-5 p-xl-5 ml-auto textWhiteHoverLatest" xs={12} sm={8} md={8} lg={8} xl={8}>
                         {title}
                         {time}
                         <Markdown className="mb-0 font-weight-bolder" source={content.substr(0, length) + '...'} />

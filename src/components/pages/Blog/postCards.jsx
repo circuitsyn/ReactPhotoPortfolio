@@ -15,7 +15,7 @@ const postCards = (props) => {
     time = moment(time).format('M.D.YY');
     time = <p className="small text-muted">{time}</p>
   return (   
-        <Col className="mt-2 mb-2" xs={12} sm={4} md={4} lg={4} xl={4}>   
+        <Col className="mt-2 mb-2" xs={12} sm={6} md={6} lg={4} xl={4}>   
             <Card className="cardOverstyle h-100"
             style={{backgroundImage: `url(${props.mainImage.fields.file.url})`, backgroundPosition: 'center',
             backgroundSize: 'cover',
