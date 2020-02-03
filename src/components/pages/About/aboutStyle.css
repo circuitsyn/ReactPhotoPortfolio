@@ -84,5 +84,4 @@
   .aboutLi::before {
     content: url(./apertureBullet.png); /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: blue; /* Or a color you prefer */
   }

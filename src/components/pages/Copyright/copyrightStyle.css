@@ -9,3 +9,37 @@
 .crWrapper {
     min-height: 100vh;
 }
+
+.cRUl {
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+}
+  
+.cRLi { 
+    padding-left: 16px;
+}
+
+.cRLi::before {
+    content: url(./author.png); /* Insert content that looks like bullets */
+    padding-right: 8px;
+}
+
+#CRContainer {
+    color: black;
+    font-weight: bolder;
+    border-radius: 3rem;
+    background-image: url(https://papers.co/wallpaper/papers.co-sj61-gray-dark-gradation-blur-26-wallpaper.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .innerCRContainer {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
