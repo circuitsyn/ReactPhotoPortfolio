@@ -51,13 +51,13 @@ class BlogPost extends React.Component {
           <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'}} fluid>
-          <h1 className="blogTitle display-1">{this.props.blog.posts[key].fields.title}</h1>
+          <h1 className="blogTitle display-1 p-3">{this.props.blog.posts[key].fields.title}</h1>
           {time}
 
           </Jumbotron>
 
-          <Container id="blogPostContainer" className="p-5">
-            <Container id="innerblogPostContainer" className="p-5">
+          <Container id="blogPostContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
+            <Container id="innerblogPostContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
               <Row>
                   <Markdown className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" source={content} escapeHtml={false}
                   renderers={{paragraph: imagesWithoutPTags}} />
