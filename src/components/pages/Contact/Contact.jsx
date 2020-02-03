@@ -1,5 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import "./Contact.css";
 import Panorama from "./panoramas.jpg";
 
@@ -8,16 +11,23 @@ const Contact = () => {
           document.title = 'Contact Page';
   
       return (
-        
-          <div className="container m-auto ContactBG">
-            <div className="row">
+      <div>
+        <Container fluid>
+          <Row>
+            <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${Panorama})`, backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'}} fluid>
+            <h1 className="blogTitle display-1 p-3">Questions, Comments, Concerns? Send Me An E-mail!</h1>
+            </Jumbotron>
+          </Row>
+        </Container>
+
+        <Container id="contactContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
+          <Container id="innerContactContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
+            <Row>
               <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                 <form action="https://formspree.io/circuitsyn@gmail.com" method="POST" >
 
-                  <div className="contactHeader mt-5 mb-5 text-shadow">
-                    <h1 className="titleFont">Questions, Comments, Concerns? Send Me An E-mail!</h1>
-                  </div>
-                  <img className="w-100 contactImg" src={Panorama} alt="panorama" />
                   <hr className="contactHr mb-4"></hr>
                   <div className="row mt-4 text-left">
                     <div className="contactForm form-group col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -53,9 +63,10 @@ const Contact = () => {
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-      
+            </Row>
+          </Container>
+        </Container>
+      </div>
       );
     }
 

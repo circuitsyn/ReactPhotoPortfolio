@@ -1,7 +1,21 @@
-.contactImg {
-    border-radius: 5px;
-}
-
 .ContactBG {
     min-height: 100vh;
+}
+
+#contactContainer{
+    color: white;
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 3rem;
+    background-image: url(http://blog.hdwallsource.com/wp-content/uploads/2016/01/nature-bench-blur-wallpaper-44620-45750-hd-wallpapers.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#innerContactContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
