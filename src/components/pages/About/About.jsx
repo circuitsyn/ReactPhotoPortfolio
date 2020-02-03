@@ -119,26 +119,26 @@ const About = () => {
                             <h2 className="titleFont text-left">
                                 Accolades:
                             </h2>
-                            <ul className="text-left">
-                                <li>
+                            <ul className="aboutUl text-left">
+                                <li className="aboutLi">
                                     <span className="firstLetter">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">G</span>rant Funded Project with the Staten Island Arts Foundation.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">P</span>ublished in the Rainforest Alliance publication.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
                                 </li>
-                                <li>
+                                <li className="aboutLi">
                                     <span className="firstLetter">P</span>hotography educator at <a className="errorLink" href=
                                     "www.makerspace.nyc">MakerSpace.NYC</a>, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
                                 </li>

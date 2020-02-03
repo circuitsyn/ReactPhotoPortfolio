@@ -4,8 +4,12 @@ import { landingPhotos } from "./landingPhotos";
 import './style.css';
 import $ from 'jquery';
 
-const Home = (props) => {
 
+
+const Home = (props) => {
+  // Adding title page name for accessibility dynamically
+  document.title = 'Jarred Sutton Photography';
+  
   const handleHover = (e) => {
 
     // Detection to make sure only overlay is added to highlighted img
