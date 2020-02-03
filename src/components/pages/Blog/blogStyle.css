@@ -89,6 +89,8 @@ border-radius: 1rem;
 
 div > img {
   border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 #blogPostContainer {
