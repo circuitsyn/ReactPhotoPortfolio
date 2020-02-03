@@ -9,6 +9,7 @@
     font-weight: bold;
     text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
     margin-right: 1px;
+    font-size: 2rem !important;
 }
 
 #aboutOutterContainer1 {
@@ -47,6 +48,18 @@
     background-color: lightgray;
     border-radius: 3rem;
     background-image: url(https://il9.picdn.net/shutterstock/videos/5495999/thumb/1.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#aboutOutterContainer4 {
+    color: white;
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 3rem;
+    background-image: url(https://images.all-free-download.com/images/graphiclarge/yellow_blurred_background_200165.jpg);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */

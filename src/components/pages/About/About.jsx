@@ -99,40 +99,53 @@ const About = () => {
             <Container>
                 <Row>
                     <Col>
-                        <hr />
+                    <Image className="m-3 apertureIcon" src={aperture} fluid />
                     </Col>
                 </Row>
-                <Row className="mt-4 mb-3">
+            </Container>
+
+            <Container>
+                <Row>
                     <Col>
-                        <h3 className="titleFont text-left">
-                            Accolades:
-                        </h3>
-                        <ul className="text-left">
-                            <li>
-                                <span className="firstLetter">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
-                            </li>
-                            <li>
-                                <span className="firstLetter">G</span>rant Funded Project with the Staten Island Arts Foundation.
-                            </li>
-                            <li>
-                                <span className="firstLetter">P</span>ublished in the Rainforest Alliance publication.
-                            </li>
-                            <li>
-                                <span className="firstLetter">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
-                            </li>
-                            <li>
-                                <span className="firstLetter">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
-                            </li>
-                            <li>
-                                <span className="firstLetter">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
-                            </li>
-                            <li>
-                                <span className="firstLetter">P</span>hotography educator at <a className="errorLink" href=
-                                "www.makerspace.nyc">MakerSpace.NYC</a>, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
-                            </li>
-                        </ul>
+                    <Image className="m-3 apertureIcon" src={aperture} fluid />
                     </Col>
                 </Row>
+            </Container>
+
+            <Container id="aboutOutterContainer4" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-4 mb-5">
+                <Container className="aboutInnerContainer p-4 p-md-5 p-lg-5 p-xl-5">
+                    <Row className="mt-4 mb-3">
+                        <Col>
+                            <h2 className="titleFont text-left">
+                                Accolades:
+                            </h2>
+                            <ul className="text-left">
+                                <li>
+                                    <span className="firstLetter">S</span>elected winner of Nikon's Kids Trip to Ancorage Alaska to learn with Wildlife Photographer Moose Peterson.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">G</span>rant Funded Project with the Staten Island Arts Foundation.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">P</span>ublished in the Rainforest Alliance publication.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">P</span>hoto contest winner and published in the Staten Island Advance for the FreshKills Landfill Photo Contest.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">D</span>esigned, built, and hosted 3D photoshere experiences for the FreshKills Landfill Website.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">G</span>allery participation and presentation of work for The Cathedral Arts Festival at the 160 year old Grace Church Van Vorst, Jersey City, NJ.
+                                </li>
+                                <li>
+                                    <span className="firstLetter">P</span>hotography educator at <a className="errorLink" href=
+                                    "www.makerspace.nyc">MakerSpace.NYC</a>, The Staten Island GreenBelt, and Clay Pit Pond State Park, NY. 
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
         </div>
       
