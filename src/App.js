@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from "react-router-dom";
+import $ from 'jquery';
 
 // Nav and footer
 import NavBar from './components/NavBar/NavBar';
@@ -44,11 +45,17 @@ class App extends Component {
             img.onload = () => {
                   img.classList.add('fade-in');
 
-            // test for touch
+            // capture target on touch to trigger gallery overlay
             document.body.addEventListener('touchstart', function(e){
                   var touchobj = e.changedTouches[0]
-                  console.log(this.tagName) // returns BODY
-                  console.log(touchobj.target) // returns element touch point landed on
+                  // console.log(this.tagName) // returns BODY
+                  // console.log(touchobj.target) // returns element touch point landed on
+                  // Detection to make sure only overlay is added to highlighted img
+                  if (touchobj.target.nodeName === 'IMG') {
+                        touchobj.target.classList.add('fade-in');
+                        let overlayURL = $(e.target).attr('overlay');
+                        touchobj.target.src = overlayURL;      
+                  }
                  }, false)
             }
       }
