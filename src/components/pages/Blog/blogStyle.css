@@ -87,10 +87,16 @@ border-radius: 1rem;
   
 }
 
-div > img {
+/* used to create fluid images on blog post page */
+div.blogPostImgGrp > img {
   border-radius: 1rem;
   max-width: 100%;
   height: auto;
+}
+
+/* used to round corners on main landing page */
+div > img {
+  border-radius: 1rem;
 }
 
 #blogPostContainer {
