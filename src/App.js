@@ -43,24 +43,20 @@ class App extends Component {
             const img = document.querySelector('img');
             img.onload = () => {
                   img.classList.add('fade-in');
+
+            // test for touch
+            document.body.addEventListener('touchstart', function(e){
+                  var touchobj = e.changedTouches[0]
+                  console.log(this.tagName) // returns BODY
+                  console.log(touchobj.target) // returns element touch point landed on
+                 }, false)
             }
       }
 
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
             this.props.history.push('/'+ e.target.alt);
-            console.log("I'm in; clicked!")
-            console.log('event', e.target.alt)
       }
-
-      // function to store key for clicked BLOG post and to advance page
-      // updateKey = (e) => {
-      //       let target = e.target;
-      //       let value = target.____;
-      //       this.setState({
-	// 		postKey: value
-	// 	})
-      // }
 
       render() {
             return (
