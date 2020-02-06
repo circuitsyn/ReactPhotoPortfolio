@@ -26,6 +26,7 @@ import Ungulates from './components/pages/Ungulates/Ungulates';
 import WaterFeatures from './components/pages/Water-Features/Water-Features';
 import Winter from './components/pages/Winter/Winter';
 import Error404 from './components/pages/Error404/Error404';
+import $ from 'jquery';
 import './App.css';
 
 class App extends Component {
@@ -44,6 +45,18 @@ class App extends Component {
             img.onload = () => {
                   img.classList.add('fade-in');
             }
+
+            // capture target on touch to trigger gallery overlay
+            document.body.addEventListener('touchstart', function(e){
+                  var touchobj = e.changedTouches[0]
+                  // Detection to make sure only overlay is added to highlighted img
+                  if (touchobj.target.nodeName === 'IMG') {
+                        touchobj.target.classList.add('fade-in');
+                        let overlayURL = $(e.target).attr('overlay');
+                        touchobj.target.src = overlayURL;      
+                  }
+                 }, false)
+            
       }
 
       // function to detect gallery click and redirect to gallery for HOME component
