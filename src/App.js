@@ -47,8 +47,9 @@ class App extends Component {
             }
 
             // capture target on touch to trigger gallery overlay
-            document.body.addEventListener('touchstart', function(e){
-                  var touchobj = e.changedTouches[0]
+            let landingGallery = document.getElementById("landingGallery");
+            landingGallery.addEventListener('touchstart', function(e){
+                  var touchobj = e.changedTouches[0];
                   // Detection to make sure only overlay is added to highlighted img
                   if (touchobj.target.nodeName === 'IMG') {
                         touchobj.target.classList.add('fade-in');

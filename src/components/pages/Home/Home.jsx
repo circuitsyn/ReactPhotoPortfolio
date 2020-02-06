@@ -22,7 +22,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <div onMouseOver={handleHover}>
+      <div id="landingGallery" onMouseOver={handleHover}>
         <Gallery className="gallery" onClick={props.onClick} photos={landingPhotos} />
       </div>
     </div>
