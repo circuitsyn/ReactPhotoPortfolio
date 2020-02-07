@@ -48,20 +48,20 @@ class App extends Component {
 
             // confine touch listener to just be added when visiting home page
             let location = this.props.location.pathname;
-             if(location === "/") {
-            // capture target on touch to trigger gallery overlay
-            console.log(this.props.location)
-            let landingGallery = document.getElementById("landingGallery");
-            landingGallery.addEventListener('touchstart', function(e){
-                  var touchobj = e.changedTouches[0];
-                  // Detection to make sure only overlay is added to highlighted img
-                  if (touchobj.target.nodeName === 'IMG') {
-                        touchobj.target.classList.add('fade-in');
-                        let overlayURL = $(e.target).attr('overlay');
-                        touchobj.target.src = overlayURL;      
+
+            if(location === "/") {
+                  // capture target on touch to trigger gallery overlay
+                  let landingGallery = document.getElementById("landingGallery");
+                  landingGallery.addEventListener('touchstart', function(e){
+                        var touchobj = e.changedTouches[0];
+                        // Detection to make sure only overlay is added to highlighted img tag type
+                        if (touchobj.target.nodeName === 'IMG') {
+                              touchobj.target.classList.add('fade-in');
+                              let overlayURL = $(e.target).attr('overlay');
+                              touchobj.target.src = overlayURL;      
+                        }
+                  }, false)
                   }
-                 }, false)
-             }
       }
 
       // function to detect gallery click and redirect to gallery for HOME component
@@ -70,15 +70,6 @@ class App extends Component {
             console.log("I'm in; clicked!")
             console.log('event', e.target.alt)
       }
-
-      // function to store key for clicked BLOG post and to advance page
-      // updateKey = (e) => {
-      //       let target = e.target;
-      //       let value = target.____;
-      //       this.setState({
-	// 		postKey: value
-	// 	})
-      // }
 
       render() {
             return (
