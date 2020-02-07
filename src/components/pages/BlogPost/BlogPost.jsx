@@ -5,8 +5,11 @@ import * as Markdown from 'react-markdown';
 import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Loading from '../../Loader/Loader';
+import Disqus from "disqus-react";
+import "./BlogPostStyle.css"
 
 const imagesWithoutPTags = (props) => {
   const element = props.children[0];
@@ -44,14 +47,24 @@ class BlogPost extends React.Component {
       let time = "";
       time = this.props.blog.posts[key].sys.createdAt;
       time = moment(time).format('M.D.YY');
-      time = <p id="latestTime" className="txt-shadow font-weight-bolder">{time}</p>
+      time = <p id="latestTime" className="txt-shadow font-weight-bolder">{time}</p>;
+      let title = this.props.blog.posts[key].fields.title;
+      let path = this.props.blog.posts[key].fields.path;
+
+      // Disqus commenting engine configuration
+      const disqusShortname = "jarredsutton"; //found in your Disqus.com dashboard
+      const disqusConfig = {
+        url: "http://localhost:3000", //this.props.pageUrl
+        identifier: path, //this.props.uniqueId
+        title: title //this.props.title
+      }
 
       return(
         <div>
           <Jumbotron className="text-center" id="blogJumbotron" style={{backgroundImage: `url(${this.props.blog.posts[key].fields.mainImage.fields.file.url})`, backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'}} fluid>
-          <h1 className="blogTitle display-1 p-3">{this.props.blog.posts[key].fields.title}</h1>
+          <h1 className="blogTitle display-1 p-3">{title}</h1>
           {time}
           </Jumbotron>
 
@@ -63,6 +76,18 @@ class BlogPost extends React.Component {
               </Row>
             </Container>
           </Container>
+
+          <Container className="mt-5 mb-5">
+            <Row>
+              <Col>
+                <Disqus.DiscussionEmbed
+                  shortname={disqusShortname}
+                  config={disqusConfig}
+                /> 
+              </Col>
+            </Row>
+          </Container>
+
           
         </div>
       )
@@ -70,8 +95,6 @@ class BlogPost extends React.Component {
   }
   
   render() {
-
-    
 
     return (
       <div>

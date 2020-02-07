@@ -46,7 +46,11 @@ class App extends Component {
                   img.classList.add('fade-in');
             }
 
+            // confine touch listener to just be added when visiting home page
+            let location = this.props.location.pathname;
+             if(location === "/") {
             // capture target on touch to trigger gallery overlay
+            console.log(this.props.location)
             let landingGallery = document.getElementById("landingGallery");
             landingGallery.addEventListener('touchstart', function(e){
                   var touchobj = e.changedTouches[0];
@@ -57,7 +61,7 @@ class App extends Component {
                         touchobj.target.src = overlayURL;      
                   }
                  }, false)
-            
+             }
       }
 
       // function to detect gallery click and redirect to gallery for HOME component
