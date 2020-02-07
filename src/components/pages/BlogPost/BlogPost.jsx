@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Loading from '../../Loader/Loader';
+import Disqus from "disqus-react";
+import "./BlogPostStyle.css"
 
 const imagesWithoutPTags = (props) => {
   const element = props.children[0];
@@ -71,11 +73,21 @@ class BlogPost extends React.Component {
   
   render() {
 
-    
+    // Disqus commenting engine configuration
+    const disqusShortname = "your-site-shortname" //found in your Disqus.com dashboard
+    const disqusConfig = {
+      url: "http://localhost:3000", //this.props.pageUrl
+      identifier: "article-id", //this.props.uniqueId
+      title: "Title of Your Article" //this.props.title
+    }
 
     return (
       <div>
         {this.loading()}
+        <Disqus.DiscussionEmbed
+          shortname={disqusShortname}
+          config={disqusConfig}
+        />
       </div>
     )
   }

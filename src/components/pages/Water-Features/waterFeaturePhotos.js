@@ -1,7 +1,7 @@
 export const waterFeaturePhotos = [
     {
       src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Water_Features/waterfall01_HIGH.jpg",
-      thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Water_Features/waterfall01_LOW.jpg             ",
+      thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Water_Features/waterfall01_LOW.jpg",
       width: 3,
       height: 4
     },
