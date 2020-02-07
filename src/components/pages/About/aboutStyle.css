@@ -1,7 +1,9 @@
 .aboutImage {
-    height: 25vh;
+    height: 26vh;
     width: auto;
     border-radius: 1rem;
+    max-width: 100%;
+    /* height: auto; */
 }
 
 .firstLetter {

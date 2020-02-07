@@ -28,7 +28,7 @@ const About = () => {
                 <Container className="aboutInnerContainer p-4 p-md-5 p-lg-5 p-xl-5">
                     <Row className="">
                         <Col>
-                            <img className="aboutImage float-none float-sm-none float-md-left float-lg-left float-xl-left m-0 m-sm-0 m-md-0 m-lg-4 m-xl-4" src={Me} alt="Jarred Sutton" />
+                            <img className="aboutImage float-none float-sm-none float-md-left float-lg-left float-xl-left m-0 m-sm-0 m-md-4 m-lg-4 m-xl-4" src={Me} alt="Jarred Sutton" />
                         
                             <p className="text-center text-sm-center text-md-left text-lg-left text-xl-left">
                                 Photography was a passion that was kicked off early in college. Not only for digital, but also for black and white film in the dark room as well. I learned photography early on as a generalist, but specialize in nature and wildlife. Being able to bring Natures' story of its flora and fauna to the public demonstrating its importance is incredibly important to me. My passion comes through when I am able to capture a single moment that will help others understand the true beauty and why it is worth protecting. For current and future generations.
@@ -58,9 +58,9 @@ const About = () => {
                 <Container className="aboutInnerContainer p-4 p-md-5 p-lg-5 p-xl-5">
                 <Row className="">
                     <Col>
-                        <img className="aboutImage float-none float-sm-none float-md-right float-lg-right float-xl-right m-0 m-sm-0 m-md-0 m-lg-4 m-xl-4" src={Travel} alt="Jarred Sutton" />
+                        <img className="aboutImage float-none float-sm-none float-md-right float-lg-right float-xl-right m-0 m-sm-0 m-md-4 m-lg-4 m-xl-4" src={Travel} alt="Jarred Sutton" />
                         <p className="text-center text-sm-center text-md-right text-lg-right text-xl-right mt-2">
-                            "Oh, it's raining? That's okday, I don't melt." A quote that truly demonstrates how I approach my photography and travel. I often seek out remote locations and conditions where humans prefer not to roam. Combining patience and stamina to endure incliment weather to get the shot. Whether it is hiding at a safe distance to photograph a mother swan over her nest or it's -40F degrees in Grand Teton National Park under the stars at night. I refuse to let that stand in my way. Being prepared and respecting nature and the elements will yield huge gains. Travelling far and wide is exciting to me as there are an unlimited number of photos to capture. Angles or changes in light or fleeting moments. Many feel every photo has been taken, but I believe that infinity is a number that still exists in this world of digital photography. Only we can be the judge.
+                            "Oh, it's raining? That's okay, I don't melt." A quote that truly demonstrates how I approach my photography and travel. I often seek out remote locations and conditions where humans prefer not to roam. Combining patience and stamina to endure incliment weather to get the shot. Whether it is hiding at a safe distance to photograph a mother swan over her nest or it's -40F degrees in Grand Teton National Park under the stars at night. I refuse to let that stand in my way. Being prepared and respecting nature and the elements will yield huge gains. Travelling far and wide is exciting to me as there are an unlimited number of photos to capture. Angles or changes in light or fleeting moments. Many feel every photo has been taken, but I believe that infinity is a number that still exists in this world of digital photography. Only we can be the judge.
                         </p>
                     </Col>
                 </Row>
@@ -87,7 +87,7 @@ const About = () => {
                 <Container className="aboutInnerContainer p-4 p-md-5 p-lg-5 p-xl-5">
                     <Row className="">
                         <Col>
-                            <img className="aboutImage float-none float-sm-none float-md-left float-lg-left float-xl-left m-0 m-sm-0 m-md-0 m-lg-4 m-xl-4" src={Teaching} alt="Jarred Sutton" />
+                            <img className="aboutImage float-none float-sm-none float-md-left float-lg-left float-xl-left m-0 m-sm-0 m-md-4 m-lg-4 m-xl-4" src={Teaching} alt="Jarred Sutton" />
                             <p className="text-center text-sm-center text-md-left text-lg-left text-xl-left mt-2">
                                 I believe the reason that my passion of photography runs so strong is its combination of art and technical challenge. I have enjoyed computers, building and fixing them since my early teenage years and that has not changed over time. I greatly enjoy testing specifications, learning new techniques, building both technical and non-technical hacks for my gear, and taking up DIY challenges at every chance I am given. I am also a gear head and thoroughly enjoy testing new equipment; lenses, cameras, accessories, software, you name it! 
                             </p>
