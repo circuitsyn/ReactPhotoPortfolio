@@ -12,8 +12,8 @@ export const landscapePhotos = [
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes03_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes03_LOW.jpg",
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes28_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes28_LOW.jpg",
     width: 3,
     height: 4
   },
@@ -38,8 +38,8 @@ export const landscapePhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes07_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes07_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes08_HIGH.jpg",
@@ -62,20 +62,20 @@ export const landscapePhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes10_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes10_LOW.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes11_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes11_LOW.jpg",
     width: 4,
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes12_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes12_LOW.jpg",
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes11_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes11_LOW.jpg",
     width: 3,
     height: 4
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes12_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes12_LOW.jpg",
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes13_HIGH.jpg",
@@ -84,22 +84,22 @@ export const landscapePhotos = [
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes14_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes14_LOW.jpg",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes15_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes15_LOW.jpg",
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes18_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes18_LOW.jpg",
     width: 4,
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes16_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes16_LOW.jpg",
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes15_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes15_LOW.jpg",
     width: 3,
     height: 4
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes16_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes16_LOW.jpg",
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes17_HIGH.jpg",
@@ -108,8 +108,8 @@ export const landscapePhotos = [
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes18_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes18_LOW.jpg",
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes14_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes14_LOW.jpg",
     width: 3,
     height: 4
   },
@@ -128,8 +128,8 @@ export const landscapePhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes21_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes21_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes22_HIGH.jpg",
@@ -146,8 +146,8 @@ export const landscapePhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes24_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes24_LOW.jpg",
-    width: 4,
-    height: 3
+    width: 3,
+    height: 4
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes25_HIGH.jpg",
@@ -168,10 +168,10 @@ export const landscapePhotos = [
     height: 4
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes28_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes28_LOW.jpg",
-    width: 3,
-    height: 4
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes03_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes03_LOW.jpg",
+    width: 4,
+    height: 3
   }
 ];
   
