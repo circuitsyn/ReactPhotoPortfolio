@@ -6,7 +6,7 @@ const NavBar = () => {
 
   return (
     <div>        
-      <nav className="navbar navbar-light pb-0 pt-1 pl-2">
+      <nav className="navbar navbar-light pb-0 pt-0 pb-1 pl-2">
         <Link to={"/"} className="navbar-brand navTitleFont mr-auto">
           <span className="titleOr">Jarred Sutton</span> | Photography
         </Link> 

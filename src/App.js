@@ -11,7 +11,6 @@ import About from './components/pages/About/About';
 import Blog from './components/pages/Blog/Blog';
 import BlogPost from './components/pages/BlogPost/BlogPost';
 import Birds from './components/pages/Birds/Birds';
-import Cetaceans from './components/pages/Cetaceans/Cetaceans';
 import Contact from './components/pages/Contact/Contact';
 import Copyright from './components/pages/Copyright/Copyright';
 import PlantLife from './components/pages/PlantLife/PlantLife';
@@ -86,9 +85,6 @@ class App extends Component {
                               />} />
                         <Route path="/Birds" render={() => 
                               <Birds 
-                              />} />
-                        <Route path="/Cetaceans" render={() => 
-                              <Cetaceans 
                               />} />
                         <Route path="/Contact" render={() => 
                               <Contact 
