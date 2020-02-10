@@ -14,6 +14,38 @@
 	font-style: normal;
 } */
 
+/* National Park HEAVY Style Font */
+/* @font-face {
+	font-family: 'TitleFont';
+	src: local('☺'), url('./assets/fonts/NP/NationalPark-Heavy.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* National Park REGULAR Style Font */
+/* @font-face {
+	font-family: 'TitleFont';
+	src: local('☺'), url('./assets/fonts/NP/NationalPark-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* National Park THIN Style Font */
+/* @font-face {
+	font-family: 'TitleFont';
+	src: local('☺'), url('./assets/fonts/NP/NationalPark-Outline.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
+/* National Park OUTLINE Style Font */
+/* @font-face {
+	font-family: 'TitleFont';
+	src: local('☺'), url('./assets/fonts/NP/NationalPark-Thin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} */
+
 .titleFont {
   font-family: TitleFont;
   font-weight: bold;
