@@ -31,12 +31,12 @@
 }
 
 /* National Park OUTLINE Style Font */
-@font-face {
+/* @font-face {
 	font-family: 'outlineFont';
 	src: local('☺'), url('./assets/fonts/NP/NationalPark-Outline.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-}
+} */
 
 /* National Park THIN Style Font */
 @font-face {
@@ -51,7 +51,7 @@ body {
 }
 
 .titleFont {
-  font-family: TitleFont;
+  font-family: TitleFont !important;
   /* font-weight: bold; */
   text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
 }

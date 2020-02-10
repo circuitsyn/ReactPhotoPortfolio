@@ -21,7 +21,7 @@ const postCards = (props) => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'}}>
                 <Card.Body className="textWhiteHover">
-                    <Card.Title className="mb-0 txt-shadow">{props.title}</Card.Title>
+                    <Card.Title className="mb-0 txt-shadow titleFont">{props.title}</Card.Title>
                     {time}
                     <hr />
                     {/* note: content in markdown, produces <p> element with text */}

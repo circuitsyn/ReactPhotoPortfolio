@@ -14,7 +14,7 @@ const postLatest = (props) => {
     let time = "";
     content = props.content;
     // pull and format time with moment.js
-    title = <h3 className="mb-0 txt-shadow">{props.title}</h3>;
+    title = <h3 className="mb-0 txt-shadow titleFont">{props.title}</h3>;
     time = props.time;
     time = moment(time).format('M.D.YY');
     time = <p className="small text-muted">{time}</p>
