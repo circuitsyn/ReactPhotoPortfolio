@@ -1,64 +1,43 @@
 export const landingPhotos = [
     {
       src: "./imgs/landing/birds.jpg",
-      width: 500,
-      height: 333,
+      width: 4,
+      height: 3,
       alt: "Birds",
       overlay: "./imgs/landing/birdsTitle.jpg"
     },
     {
-      src: "./imgs/landing/cetaceans.jpg",
-      width: 500, 
-      height: 333,
-      alt: "Cetaceans",
-      overlay:  "./imgs/landing/cetaceansTitle.jpg"
-    },
-    {
       src: "./imgs/landing/insects.jpg",
-      width: 500,
-      height: 332,
+      width: 4,
+      height: 3,
       alt: "Insects",
       overlay: "./imgs/landing/insectsTitle.jpg" 
     },
     {
       src: "./imgs/landing/landscapes.jpg",
-      width: 500,
-      height: 332,
+      width: 4,
+      height: 3,
       alt: "Landscapes",
       overlay: "./imgs/landing/landscapesTitle.jpg" 
     },
     {
-      src: "./imgs/landing/nightTime.jpg",
-      width: 333,
-      height: 500,
-      alt: "Night-Sky",
-      overlay: "./imgs/landing/nightTimeTitle.jpg"
-    },
-    {
       src: "./imgs/landing/ungulates.jpg",
-      width: 500,
-      height: 375,
+      width: 4,
+      height: 3,
       alt: "Ungulates",
       overlay: "./imgs/landing/ungulatesTitle.jpg" 
     },
     {
       src: "./imgs/landing/waterFeatures.jpg",
-      width: 333,
-      height: 500,
+      width: 3,
+      height: 4,
       alt: "Water-Features",
       overlay: "./imgs/landing/waterFeaturesTitle.jpg"
     },
     {
-      src: "./imgs/landing/winter.jpg",
-      width: 500,
-      height: 333,
-      alt: "Winter",
-      overlay: "./imgs/landing/winterTitle.jpg" 
-    },
-    {
       src: "./imgs/landing/panoramas.jpg",
-      width: 2500,
-      height: 439,
+      width: 10,
+      height: 3,
       alt: "Panoramas",
       overlay: "./imgs/landing/panoramasTitle.jpg" 
     },
@@ -71,22 +50,22 @@ export const landingPhotos = [
     },
     {
       src: "./imgs/landing/travel.jpg",
-      width: 750,
-      height: 1000,
+      width: 3,
+      height: 4,
       alt: "Travel",
       overlay: "./imgs/landing/travelTitle.jpg" 
     },
     {
       src: "./imgs/landing/seaLife.jpg",
-      width: 1000,
-      height: 669,
+      width: 4,
+      height: 3,
       alt: "SeaLife",
       overlay: "./imgs/landing/seaLifeTitle.jpg"
     }, 
     {
       src: "./imgs/landing/reptiles.jpg",
-      width: 1000,
-      height: 669,
+      width: 4,
+      height: 3,
       alt: "Reptiles",
       overlay: "./imgs/landing/reptilesTitles.jpg"
     }
