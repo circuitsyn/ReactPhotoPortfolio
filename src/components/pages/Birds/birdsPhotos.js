@@ -152,8 +152,8 @@ export const birdsPhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds28_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds28_LOW.jpg",
-    width: 4,
-    height: 3
+    width: 3,
+    height: 4
   },
   { 
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds29_HIGH.jpg",
@@ -194,8 +194,8 @@ export const birdsPhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds35_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds35_LOW.jpg",
-    width: 4,
-    height: 3
+    width: 3,
+    height: 4
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds36_HIGH.jpg",
@@ -212,14 +212,14 @@ export const birdsPhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds38_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds38_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds39_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds39_LOW.jpg",
-    width: 4,
-    height: 3
+    width: 3,
+    height: 4
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds40_HIGH.jpg",
@@ -230,8 +230,8 @@ export const birdsPhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds41_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds41_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds42_HIGH.jpg",
@@ -240,22 +240,16 @@ export const birdsPhotos = [
     height: 3
   },
   {
-    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds43_HIGH.jpg",
-    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds43_LOW.jpg",
-    width: 3,
-    height: 4
-  },
-  {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds44_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds44_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds45_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Birds/birds45_LOW.jpg",
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   }
 ];
   
