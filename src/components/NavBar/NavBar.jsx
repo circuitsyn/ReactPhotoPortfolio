@@ -48,10 +48,7 @@ const NavBar = () => {
                   <Link to={"/Birds"} className="dropdown-item txt-shadow">
                     Birds
                   </Link>                  
-                  <Link to={"/Cetaceans"} className="dropdown-item txt-shadow">
-                    Cetaceans
-                  </Link>
-                  <Link to={"/Flowers"} className="dropdown-item txt-shadow">
+                  <Link to={"/PlantLife"} className="dropdown-item txt-shadow">
                     Flowers
                   </Link>
                   <Link to={"/Insects"} className="dropdown-item txt-shadow">
@@ -59,9 +56,6 @@ const NavBar = () => {
                   </Link>
                   <Link to={"/Landscapes"} className="dropdown-item txt-shadow">
                     Landscapes
-                  </Link>
-                  <Link to={"/Night-Sky"} className="dropdown-item txt-shadow">
-                    Night Sky
                   </Link>
                   <Link to={"/Panoramas"} className="dropdown-item txt-shadow">
                     Panoramas
@@ -75,14 +69,11 @@ const NavBar = () => {
                   <Link to={"/Travel"} className="dropdown-item txt-shadow">
                     Travel
                   </Link>
-                  <Link to={"/Ungulates"} className="dropdown-item txt-shadow">
-                    Ungulates
+                  <Link to={"/Mammals"} className="dropdown-item txt-shadow">
+                    Mammals
                   </Link>
                   <Link to={"/Water-Features"} className="dropdown-item txt-shadow">
                     Water Features
-                  </Link>
-                  <Link to={"/Winter"} className="dropdown-item txt-shadow">
-                    Winter
                   </Link>
                 </div>
               </li>              
