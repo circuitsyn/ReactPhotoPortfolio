@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-travel.bc84ed9a.jpg"
   },
   {
-    "revision": "6b44dc161dfc02168edb",
-    "url": "/static/css/main.486ae5dc.chunk.css"
+    "revision": "c445991e78d7115f2fa0",
+    "url": "/static/css/main.b0da728b.chunk.css"
   },
   {
     "revision": "1068e4d0f48847ae02fb1ed9da793cdf",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "6b44dc161dfc02168edb",
-    "url": "/static/js/main.6b44dc16.chunk.js"
+    "revision": "c445991e78d7115f2fa0",
+    "url": "/static/js/main.c445991e.chunk.js"
   },
   {
     "revision": "c8d58406e74953b1c05ceda804d913e9",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.b953da0c.chunk.css"
   },
   {
-    "revision": "90ed0dc1119c7d403f48e07793c45e0e",
+    "revision": "10d38f5d563a47733d4b2e9ed4fdd510",
     "url": "/index.html"
   }
 ];
