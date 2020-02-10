@@ -1,48 +1,45 @@
 export const panoramasPhotos = [
-    {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    }
-  ];
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama01_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama01_LOW.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama02_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama02_LOW.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama03_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama03_LOW.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama04_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama04_LOW.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama05_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama05_LOW.jpg",
+    width: 3,
+    height: 4
+  },
+  { 
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama06_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama06_LOW.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama07_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Panoramas/panorama07_LOW.jpg",
+    width: 3,
+    height: 4
+  }
+];
   
