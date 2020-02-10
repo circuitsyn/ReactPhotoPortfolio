@@ -14,17 +14,15 @@ import Birds from './components/pages/Birds/Birds';
 import Cetaceans from './components/pages/Cetaceans/Cetaceans';
 import Contact from './components/pages/Contact/Contact';
 import Copyright from './components/pages/Copyright/Copyright';
-import Flowers from './components/pages/Flowers/Flowers';
+import PlantLife from './components/pages/PlantLife/PlantLife';
 import Insects from './components/pages/Insects/Insects';
 import Landscapes from './components/pages/Landscapes/Landscapes';
-import NightSky from './components/pages/Night-Sky/Night-Sky';
 import Panoramas from './components/pages/Panoramas/Panoramas';
 import Reptiles from './components/pages/Reptiles/Reptiles';
 import SeaLife from './components/pages/SeaLife/SeaLife';
 import Travel from './components/pages/Travel/Travel';
-import Ungulates from './components/pages/Ungulates/Ungulates';
+import Mammals from './components/pages/Mammals/mammals';
 import WaterFeatures from './components/pages/Water-Features/Water-Features';
-import Winter from './components/pages/Winter/Winter';
 import Error404 from './components/pages/Error404/Error404';
 import $ from 'jquery';
 import './App.css';
@@ -98,17 +96,14 @@ class App extends Component {
                         <Route path="/Copyright" render={() => 
                               <Copyright 
                               />} />
-                        <Route path="/Flowers" render={() => 
-                              <Flowers 
+                        <Route path="/PlantLife" render={() => 
+                              <PlantLife 
                               />} />
                         <Route path="/Insects" render={() => 
                               <Insects 
                               />} />
                         <Route path="/Landscapes" render={() => 
                               <Landscapes 
-                              />} />
-                        <Route path="/Night-Sky" render={() => 
-                              <NightSky 
                               />} />
                         <Route path="/Panoramas" render={() => 
                               <Panoramas 
@@ -122,14 +117,11 @@ class App extends Component {
                         <Route path="/Travel" render={() => 
                               <Travel 
                               />} />
-                        <Route path="/Ungulates" render={() => 
-                              <Ungulates 
+                        <Route path="/Mammals" render={() => 
+                              <Mammals 
                               />} />
                         <Route path="/Water-Features" render={() => 
                               <WaterFeatures 
-                              />} />
-                        <Route path="/Winter" render={() => 
-                              <Winter 
                               />} />
                         {/* Reusable blog post page */}
                         <Route path="/Blog/:blogPost" render={() => 

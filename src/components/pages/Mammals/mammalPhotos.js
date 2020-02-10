@@ -1,4 +1,4 @@
-export const ungulatePhotos = [
+export const mammalPhotos = [
   {
     src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Mammals/mammals01_HIGH.jpg",
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Mammals/mammals01_LOW.jpg",

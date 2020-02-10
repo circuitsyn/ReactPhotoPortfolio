@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { flowersPhotos } from "./flowersPhotos";
+import { mammalPhotos } from "./mammalPhotos";
 
-const Flowers = (props) => {
+const Mammals = (props) => {
 
   // Adding title page name for accessibility dynamically
-  document.title = 'Flowers Gallery Page';
+  document.title = 'Mammals Gallery Page';
 
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
@@ -24,13 +24,13 @@ const Flowers = (props) => {
 
   return (
     <div>
-      <Gallery photos={flowersPhotos} onClick={openLightbox} />
+      <Gallery photos={mammalPhotos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={flowersPhotos.map(x => ({
+              views={mammalPhotos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title
@@ -43,4 +43,4 @@ const Flowers = (props) => {
   );
 }
 
-export default Flowers;
+export default Mammals;

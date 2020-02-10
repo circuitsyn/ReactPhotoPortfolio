@@ -49,7 +49,7 @@ const NavBar = () => {
                     Birds
                   </Link>                  
                   <Link to={"/PlantLife"} className="dropdown-item txt-shadow">
-                    Flowers
+                    Plant Life
                   </Link>
                   <Link to={"/Insects"} className="dropdown-item txt-shadow">
                     Insects

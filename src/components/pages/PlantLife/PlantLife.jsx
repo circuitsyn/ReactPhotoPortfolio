@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { ungulatePhotos } from "./ungulatePhotos";
+import { plantLifePhotos } from "./plantLifePhotos";
 
-const Ungulates = (props) => {
+const PlantLife = (props) => {
 
   // Adding title page name for accessibility dynamically
-  document.title = 'Ungulates Gallery Page';
+  document.title = 'Plant Life Gallery Page';
 
   // functions to facilitate lightbox
   const [currentImage, setCurrentImage] = useState(0);
@@ -24,13 +24,13 @@ const Ungulates = (props) => {
 
   return (
     <div>
-      <Gallery photos={ungulatePhotos} onClick={openLightbox} />
+      <Gallery photos={plantLifePhotos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={ungulatePhotos.map(x => ({
+              views={plantLifePhotos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title
@@ -43,4 +43,4 @@ const Ungulates = (props) => {
   );
 }
 
-export default Ungulates;
+export default PlantLife;
