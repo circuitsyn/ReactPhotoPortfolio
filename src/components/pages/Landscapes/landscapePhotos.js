@@ -172,6 +172,12 @@ export const landscapePhotos = [
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes03_LOW.jpg",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes30_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Landscapes/landscapes30_LOW.jpg",
+    width: 4,
+    height: 3
   }
 ];
   

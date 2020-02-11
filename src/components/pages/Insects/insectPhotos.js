@@ -130,6 +130,12 @@ export const insectPhotos = [
     thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Insects/insects22_LOW.jpg",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Insects/insects23_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Insects/insects23_LOW.jpg",
+    width: 4,
+    height: 3
   }
   ];
   
