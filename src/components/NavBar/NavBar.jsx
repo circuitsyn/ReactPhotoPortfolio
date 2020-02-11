@@ -11,7 +11,7 @@ const NavBar = () => {
           <span className="titleOr">Jarred Sutton</span> | Photography
         </Link> 
         
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation" data-display="static">
+        <button className="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation" data-display="static">
           <img className="navIcon" src={navIcon} alt="camera" />
         </button>
       </nav>

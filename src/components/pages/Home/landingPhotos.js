@@ -36,7 +36,7 @@ export const landingPhotos = [
     },
     {
       src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Home/panoramasHome_HIGH.jpg",
-      width: 10,
+      width: 11,
       height: 3,
       alt: "Panoramas",
       overlay: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Home/panoramasHome_Overlay.jpg" 

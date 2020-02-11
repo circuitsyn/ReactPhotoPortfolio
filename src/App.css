@@ -59,7 +59,7 @@ body {
 .navTitleFont {
   font-family: TitleFont;
   font-weight: bold;
-  font-size: 1.75rem !important;
+  /* font-size: 1.75rem !important; */
   text-shadow: 1px 1.5px rgba(0, 0, 0, 0.2);
 }
 
@@ -93,17 +93,18 @@ body {
 } */
 
 .navbar-toggler:focus {
-    /* outline-color: orangered; */
-    /* outline-style: auto; */
-    /* outline-width: 5px; */
-    box-shadow: 0 0 20px 0 orangered, 0 0 20px 0 orangered;
+    outline-color: orangered;
+    outline-style: auto;
+    outline-width: 5px;
+    box-shadow: 0 0 20px 0 gray, 0 0 20px 0 gray;
 }
 
 .navbar-toggler:hover {
-  /* outline-color: orangered; */
-  /* outline-style: auto; */
-  /* outline-width: 5px; */
-  box-shadow: 0 0 20px 0 orangered, 0 0 20px 0 orangered;
+  outline-color: orangered;
+  outline-style: auto;
+  outline-width: 5px;
+  box-shadow: 0 0 20px 0 gray, 0 0 20px 0 gray;
+  transition: 0.4s;
 }
 
 .nav-link:hover {
@@ -113,6 +114,7 @@ body {
   text-decoration-line: underline !important;
   text-decoration-style: dotted !important;
   -moz-text-decoration-line: underline !important;
+  transition: 1s;
 }
 
 .navIcon {
@@ -123,6 +125,7 @@ body {
 .navbar-toggler {
   border-color: rgba(0,0,0,.4) !important;
   padding: 0rem .2rem !important;
+  box-shadow: 0 0 3px 0 gray, 0 0 3px 0 gray;
 }
 
 .App {
