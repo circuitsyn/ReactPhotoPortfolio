@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/Svalbard.c8d58406.jpg"
   },
   {
-    "revision": "3fd22ac8d51779ba03a7",
-    "url": "/static/css/main.b4ffaf1c.chunk.css"
+    "revision": "c33604a81407faa2ee87",
+    "url": "/static/css/main.98e50cf2.chunk.css"
   },
   {
     "revision": "8a67b6a8c82120a7bdb9015af4556e93",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-travel.bc84ed9a.jpg"
   },
   {
-    "revision": "3fd22ac8d51779ba03a7",
-    "url": "/static/js/main.3fd22ac8.chunk.js"
+    "revision": "c33604a81407faa2ee87",
+    "url": "/static/js/main.c33604a8.chunk.js"
   },
   {
     "revision": "9fdd7ae8f4dfbf003b35f6d6c5a8278f",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.b953da0c.chunk.css"
   },
   {
-    "revision": "80123586c7f8c083e57cf04d26d9f7c2",
+    "revision": "13da799e2e91799a53d316f549769441",
     "url": "/index.html"
   }
 ];
