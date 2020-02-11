@@ -28,27 +28,27 @@ const Footer = () => {
             <h3 className="title titleFont">Navigation</h3>
             <ul>
               <li className="list-unstyled">
-                <Link to={"/"} className={` ${window.location.pathname === '/' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                <Link to={"/"} className={` ${window.location.pathname === '/' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
                   Home
                 </Link>   
               </li>
               <li className="list-unstyled">
-                <Link to={"/Blog"} className={` ${window.location.pathname === '/Blog' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                <Link to={"/Blog"} className={` ${window.location.pathname === '/Blog' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
                   Blog
                 </Link> 
               </li>
               <li className="list-unstyled">
-                <Link to={"/About"} className={` ${window.location.pathname === '/About' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                <Link to={"/About"} className={` ${window.location.pathname === '/About' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
                   About
                 </Link> 
               </li>
               <li className="list-unstyled">
-                <Link to={"/Copyright"} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                <Link to={"/Copyright"} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
                   Copyright
                 </Link>
               </li>
               <li className="list-unstyled">
-                <Link to={"/Contact"} className={` ${window.location.pathname === '/Contact' ? 'active footerLink nav-link txt-shadow' : 'inactive footerLink nav-link txt-shadow'} `}>
+                <Link to={"/Contact"} className={` ${window.location.pathname === '/Contact' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
                   Contact
                 </Link>
               </li>
