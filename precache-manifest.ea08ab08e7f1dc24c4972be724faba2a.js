@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "bc84ed9a45a2252953c228a7e13477f9",
-    "url": "/static/media/jarred-sutton-travel.bc84ed9a.jpg"
+    "revision": "c8d58406e74953b1c05ceda804d913e9",
+    "url": "/static/media/Svalbard.c8d58406.jpg"
   },
   {
-    "revision": "c445991e78d7115f2fa0",
-    "url": "/static/css/main.b0da728b.chunk.css"
+    "revision": "3fd22ac8d51779ba03a7",
+    "url": "/static/css/main.b4ffaf1c.chunk.css"
   },
   {
-    "revision": "1068e4d0f48847ae02fb1ed9da793cdf",
-    "url": "/static/media/Feldn___.1068e4d0.woff"
+    "revision": "8a67b6a8c82120a7bdb9015af4556e93",
+    "url": "/static/media/NationalPark-Thin.8a67b6a8.woff"
   },
   {
-    "revision": "cb28bb3884a61747b938",
-    "url": "/static/js/1.cb28bb38.chunk.js"
+    "revision": "d36f85fbdc75a6a14383",
+    "url": "/static/js/1.d36f85fb.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "c445991e78d7115f2fa0",
-    "url": "/static/js/main.c445991e.chunk.js"
+    "revision": "bc84ed9a45a2252953c228a7e13477f9",
+    "url": "/static/media/jarred-sutton-travel.bc84ed9a.jpg"
   },
   {
-    "revision": "c8d58406e74953b1c05ceda804d913e9",
-    "url": "/static/media/Svalbard.c8d58406.jpg"
+    "revision": "3fd22ac8d51779ba03a7",
+    "url": "/static/js/main.3fd22ac8.chunk.js"
   },
   {
     "revision": "9fdd7ae8f4dfbf003b35f6d6c5a8278f",
@@ -60,11 +60,15 @@ self.__precacheManifest = [
     "url": "/static/media/blogSunset.f43211c9.jpg"
   },
   {
-    "revision": "cb28bb3884a61747b938",
+    "revision": "eed8108a30ca873fd17ff4fabc41b699",
+    "url": "/static/media/NationalPark-Regular.eed8108a.woff"
+  },
+  {
+    "revision": "d36f85fbdc75a6a14383",
     "url": "/static/css/1.b953da0c.chunk.css"
   },
   {
-    "revision": "10d38f5d563a47733d4b2e9ed4fdd510",
+    "revision": "80123586c7f8c083e57cf04d26d9f7c2",
     "url": "/index.html"
   }
 ];
