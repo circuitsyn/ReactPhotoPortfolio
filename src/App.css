@@ -92,6 +92,20 @@ body {
   min-height: 100vh;
 } */
 
+.navbar-toggler:focus {
+    /* outline-color: orangered; */
+    /* outline-style: auto; */
+    /* outline-width: 5px; */
+    box-shadow: 0 0 20px 0 orangered, 0 0 20px 0 orangered;
+}
+
+.navbar-toggler:hover {
+  /* outline-color: orangered; */
+  /* outline-style: auto; */
+  /* outline-width: 5px; */
+  box-shadow: 0 0 20px 0 orangered, 0 0 20px 0 orangered;
+}
+
 .nav-link:hover {
   color: black;
   font-weight: bolder;

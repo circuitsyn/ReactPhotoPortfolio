@@ -1,48 +1,111 @@
 export const plantLifePhotos = [
-    {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://fablesandflora.files.wordpress.com/2013/07/meadow-flowers-low-res.jpg",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    }
-  ];
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife01_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife01_LOW.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife02_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife02_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife03_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife03_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife04_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife04_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife05_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife05_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  { 
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife06_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife06_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife07_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife07_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife08_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife08_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife09_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife09_LOW.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife10_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife10_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife17_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife17_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife12_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife12_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife13_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife13_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife14_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife14_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife15_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife15_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife16_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife16_LOW.jpg",
+    width: 3,
+    height: 2
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife11_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife11_LOW.jpg",
+    width: 2,
+    height: 3
+  },
+  {
+    src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife18_HIGH.jpg",
+    thumbnail: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/PlantLife/plantLife18_LOW.jpg",
+    width: 3,
+    height: 2
+  }
+];
   
