@@ -60,7 +60,7 @@ const Contact = () => {
                                     <strong>Error 404 robot logo</strong> - from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                                 </li>
                                 <li className="cRLi">
-                                    <strong>Styled font</strong> - Feldicouth Norm
+                                    <strong>Styled font</strong> - <a href="https://nationalparktypeface.com/" title="Flaticon">National Park Typeface</a>
                                 </li>
                             </ul>
                         </Col>

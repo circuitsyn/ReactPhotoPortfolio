@@ -22,7 +22,7 @@ const Contact = () => {
           </Row>
         </Container>
 
-        <Container id="contactContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
+        <Container id="contactContainer" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-4 mb-5">
           <Container id="innerContactContainer" className="p-4 p-md-5 p-lg-5 p-xl-5">
             <Row>
               <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
