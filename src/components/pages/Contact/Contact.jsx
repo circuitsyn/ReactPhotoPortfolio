@@ -1,10 +1,11 @@
 import React from 'react';
+import Panorama from "./panoramas.jpg";
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import "./Contact.css";
-import Panorama from "./panoramas.jpg";
+
 
 const Contact = () => {
           // Adding title page name for accessibility dynamically
