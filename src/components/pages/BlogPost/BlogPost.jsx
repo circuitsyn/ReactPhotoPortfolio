@@ -11,6 +11,7 @@ import Loading from '../../Loader/Loader';
 import Disqus from "disqus-react";
 import "./BlogPostStyle.css"
 
+// code to eliminate the p tag wrapping on images from the react markdown converter on contentful content
 const imagesWithoutPTags = (props) => {
   const element = props.children[0];
   return element.type === 'img' ? { ...element } : <p {...props} />;
@@ -39,11 +40,8 @@ class BlogPost extends React.Component {
       return(<Loading />)
     }
     else {
-      let key = this.props.blog.articleNum;
-      // console.log('blogPost Key:', key)
-      
+      let key = this.props.blog.articleNum;      
       let content = this.props.blog.posts[key].fields.content;
-      console.log('content', content)
       let time = "";
       time = this.props.blog.posts[key].sys.createdAt;
       time = moment(time).format('M.D.YY');

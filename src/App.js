@@ -64,8 +64,6 @@ class App extends Component {
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
             this.props.history.push('/'+ e.target.alt);
-            console.log("I'm in; clicked!")
-            console.log('event', e.target.alt)
       }
 
       render() {
