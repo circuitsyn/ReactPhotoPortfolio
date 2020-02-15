@@ -19,7 +19,7 @@ class NavBar extends React.Component {
     <div>        
       <nav className="navbar navbar-light pb-0 pt-0 pb-1 pl-2">
         <Link to={"/"} className="navbar-brand navTitleFont mr-auto">
-          <span className="titleOr">Jarred Sutton</span> | Photography
+          <span className="titleOr">Jarred Sutton</span> | {this.props.blog.navTitle}
         </Link> 
         
         <button className="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navBarToggleTrig" aria-controls="navBarToggleTrig" aria-expanded="false" aria-label="Toggle navigation" data-display="static">
