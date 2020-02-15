@@ -24,7 +24,7 @@ const Contact = () => {
                 <h1 className="blogTitle display-1 p-3">Copyright Info</h1>
             </Jumbotron>
 
-            <Container id="CRContainer" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-5 mb-5">
+            <Container id="CRContainer" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-5 mb-3">
                 <Container className="innerCRContainer p-4 p-md-5 p-lg-5 p-xl-5">
                     <Row>
                         <Col>
@@ -53,7 +53,7 @@ const Contact = () => {
                 </Row>
             </Container>
 
-            <Container id="CRContainer" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-5 mb-5">
+            <Container id="CRContainer" className="p-4 p-md-5 p-lg-5 p-xl-5 mt-3 mb-5">
                 <Container className="innerCRContainer p-4 p-md-5 p-lg-5 p-xl-5">
                     <Row>
                         <Col>
