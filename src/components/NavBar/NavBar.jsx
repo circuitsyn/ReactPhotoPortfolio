@@ -1,10 +1,21 @@
 import React from 'react';
 import navIcon from '../../assets/Icons/camera2.png';
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
-const NavBar = () => {
 
-  return (
+class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state= { 
+      
+    }
+  }
+
+  render() {
+
+    return (
+
     <div>        
       <nav className="navbar navbar-light pb-0 pt-0 pb-1 pl-2">
         <Link to={"/"} className="navbar-brand navTitleFont mr-auto">
@@ -83,7 +94,13 @@ const NavBar = () => {
       
       
     </div>
-  );
+    );
+  }
 }
 
-export default NavBar;
+function mapStateToProps(state, ownProps) {
+  return {
+    blog: state.blog
+  }
+}
+export default connect(mapStateToProps)(NavBar)
