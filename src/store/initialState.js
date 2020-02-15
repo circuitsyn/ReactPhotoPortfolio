@@ -1,6 +1,7 @@
 export default {
     blog: {
       posts: [],
-      articleNum: 0
+      articleNum: 0,
+      navTitle: "photography"
     }
   }
