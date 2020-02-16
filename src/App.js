@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from "react-router-dom";
+import { connect } from 'react-redux';
 
 // Nav and footer
 import NavBar from './components/NavBar/NavBar';
@@ -63,7 +64,9 @@ class App extends Component {
 
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
-            this.props.history.push('/'+ e.target.alt);
+            let location = e.target.alt;
+            this.props.history.push('/'+ location);
+            this.props.changePageTitle(location);
       }
 
       render() {
@@ -132,4 +135,18 @@ class App extends Component {
       }
 }
 
-export default withRouter (App)
+const mapDispatchToProps = dispatch => {
+      return {
+        changePageTitle: (location) => {
+          dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location})
+        }
+      };
+    }
+    
+    function mapStateToProps(state, ownProps) {
+      return {
+        blog: state.blog
+      }
+    }
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

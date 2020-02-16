@@ -19,6 +19,11 @@ export default function blogReducer(state = initialState.blog, action) {
         ...state,
         articleNum: 0
       }
+    case 'CHANGE_PAGE_TITLE':
+      return {
+        ...state,
+        navTitle: action.navTitle
+      }
     default:
       return state
   }
