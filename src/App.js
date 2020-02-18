@@ -72,7 +72,7 @@ class App extends Component {
       render() {
             return (
                   <div className="App">
-                  <NavBar titleCapture={this.changePageTitle} />
+                  <NavBar titleCapture={this.props.changePageTitleNav} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -137,15 +137,18 @@ class App extends Component {
 
 const mapDispatchToProps = dispatch => {
       return {
-        changePageTitle: (e, location) => {
+      	changePageTitle: (e, location) => {
             if (location.length > 0) {
                   dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location}) 
+									console.log('changePageTitle func location value:', location)
             }
             else {
                   console.log('else');
-            }
-          
-        }
+            }  
+        },
+				changePageTitleNav: () => {
+					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"})
+				}
       };
     }
     
