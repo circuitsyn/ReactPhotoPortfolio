@@ -12,13 +12,13 @@ class NavBar extends React.Component {
     }
   }
 
-  render() {
+  render(props) {
 
     return (
 
     <div>        
       <nav className="navbar navbar-light pb-0 pt-0 pb-1 pl-2">
-        <Link to={"/"} className="navbar-brand navTitleFont mr-auto">
+        <Link to={"/"} className="navbar-brand navTitleFont mr-auto" onClick={this.props.titleCapture}>
           <span className="titleOr">Jarred Sutton</span> | {this.props.blog.navTitle}
         </Link> 
         

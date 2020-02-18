@@ -66,13 +66,13 @@ class App extends Component {
       onPickClick = e => {
             let location = e.target.alt;
             this.props.history.push('/'+ location);
-            this.props.changePageTitle(location);
+            this.props.changePageTitle(e, location);
       }
 
       render() {
             return (
                   <div className="App">
-                  <NavBar />
+                  <NavBar titleCapture={this.changePageTitle} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -137,8 +137,14 @@ class App extends Component {
 
 const mapDispatchToProps = dispatch => {
       return {
-        changePageTitle: (location) => {
-          dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location})
+        changePageTitle: (e, location) => {
+            if (location.length > 0) {
+                  dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location}) 
+            }
+            else {
+                  console.log('else');
+            }
+          
         }
       };
     }
