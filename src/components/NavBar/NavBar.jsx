@@ -12,6 +12,10 @@ class NavBar extends React.Component {
     }
   }
 
+	// loading = () => {
+	// 	if
+	// }
+
   render(props) {
 
     return (
