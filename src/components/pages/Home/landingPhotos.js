@@ -24,7 +24,7 @@ export const landingPhotos = [
       src: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Home/mammalsHome_HIGH.jpg",
       width: 4,
       height: 3,
-      alt: "mammals",
+      alt: "Mammals",
       overlay: "https://js-react-photo-portfolio.s3-us-west-2.amazonaws.com/PhotoPortfolio/Home/mammalsHome_Overlay.jpg" 
     },
     {

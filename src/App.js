@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from "react-router-dom";
+import { connect } from 'react-redux';
 
 // Nav and footer
 import NavBar from './components/NavBar/NavBar';
@@ -63,13 +64,44 @@ class App extends Component {
 
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
-            this.props.history.push('/'+ e.target.alt);
+            let location = e.target.alt;
+            this.props.history.push('/'+ location);
+            this.props.changePageTitle(e, location);
       }
+
+			// function to process link location and then trigget change for page title
+			locCaptureAndTrigger = e => {
+				let baseLen = e.target.origin.length;
+				// add 1 to baseLen to remove / on slice method
+				baseLen++ 
+				let href = e.target.href;
+				let location = href.slice(baseLen);
+				// switch statement to convert irregular addresses to plain english
+				switch(location) {
+					case "":
+						location = "Photography";
+						break;
+					case "PlantLife":
+						location = "Plant Life";
+						break;
+					case "SeaLife":
+						location = "Sea Life";
+						break;
+					case "Water-Features":
+						location = "Water Features";
+						break;
+					default:
+						break;
+				}
+				this.props.changePageTitle(e, location);
+				// reset baseLen
+				baseLen = 0;
+			}
 
       render() {
             return (
                   <div className="App">
-                  <NavBar />
+                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -85,7 +117,7 @@ class App extends Component {
                               <Birds 
                               />} />
                         <Route path="/Contact" render={() => 
-                              <Contact 
+                              <Contact
                               />} />
                         <Route path="/Copyright" render={() => 
                               <Copyright 
@@ -126,10 +158,32 @@ class App extends Component {
                         <Route path="*" component={Error404} />
                         </Switch>
                   </div>
-                  <Footer />
+                  <Footer brandFooterCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger}/>
                   </div>
             );
       }
 }
 
-export default withRouter (App)
+const mapDispatchToProps = dispatch => {
+      return {
+      	changePageTitle: (e, location) => {
+            if (location.length > 0) {
+                  dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location}) 
+            }
+            else {
+                  console.log('ERROR: Location clicked is blank, check your original click path and make sure it is a proper destination.');
+            }  
+        },
+				changePageTitleNav: () => {
+					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"})
+				}
+      };
+    }
+    
+    function mapStateToProps(state, ownProps) {
+      return {
+        blog: state.blog
+      }
+    }
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
