@@ -76,6 +76,10 @@ class App extends Component {
 				baseLen++ 
 				let href = e.target.href;
 				let location = href.slice(baseLen);
+				// test for "" so that we can set home to be "Photography" for nav
+				if (location === "") {
+					location = "Photography";
+				}
 				this.props.changePageTitle(e, location);
 				// reset baseLen
 				baseLen = 0;
