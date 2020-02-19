@@ -42,27 +42,27 @@ class Footer extends React.Component {
 							<h3 className="title titleFont">Navigation</h3>
 							<ul>
 								<li className="list-unstyled">
-									<Link to={"/"} className={` ${window.location.pathname === '/' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
 										Home
 									</Link>   
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Blog"} className={` ${window.location.pathname === '/Blog' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Blog"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Blog' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
 										Blog
 									</Link> 
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/About"} className={` ${window.location.pathname === '/About' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/About"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/About' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
 										About
 									</Link> 
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Copyright"} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Copyright"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
 										Copyright
 									</Link>
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Contact"} className={` ${window.location.pathname === '/Contact' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Contact"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Contact' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
 										Contact
 									</Link>
 								</li>

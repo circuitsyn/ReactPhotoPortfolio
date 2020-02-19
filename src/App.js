@@ -69,10 +69,23 @@ class App extends Component {
             this.props.changePageTitle(e, location);
       }
 
+			// function to process link location and then trigget change for page title
+			locCaptureAndTrigger = e => {
+				let baseLen = e.target.baseURI.length;
+				console.log('base', baseLen);
+				let href = e.target.href;
+				console.log('href', href);
+				let location = href.slice(baseLen);
+				console.log('location', location);
+				this.props.changePageTitle(e, location);
+				// reset baseLen
+				baseLen = 0;
+			}
+
       render() {
             return (
                   <div className="App">
-                  <NavBar titleCapture={this.props.changePageTitleNav} />
+                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.onPickClicklocCaptureAndTrigger} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -88,7 +101,7 @@ class App extends Component {
                               <Birds 
                               />} />
                         <Route path="/Contact" render={() => 
-                              <Contact 
+                              <Contact
                               />} />
                         <Route path="/Copyright" render={() => 
                               <Copyright 
@@ -129,7 +142,7 @@ class App extends Component {
                         <Route path="*" component={Error404} />
                         </Switch>
                   </div>
-                  <Footer brandFooterCapture={this.props.changePageTitleNav} titleCaptureFoot={this.props.changePageTitle}/>
+                  <Footer brandFooterCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger}/>
                   </div>
             );
       }
