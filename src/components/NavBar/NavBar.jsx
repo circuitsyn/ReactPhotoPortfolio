@@ -36,22 +36,22 @@ class NavBar extends React.Component {
           <div className="pb-4 pr-4 pt-0">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item active">
-                <Link to={"/"} className="nav-link txt-shadow">
+                <Link to={"/"} onClick={this.props.linkCapture} className="nav-link txt-shadow">
                   Home
                 </Link>
               </li>
               <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
-                <Link to={"/Blog"} className="nav-link txt-shadow">
+                <Link to={"/Blog"} onClick={this.props.linkCapture} className="nav-link txt-shadow">
                   Blog
                 </Link>
               </li>
               <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
-                <Link to={"/About"} className="nav-link txt-shadow">
+                <Link to={"/About"} onClick={this.props.linkCapture} className="nav-link txt-shadow">
                   About
                 </Link>
               </li>
               <li data-toggle="collapse" data-target="#navBarToggleTrig" className="nav-item">
-                <Link to={"/Contact"} className="nav-link txt-shadow">
+                <Link to={"/Contact"} onClick={this.props.linkCapture} className="nav-link txt-shadow">
                   Contact
                 </Link>
               </li>
@@ -60,34 +60,34 @@ class NavBar extends React.Component {
                   Galleries
                 </Link>
                 <div className="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdown">
-                  <Link to={"/Birds"} className="dropdown-item txt-shadow">
+                  <Link to={"/Birds"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Birds
                   </Link>                  
-                  <Link to={"/PlantLife"} className="dropdown-item txt-shadow">
+                  <Link to={"/PlantLife"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Plant Life
                   </Link>
-                  <Link to={"/Insects"} className="dropdown-item txt-shadow">
+                  <Link to={"/Insects"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Insects
                   </Link>
-                  <Link to={"/Landscapes"} className="dropdown-item txt-shadow">
+                  <Link to={"/Landscapes"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Landscapes
                   </Link>
-                  <Link to={"/Panoramas"} className="dropdown-item txt-shadow">
+                  <Link to={"/Panoramas"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Panoramas
                   </Link>
-                  <Link to={"/Reptiles"} className="dropdown-item txt-shadow">
+                  <Link to={"/Reptiles"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Reptiles
                   </Link>
-                  <Link to={"/SeaLife"} className="dropdown-item txt-shadow">
+                  <Link to={"/SeaLife"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     SeaLife
                   </Link>
-                  <Link to={"/Travel"} className="dropdown-item txt-shadow">
+                  <Link to={"/Travel"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Travel
                   </Link>
-                  <Link to={"/Mammals"} className="dropdown-item txt-shadow">
+                  <Link to={"/Mammals"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Mammals
                   </Link>
-                  <Link to={"/Water-Features"} className="dropdown-item txt-shadow">
+                  <Link to={"/Water-Features"} onClick={this.props.linkCapture} className="dropdown-item txt-shadow">
                     Water Features
                   </Link>
                 </div>

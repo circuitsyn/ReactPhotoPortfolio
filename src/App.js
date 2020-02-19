@@ -88,7 +88,7 @@ class App extends Component {
       render() {
             return (
                   <div className="App">
-                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.onPickClicklocCaptureAndTrigger} />
+                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -156,10 +156,9 @@ const mapDispatchToProps = dispatch => {
       	changePageTitle: (e, location) => {
             if (location.length > 0) {
                   dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location}) 
-									console.log('changePageTitle loc:', location)
             }
             else {
-                  console.log('else');
+                  console.log('ERROR: Location clicked is blank, check your original click path and make sure it is a proper destination.');
             }  
         },
 				changePageTitleNav: () => {
