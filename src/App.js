@@ -71,12 +71,11 @@ class App extends Component {
 
 			// function to process link location and then trigget change for page title
 			locCaptureAndTrigger = e => {
-				let baseLen = e.target.baseURI.length;
-				console.log('base', baseLen);
+				let baseLen = e.target.origin.length;
+				// add 1 to baseLen to remove / on slice method
+				baseLen++ 
 				let href = e.target.href;
-				console.log('href', href);
 				let location = href.slice(baseLen);
-				console.log('location', location);
 				this.props.changePageTitle(e, location);
 				// reset baseLen
 				baseLen = 0;
@@ -153,7 +152,7 @@ const mapDispatchToProps = dispatch => {
       	changePageTitle: (e, location) => {
             if (location.length > 0) {
                   dispatch({type: "CHANGE_PAGE_TITLE", navTitle: location}) 
-									console.log('changePageTitle func location value:', location)
+									console.log('changePageTitle loc:', location)
             }
             else {
                   console.log('else');
