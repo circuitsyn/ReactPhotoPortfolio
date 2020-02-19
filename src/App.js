@@ -129,7 +129,7 @@ class App extends Component {
                         <Route path="*" component={Error404} />
                         </Switch>
                   </div>
-                  <Footer />
+                  <Footer brandFooterCapture={this.props.changePageTitleNav} titleCaptureFoot={this.props.changePageTitle}/>
                   </div>
             );
       }

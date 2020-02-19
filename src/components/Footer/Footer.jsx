@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
 
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="font-small mt-3">
       <Container>
@@ -15,7 +15,7 @@ const Footer = () => {
       <Container fluid className="text-center text-md-left">
         <Row>
           <Col md="6">
-          <Link to={"/"} className="navbar-brand navTitleFont pb-0">
+          <Link to={"/"} className="navbar-brand navTitleFont pb-0" onClick={props.brandFooterCapture}>
             <span className="titleOr">Jarred Sutton</span><span className="titleBl"> | Photography</span>
           </Link>   
 
