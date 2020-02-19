@@ -3,10 +3,19 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
+class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state= { 
+      
+    }
+  }
 
-const Footer = (props) => {
-  return (
+  render(props) {
+		return (
+
     <div className="font-small mt-3">
       <Container>
         <hr />
@@ -57,7 +66,13 @@ const Footer = (props) => {
         </Row>
       </Container>
       </div>
-  );
+  	);
+	}
 }
 
-export default Footer;
+function mapStateToProps(state, ownProps) {
+  return {
+    blog: state.blog
+  }
+}
+export default connect(mapStateToProps)(Footer)
