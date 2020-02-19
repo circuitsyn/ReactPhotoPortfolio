@@ -76,9 +76,22 @@ class App extends Component {
 				baseLen++ 
 				let href = e.target.href;
 				let location = href.slice(baseLen);
-				// test for "" so that we can set home to be "Photography" for nav
-				if (location === "") {
-					location = "Photography";
+				// switch statement to convert irregular addresses to plain english
+				switch(location) {
+					case "":
+						location = "Photography";
+						break;
+					case "PlantLife":
+						location = "Plant Life";
+						break;
+					case "SeaLife":
+						location = "Sea Life";
+						break;
+					case "Water-Features":
+						location = "Water Features";
+						break;
+					default:
+						break;
 				}
 				this.props.changePageTitle(e, location);
 				// reset baseLen
