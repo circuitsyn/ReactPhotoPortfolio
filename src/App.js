@@ -64,9 +64,11 @@ class App extends Component {
 
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
-            let location = e.target.alt;
-            this.props.history.push('/'+ location);
-            this.props.changePageTitle(e, location);
+				let location = e.target.alt;
+				this.props.history.push('/'+ location);
+				this.props.changePageTitle(e, location);
+				// animate changed title portion
+				this.animateCSS('.navbar-brand', 'bounce');
       }
 
 			// function to process link location and then trigget change for page title
@@ -100,6 +102,13 @@ class App extends Component {
 				this.animateCSS('.navbar-brand', 'bounce');
 			}
 
+			homeClick = () => {
+				this.props.changePageTitleNav();
+				// animate changed title portion
+				this.animateCSS('.navbar-brand', 'bounce');
+				console.log('homeClick')
+			}
+
 			// annimate.css function
 			animateCSS = (element, animationName, callback) => {
     		const node = document.querySelector(element)
@@ -118,7 +127,7 @@ class App extends Component {
       render() {
             return (
                   <div className="App">
-                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger} />
+                  <NavBar titleCapture={this.homeClick} linkCapture={this.locCaptureAndTrigger} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -175,7 +184,7 @@ class App extends Component {
                         <Route path="*" component={Error404} />
                         </Switch>
                   </div>
-                  <Footer brandFooterCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger}/>
+                  <Footer brandFooterCapture={this.homeClick} linkCapture={this.locCaptureAndTrigger}/>
                   </div>
             );
       }
@@ -192,7 +201,8 @@ const mapDispatchToProps = dispatch => {
             }  
         },
 				changePageTitleNav: () => {
-					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"})
+					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"});
+					console.log('bounce')
 				}
       };
     }
