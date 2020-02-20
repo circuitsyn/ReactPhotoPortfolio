@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-travel.bc84ed9a.jpg"
   },
   {
-    "revision": "78c7901c5968a5c11f06",
+    "revision": "00121544c131f619273a",
     "url": "/static/css/main.96337b44.chunk.css"
   },
   {
-    "revision": "eed8108a30ca873fd17ff4fabc41b699",
-    "url": "/static/media/NationalPark-Regular.eed8108a.woff"
+    "revision": "8a67b6a8c82120a7bdb9015af4556e93",
+    "url": "/static/media/NationalPark-Thin.8a67b6a8.woff"
   },
   {
     "revision": "1bf9df3e9c31ef8a29c1",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/jarred-sutton-teaching.1d95a45b.jpg"
   },
   {
-    "revision": "78c7901c5968a5c11f06",
-    "url": "/static/js/main.78c7901c.chunk.js"
+    "revision": "00121544c131f619273a",
+    "url": "/static/js/main.00121544.chunk.js"
   },
   {
     "revision": "c8d58406e74953b1c05ceda804d913e9",
@@ -64,15 +64,15 @@ self.__precacheManifest = [
     "url": "/static/media/blogSunset.f43211c9.jpg"
   },
   {
-    "revision": "8a67b6a8c82120a7bdb9015af4556e93",
-    "url": "/static/media/NationalPark-Thin.8a67b6a8.woff"
+    "revision": "eed8108a30ca873fd17ff4fabc41b699",
+    "url": "/static/media/NationalPark-Regular.eed8108a.woff"
   },
   {
     "revision": "1bf9df3e9c31ef8a29c1",
     "url": "/static/css/1.30061c83.chunk.css"
   },
   {
-    "revision": "b40d11b080a9e361f3e7b541a16c80f5",
+    "revision": "f5382374165fe1ddab5cb8ef07fcfa53",
     "url": "/index.html"
   }
 ];
