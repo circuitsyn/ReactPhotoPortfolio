@@ -37,7 +37,7 @@ class App extends Component {
 
       }
 
-      // capture all image components to add fade in ability on load for transition on hover
+      // capture all image components to add fade in ability on load for transition on hover for home mobile
       componentDidMount() {
             const img = document.querySelector('img');
             img.onload = () => {
@@ -66,6 +66,23 @@ class App extends Component {
       onPickClick = e => {
 				let location = e.target.alt;
 				this.props.history.push('/'+ location);
+				// switch statement to convert irregular addresses to plain english
+				switch(location) {
+					case "":
+						location = "Photography";
+						break;
+					case "PlantLife":
+						location = "Plant Life";
+						break;
+					case "SeaLife":
+						location = "Sea Life";
+						break;
+					case "Water-Features":
+						location = "Water Features";
+						break;
+					default:
+						break;
+				}
 				this.props.changePageTitle(e, location);
 				// animate changed title portion
 				this.animateCSS('.navbar-brand', 'bounce');
