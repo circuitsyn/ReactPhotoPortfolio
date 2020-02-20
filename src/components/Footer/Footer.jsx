@@ -38,31 +38,31 @@ class Footer extends React.Component {
 						</p>
 
 						</Col>
-						<Col className="text-right" md="6">
+						<Col className="text-center text-sm-center text-md-right text-lg-right text-xl-right" md="6">
 							<h3 className="title titleFont">Navigation</h3>
-							<ul>
+							<ul className="p-0">
 								<li className="list-unstyled">
-									<Link to={"/"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/' ? 'active footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow' : 'inactive footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow'} `}>
 										Home
 									</Link>   
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Blog"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Blog' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Blog"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Blog' ? 'active footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow' : 'inactive footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow'} `}>
 										Blog
 									</Link> 
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/About"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/About' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/About"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/About' ? 'active footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow' : 'inactive footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow'} `}>
 										About
 									</Link> 
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Copyright"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Copyright"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Copyright' ? 'active footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow' : 'inactive footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow'} `}>
 										Copyright
 									</Link>
 								</li>
 								<li className="list-unstyled">
-									<Link to={"/Contact"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Contact' ? 'active footerLink pr-0 nav-link txt-shadow' : 'inactive footerLink pr-0 nav-link txt-shadow'} `}>
+									<Link to={"/Contact"} onClick={this.props.linkCapture} className={` ${window.location.pathname === '/Contact' ? 'active footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow' : 'inactive footerLink pr-md-0 pr-lg-0 pr-xl-0 nav-link txt-shadow'} `}>
 										Contact
 									</Link>
 								</li>
