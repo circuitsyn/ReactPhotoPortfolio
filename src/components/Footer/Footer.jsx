@@ -30,7 +30,7 @@ class Footer extends React.Component {
 					<Row>
 						<Col md="6">
 						<Link to={"/"} className="navbar-brand navTitleFont pb-0" onClick={this.props.brandFooterCapture}>
-							<span className="titleOr">Jarred Sutton</span><span className="titleBl"> | {this.props.blog.navTitle}</span>
+							<span className="titleOr">Jarred Sutton</span> | <span className="titleBl titleArea">{this.props.blog.navTitle}</span>
 						</Link>   
 
 						<p className="small text-muted">
