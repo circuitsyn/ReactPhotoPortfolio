@@ -123,7 +123,6 @@ class App extends Component {
 				this.props.changePageTitleNav();
 				// animate changed title portion
 				this.animateCSS('.navbar-brand', 'bounce');
-				console.log('homeClick')
 			}
 
 			// annimate.css function
@@ -219,7 +218,6 @@ const mapDispatchToProps = dispatch => {
         },
 				changePageTitleNav: () => {
 					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"});
-					console.log('bounce')
 				}
       };
     }
