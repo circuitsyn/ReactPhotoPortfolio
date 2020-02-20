@@ -37,7 +37,7 @@ class App extends Component {
 
       }
 
-      // capture all image components to add fade in ability on load for transition on hover
+      // capture all image components to add fade in ability on load for transition on hover for home mobile
       componentDidMount() {
             const img = document.querySelector('img');
             img.onload = () => {
@@ -64,9 +64,28 @@ class App extends Component {
 
       // function to detect gallery click and redirect to gallery for HOME component
       onPickClick = e => {
-            let location = e.target.alt;
-            this.props.history.push('/'+ location);
-            this.props.changePageTitle(e, location);
+				let location = e.target.alt;
+				this.props.history.push('/'+ location);
+				// switch statement to convert irregular addresses to plain english
+				switch(location) {
+					case "":
+						location = "Photography";
+						break;
+					case "PlantLife":
+						location = "Plant Life";
+						break;
+					case "SeaLife":
+						location = "Sea Life";
+						break;
+					case "Water-Features":
+						location = "Water Features";
+						break;
+					default:
+						break;
+				}
+				this.props.changePageTitle(e, location);
+				// animate changed title portion
+				this.animateCSS('.navbar-brand', 'bounce');
       }
 
 			// function to process link location and then trigget change for page title
@@ -96,12 +115,36 @@ class App extends Component {
 				this.props.changePageTitle(e, location);
 				// reset baseLen
 				baseLen = 0;
+				// animate changed title portion
+				this.animateCSS('.navbar-brand', 'bounce');
+			}
+
+			homeClick = () => {
+				this.props.changePageTitleNav();
+				// animate changed title portion
+				this.animateCSS('.navbar-brand', 'bounce');
+				console.log('homeClick')
+			}
+
+			// annimate.css function
+			animateCSS = (element, animationName, callback) => {
+    		const node = document.querySelector(element)
+    		node.classList.add('animated', animationName)
+
+    	function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    	}
+
+    	node.addEventListener('animationend', handleAnimationEnd)
 			}
 
       render() {
             return (
                   <div className="App">
-                  <NavBar titleCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger} />
+                  <NavBar titleCapture={this.homeClick} linkCapture={this.locCaptureAndTrigger} />
                   <div className="wrapper">
                   <Switch>
                         <Route exact path="/" render={() => 
@@ -158,7 +201,7 @@ class App extends Component {
                         <Route path="*" component={Error404} />
                         </Switch>
                   </div>
-                  <Footer brandFooterCapture={this.props.changePageTitleNav} linkCapture={this.locCaptureAndTrigger}/>
+                  <Footer brandFooterCapture={this.homeClick} linkCapture={this.locCaptureAndTrigger}/>
                   </div>
             );
       }
@@ -175,7 +218,8 @@ const mapDispatchToProps = dispatch => {
             }  
         },
 				changePageTitleNav: () => {
-					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"})
+					dispatch({type: "CHANGE_PAGE_TITLE", navTitle: "Photography"});
+					console.log('bounce')
 				}
       };
     }
