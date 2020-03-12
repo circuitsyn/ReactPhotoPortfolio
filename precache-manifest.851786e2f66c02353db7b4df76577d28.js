@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/css/main.36806e07.chunk.css"
   },
   {
-    "revision": "eed8108a30ca873fd17ff4fabc41b699",
-    "url": "/static/media/NationalPark-Regular.eed8108a.woff"
+    "revision": "8a67b6a8c82120a7bdb9015af4556e93",
+    "url": "/static/media/NationalPark-Thin.8a67b6a8.woff"
   },
   {
     "revision": "b90c962f424c28f5129c",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/static/media/blogSunset.f43211c9.jpg"
   },
   {
-    "revision": "8a67b6a8c82120a7bdb9015af4556e93",
-    "url": "/static/media/NationalPark-Thin.8a67b6a8.woff"
+    "revision": "eed8108a30ca873fd17ff4fabc41b699",
+    "url": "/static/media/NationalPark-Regular.eed8108a.woff"
   },
   {
     "revision": "b90c962f424c28f5129c",
